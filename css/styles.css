@@ -154,14 +154,62 @@ body {
   border: solid 1px blue;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
+@media only screen and (max-width: 760px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -999px;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  tr:nth-of-type(odd) td {
+    border-bottom: 1px solid #fff;
+  }
+  td:before {
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  td:nth-of-type(1):before {
+    content: "Address:";
+  }
+  td:nth-of-type(2):before {
+    content: "Phone #:";
+  }
+  td:nth-of-type(3):before {
+    content: "Hours of Operation:";
+  }
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
+@media (min-width: 600px) {
+  td, th {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 85%;
+  }
 }
 
 th {
@@ -169,7 +217,14 @@ th {
   text-transform: uppercase;
 }
 
-tr:nth-child(even) {
+@media (min-width: 600px) {
+  th {
+    background: #333;
+    color: white;
+  }
+}
+
+tr:nth-child(odd) {
   background-color: #dddddd;
 }
 
