@@ -79,6 +79,7 @@ body {
 @media (min-width: 600px) {
   .navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
@@ -113,26 +114,32 @@ body {
   background-color: #fff;
 }
 
+.subflyout:hover {
+  position: relative;
+}
+
 .subflyout:hover .submenu {
   list-style-type: none;
 }
 
 @media (min-width: 600px) {
   .subflyout:hover .submenu {
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: dotted 1px #333;
-    z-index: 3;
-    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eee;
     color: #000;
   }
 }
 
 .subflyout:hover .submenu a {
-  margin: 10px;
   padding: 4px;
   text-decoration: none;
+}
+
+.subflyout:hover .submenu a:hover {
+  background-color: #fff;
 }
 
 .container {
