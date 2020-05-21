@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
     <title>Table</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        th {
-            color: #fff;
-        }
-
-
-    </style>
+    
 </head>
 <body>
 
@@ -21,102 +16,26 @@
 
     <div class="row">
         <div class="col">
-            <div class="card card-body"><input type="text" id="search-input" class="form-control"></div>
+            <div ><input type="text" id="search-input"><i class="fas fa-search"></i></div>
         </div>
     </div>
-    <table class="table table-striped">
-           
-        <tr class="bg-info">
-            <th data-column="address" data-order="desc">Address &#9650</th>
-            <th data-column="phone" data-order="desc">Phone &#9650 </th>
-            <th data-column="hours" data-order="desc">Hours of Operation &#9650</th>
+    <table >
+
+   
+    <table >
+        <thead>  
+        <tr >
+            <th>Address &#9650</th>
+            <th>Phone &#9650 </th>
+            <th>Hours of Operation &#9650</th>
         </tr>
-           
+    </thead>    
         <tbody id="tableData">
 
         </tbody>
         </table>
 
-        <script>
-            let sortDirection = false;
-            let storeInfo = [
-                {'address': 'Miramar Store, 97 Gates Road',     'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
-                {'address': 'Mira Mesa Store, 202-B Laffey Circle',   'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
-                {'address': 'Kearny Mesa Store, 1540 D Lovell Ct',   'phone' : '(619)851-4153', 'hours': '4:00pm-11:00pm'},
-                {'address': 'Clairemont Store, 4545 La Jolla Village Square', 'phone' : '(619)453-8562', 'hours': '9:00am-5:00pm'},
-                {'address': 'University City Store, 2267 Lago Ventana',    'phone' : '(858)256-2044', 'hours': '9:00am-5:00pm'},
-                {'address': 'San Diego Store, 1570 Iris Avenue',   'phone' : '(858)256-9651', 'hours': '4:00pm-11:00pm'},
-            ];
-
-            $('#search-input').on('keyup', function(){
-                var value = $(this).val()
-                console.log('value:',value)
-                var data= searchTable(value, storeInfo)
-                loadTableData(data)
-            })
-
-          
-
-            function searchTable(value, data) {
-                var filterData=[];
-
-                for(var i=0; i< data.length; i++ ){
-                    value = value.toLowerCase()
-                    var address = data[i].address.toLowerCase()
-
-                    if (address.includes(value)){
-                        filterData.push(data[i])
-                    }
-                } return filterData
-            }
-
-            //sort function
-            $('th').on('click', function(){
-                var column = $(this).data('column');
-                var order = $(this).data('order');
-                var text = $(this).html();
-                text = text.substring(0, text.length -1)
-
-                console.log('column was clicked', column, order);
-
-                if(order == 'desc') {
-                    $(this).data('order', 'asc')
-                    storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
-                    text += '&#9660'
-                }else {
-                    $(this).data('order', 'desc')
-                    storeInfo = storeInfo.sort((a,b) => a[column] < b[column] ? 1: -1)
-                    text += '&#9650'
-                }
-                $(this).html(text)
-
-                loadTableData(storeInfo)
-            })
-
-
-            //table data load
-                window.onload = () => {
-                loadTableData(storeInfo);
-            }
-             function loadTableData(storeInfo) {
-                const tableBody = document.getElementById('tableData');
-                let dataHtml = '';
-
-                for(let person of storeInfo) {
-                    dataHtml += `<tr>
-                                    <td>${person.address}</td>
-                                    <td>${person.phone}</td>
-                                    <td>${person.hours}</td>
-                                </tr>`;
-                }
-                console.log(dataHtml);
-
-                tableBody.innerHTML= dataHtml;
-            } 
-
-            
-
-        </script>
+        <script src="../scripts/table.js"></script>
         
 </body>
 </html>
