@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <!-- <link rel="stylesheet" href="../css/form1.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Come whale watching</h1>
+        <h2>You will never forget this experience!</h2>
+    </header>
+<!--    form#signup>p{We can't wait to show you the ocean and introduce you to some whales}+fieldset>legend{Personal details}+ul>li*8>label+input-->
+    <form action="" id="signup">
+        <p>We can't wait to show you the ocean and introduce you to some whales</p>
+        <fieldset>
+            <legend>Personal details</legend>
+            <ul>
+                <li>
+                    <label for="fName">First name</label>
+                    <input type="text" id="fName" name="first_name" required autofocus>
+                </li>
+                <li>
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" name="last_name" required>
+                </li>
+                <li>
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="birth_date" required>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@domain.com" required>
+                </li>
+                <li>
+                    <label for="url">URL</label>
+                    <input type="url" id="url" name="url" placeholder="http://yoursite.com">
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="111-111-1111">
+                </li>
+                <li>
+                    <label for="bootSize">Boot size</label>
+                    <input type="number" id="bootSize" name="boot_size" min="5" max="14" step=".5">
+                </li>
+                <li>
+                    <label for="comfortLevel">Water comfort level <span>1 = low, 10 = high</span></label>
+                    <input type="range" min="1" max="10" value="0" id="comfortLevel" name="comfort_level" required>
+                    <output name="output" onforminput="value=a.value">0</output>
+                </li>
+                <li>
+                    <h3>Animals you hope to see</h3>
+                    <input type="checkbox" value="whale" name="whale" id="whale">
+                    <label for="whale">Whale</label>
+                    <input type="checkbox" value="turtle" name="turtle" id="turtle">
+                    <label for="turtle">Sea turtle</label>
+                    <input type="checkbox" value="dolphin" name="dolphin" id="dolphin">
+                    <label for="dolphin">Dolphin</label>
+                    <input type="checkbox" value="shark" name="shark" id="shark">
+                    <label for="shark">Shark</label>
+                </li>
+                
+                <li>
+                    <label for="tourTime">Select tour time</label>
+                    <select name="tour_time" id="tourTime" required>
+                       <option value="null">Select time slot</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="sunset">Sunset</option>
+                        <option value="night" disabled>Late night</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+<!--        fieldset>legend{Billing Info}+ul>li*3>label+input-->
+        <fieldset>
+            <legend>Billing Info</legend>
+                <ul>
+                    <li>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </li>
+                    <li>
+                        <label for="zip">Zip code / postal</label>
+                        <input type="text" id="zip" name="zip_code">
+                    </li>
+                    <li>
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" list="cList" required>
+                        <datalist id="cList">
+                            <option value="USA" label="USA"></option>
+                            <option value="Mexico" label="Mexico"></option>
+                            <option value="Canada" label="Canada"></option>
+                        </datalist>
+                    </li>
+                </ul>
+        </fieldset>
+<!--        fieldset>legend{Payment Details}+ul>li*5>label+input-->
+        <fieldset>
+            <legend>Payment Details</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="visa" name="cc">
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="mc" name="cc">
+                    <label for="mc">Mastercard</label>
+                    <input type="radio" id="amex" name="cc">
+                    <label for="amex">American Express</label>
+                </li>
+                <li>
+                    <label for="cardName">Name <span>as it appears on your card</span></label>
+                    <input type="text" id="cardName" name="cc_name" required>
+                </li>
+                <li>
+                    <label for="cardNum"></label>
+                    <input type="number" id="cardNum" name="card_number" required>
+                </li>
+                <li>
+                    <label for="exp">Expire date</label>
+                    <input type="month" id="exp" name="experiation" required>
+                </li>
+                <li>
+                    <label for="cvv">Security number</label>
+                    <input type="number" id="cvv" name="cvv" required pattern="[0-9]{3}">
+                </li>
+            </ul>
+        </fieldset>
+        
+        <button id="submit" type="submit">Reserve now</button>
+    </form>
+</body>
+</html>
