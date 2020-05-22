@@ -25,3 +25,19 @@ fieldset {
   label[for="visa"], label[for="mc"], label[for="amex"] {
     display: inline-block;
 }
+
+@media screen and (max-width: 450px) {
+   h1 {
+     text-align: center;
+
+   }
+   .fieldset1 {
+     float: left;
+     width: 48%;
+   }
+   .fieldset1 {
+    float: right;
+    width: 48%;
+  }
+}
+
