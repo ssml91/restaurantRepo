@@ -7,6 +7,9 @@
     .main-nav {
         list-style-type: none;
         display: none;
+        
+       
+        
         .nav-links {
             text-decoration: none;
             color: rgba(255,255,255, 0.7);
@@ -19,6 +22,7 @@
            
         }
         @include break(600px) {
+               
             display: flex;
             margin-right: 30px;
             flex-direction: row;
@@ -26,6 +30,7 @@
         }
     }
     li {
+      
         text-align: center;
         margin: 15px auto;
         @include break(600px) {
@@ -56,6 +61,7 @@
     }
     @include break(600px) {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         padding-bottom: 0;
         height: 70px;
@@ -67,6 +73,8 @@
 }
 .main-nav.active {
     display: block;
+    
+   
 }
 .submenu {
     display: none;
@@ -84,27 +92,32 @@
         }
 }
 .subflyout {
-   
+  
     &:hover {
-       
+       position: relative;
         .submenu {
             list-style-type: none;
             @include break(600px) {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                border: dotted 1px #333;
+               position: absolute;
                
-                z-index: 3;
-                background-color: #fff;
+              display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+               
+                
+                background-color: #eee;
                
                 color: #000;
                   
                 }
                 a {
-                    margin: 10px;
+                   
                     padding: 4px;
                     text-decoration: none;
+                    &:hover {
+                        background-color: #fff;
+                    }
                 }
         }
     }
