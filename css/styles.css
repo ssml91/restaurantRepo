@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar {
@@ -232,5 +232,87 @@ tr:nth-child(odd) {
 tr:hover {
   color: white;
   background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#intro, #grids {
+  margin-top: 1.5em;
+}
+
+#col3 {
+  width: 60%;
+}
+
+#col3 img {
+  text-align: center;
+}
+
+#col3 button {
+  background-color: #ededed;
+  margin-top: 1.6em;
+  padding: .6em 3em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  #col3 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 350px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #menuGrid {
+    display: grid;
+    grid-template-columns: 90px 600px;
+    grid-template-rows: 85px 85px 85px 85px 85px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #menuGrid p {
+    padding: .7em;
+  }
+  #menuGrid2 {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px 350px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  #menuGrid2 div {
+    margin-bottom: 1em;
+    text-align: center;
+    width: 200px;
+    border: solid 1px #dedede;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #menuGrid2 p {
+    margin: .3em;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  width: 60%;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */
