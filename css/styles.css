@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -37,17 +36,10 @@ body {
 
 @media (min-width: 600px) {
   .navbar .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-right: 30px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 
@@ -86,21 +78,12 @@ body {
 
 @media (min-width: 600px) {
   .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .navbar .navbar-toggle {
     display: none;
@@ -142,16 +125,9 @@ body {
 @media (min-width: 600px) {
   .subflyout:hover .submenu {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: #eee;
     color: #000;
   }
@@ -167,16 +143,9 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .amenities, .web, .menu, .food {
@@ -185,9 +154,88 @@ body {
   border: solid 1px blue;
 }
 
+@media only screen and (max-width: 601px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -999px;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  tr:nth-of-type(odd) td {
+    border-bottom: 1px solid #fff;
+  }
+  td:before {
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  td:nth-of-type(1):before {
+    content: " ";
+  }
+  td:nth-of-type(2):before {
+    content: "Address:";
+  }
+  td:nth-of-type(3):before {
+    content: "Phone #:";
+  }
+  td:nth-of-type(4):before {
+    content: "Hours of Operation:";
+  }
+  td:nth-of-type(1) {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  th, td {
+    font-size: 50%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 85%;
+  }
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  th {
+    background: #333;
+    color: white;
+  }
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+tr:hover {
+  color: white;
+  background-color: black;
+}
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -218,61 +266,39 @@ body {
 
 @media screen and (min-width: 900px) {
   #col3 {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 300px 300px 300px;
-        grid-template-columns: 300px 300px 300px;
-    -ms-grid-rows: 350px;
-        grid-template-rows: 350px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 350px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
   #menuGrid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 90px 600px;
-        grid-template-columns: 90px 600px;
-    -ms-grid-rows: 85px 85px 85px 85px 85px;
-        grid-template-rows: 85px 85px 85px 85px 85px;
+    grid-template-columns: 90px 600px;
+    grid-template-rows: 85px 85px 85px 85px 85px;
     text-align: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
   }
   #menuGrid p {
     padding: .7em;
   }
   #menuGrid2 {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 250px 250px 250px 250px;
-        grid-template-columns: 250px 250px 250px 250px;
-    -ms-grid-rows: 350px 350px 350px;
-        grid-template-rows: 350px 350px 350px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px 350px;
     margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   #menuGrid2 div {
     margin-bottom: 1em;
     text-align: center;
     width: 200px;
     border: solid 1px #dedede;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #menuGrid2 p {
     margin: .3em;
@@ -282,8 +308,7 @@ body {
 * {
   padding: 0px;
   margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .carousel-container {
