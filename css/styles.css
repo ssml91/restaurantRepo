@@ -154,7 +154,7 @@ body {
   border: solid 1px blue;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 601px) {
   table, thead, tbody, th, td, tr {
     display: block;
   }
@@ -181,19 +181,19 @@ body {
     font-weight: bold;
   }
   td:nth-of-type(1):before {
-    content: "Address:";
+    content: " ";
   }
   td:nth-of-type(2):before {
-    content: "Phone #:";
+    content: "Address:";
   }
   td:nth-of-type(3):before {
+    content: "Phone #:";
+  }
+  td:nth-of-type(4):before {
     content: "Hours of Operation:";
   }
-}
-
-@media (min-width: 600px) {
-  td, th {
-    font-size: 50%;
+  td:nth-of-type(1) {
+    padding-left: 0;
   }
 }
 
@@ -206,6 +206,7 @@ body {
 
 @media (min-width: 600px) {
   th, td {
+    font-size: 50%;
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 85%;
