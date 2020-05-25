@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #99b8a8;
+  background-color: #fff;
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
   width: 100%;
@@ -81,7 +81,6 @@ article {
   padding-top: 10px;
 }
 
-
 #gCard_main {
   display: grid;
   grid-template-columns: 300px 300px;
@@ -99,7 +98,7 @@ article {
   padding-top: 15px;
 }
 
-.gCarddetail{
+.gCard_detail{
   list-style: none;
   
 }
@@ -121,7 +120,7 @@ article {
     border: solid 1px #ccc;
     padding-top: 20px;  
   }
-#description {
+#gCard_description {
   justify-content: center;
   text-align: center;
   padding-top: 15px;
@@ -139,7 +138,7 @@ article {
 }
 
 
- .gCarddetail{
+ .gCard_detail{
   list-style: none;
   margin-left: 0;
   text-align: center;

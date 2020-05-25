@@ -1,6 +1,16 @@
 /*form styles*/
-fieldset {
+* {
+  margin: 0 auto;
+
+}
+h1, h2 {
+  text-align: center;
+  margin-top:10px ;
+  margin-bottom: 10px;
+}
+  .fieldset1, .fieldset2, .fieldset3 {
     padding: 1em;
+    margin: 5px;
   }
   legend {
     color: #999;
@@ -15,7 +25,6 @@ fieldset {
   label {
     display: block;
   }
-  
   input[id="address"] {
     width: 250px;
   }
@@ -25,19 +34,40 @@ fieldset {
   label[for="visa"], label[for="mc"], label[for="amex"] {
     display: inline-block;
 }
-
-@media screen and (max-width: 450px) {
-   h1 {
-     text-align: center;
-
-   }
-   .fieldset1 {
-     float: left;
-     width: 48%;
-   }
-   .fieldset1 {
-    float: right;
-    width: 48%;
-  }
+.checkoutp {
+  padding-left: 5px;
 }
 
+/* .container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+} */
+
+  @media screen and (min-width: 800px) {
+  
+    .fieldset3 {
+      width: 94%;
+    }
+    .innerfieldset{
+      width: 93%;
+      margin-top: 15px;;
+    }
+
+    .fieldset1, .fieldset2, .fieldset3 {
+            background-color:#FFF;
+            box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+            float: left;
+            width: calc(100% - 56%);
+            margin-right: 10px;
+            overflow: hidden;
+          }
+       .clear {
+         clear: both;
+       }
+       .checkoutp {
+         padding:2px;
+         max-width: 940px;
+       }
+
+  }

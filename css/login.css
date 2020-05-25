@@ -115,4 +115,27 @@ form {
     }
   }
 
+  /* ===================================================== */
+  h1 {
+    text-align: center;
+  }
+  .contact_container {
+    width: 90%;
+    border: 2px solid #ccc;
+    margin: 15px;
+    padding: 15px;
+    line-height: 1.7;
+
+  }
   
+  .contact_email, .contact_reason, .contact_text {
+   
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    
+    
+  }
