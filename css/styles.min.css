@@ -4,15 +4,23 @@ body { font-family: 'Montserrat', sans-serif; }
 
 h1 { font-family: 'Abril Fatface', cursive; }
 
+p { font-size: .8em; }
+
 #description { height: 500px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 #description h1 { text-align: center; }
 
 #description i { font-size: 2.5em; }
 
-#description p { font-size: .8em; }
-
 button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatface', cursive; }
+
+#gridDesc { width: 85%; text-align: center; margin-bottom: 3em; }
+
+#gridDesc div { margin-bottom: 2em; }
+
+footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #fff; }
+
+@media screen and (min-width: 900px) { #gridDesc { display: -ms-grid; display: grid; -ms-grid-columns: 320px 320px 320px; grid-template-columns: 320px 320px 320px; -ms-grid-rows: 200px; grid-template-rows: 200px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin: 0 auto; padding-bottom: 4em; } }
 
 .navbar { font-size: .8em; background-color: #c4bdac; padding-bottom: 10px; }
 
@@ -89,18 +97,16 @@ tr:hover { color: white; background-color: black; }
 
 body { width: 960px; margin: 0 auto; }
 
-#intro, #grids { margin-top: 1.5em; }
+#intro { margin-top: 1.5em; margin: 1.5em 1em 0; }
 
-#col3 { width: 60%; }
+#gridContainer { text-align: center; width: 80%; }
 
-#col3 img { text-align: center; }
+#gridContainer div { background-color: #ededed; padding: 1em; margin: 1.5em 0; }
 
-#col3 button { background-color: #ededed; margin-top: 1.6em; padding: .6em 3em; cursor: pointer; }
-
-@media screen and (min-width: 900px) { #gridContainer { font-family: 'Abril Fatface', sans-serif; margin: 0 auto; display: -ms-grid; display: grid; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; -ms-grid-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px; grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px; }
-  #gridContainer div { background-color: #ededed; padding: 1em auto; }
-  #gridContainer #one1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; }
-  #gridContainer #one2 { -ms-grid-column: 2; -ms-grid-column-span: 11; grid-column: 2 / span 11; -ms-grid-row: 1; grid-row: 1; }
+@media screen and (min-width: 900px) { #gridContainer { font-family: 'Abril Fatface', sans-serif; margin: 0 auto; display: -ms-grid; display: grid; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; -ms-grid-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px; grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px; }
+  #gridContainer div { text-align: center; background-color: #ededed; }
+  #gridContainer #one1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; background-color: #ededed; }
+  #gridContainer #one2 { -ms-grid-column: 2; -ms-grid-column-span: 11; grid-column: 2 / span 11; -ms-grid-row: 1; grid-row: 1; background-color: #ededed; }
   #gridContainer #two1 { -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; -ms-grid-row: 2; grid-row: 2; }
   #gridContainer #two2 { -ms-grid-column: 3; -ms-grid-column-span: 10; grid-column: 3 / span 10; -ms-grid-row: 2; grid-row: 2; }
   #gridContainer #three1 { -ms-grid-column: 1; -ms-grid-column-span: 3; grid-column: 1 / span 3; -ms-grid-row: 3; grid-row: 3; }

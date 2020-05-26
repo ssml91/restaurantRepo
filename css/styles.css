@@ -13,6 +13,10 @@ h1 {
   font-family: 'Abril Fatface', cursive;
 }
 
+p {
+  font-size: .8em;
+}
+
 #description {
   height: 500px;
   display: -webkit-box;
@@ -38,14 +42,47 @@ h1 {
   font-size: 2.5em;
 }
 
-#description p {
-  font-size: .8em;
-}
-
 button {
   background-color: #efeeee;
   padding: 1em 3em;
   font-family: 'Abril Fatface', cursive;
+}
+
+#gridDesc {
+  width: 85%;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+#gridDesc div {
+  margin-bottom: 2em;
+}
+
+footer {
+  text-align: center;
+  background-color: #c4bdac;
+  padding: 1.5em;
+  color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  #gridDesc {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 320px 320px 320px;
+        grid-template-columns: 320px 320px 320px;
+    -ms-grid-rows: 200px;
+        grid-template-rows: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4em;
+  }
 }
 
 .navbar {
@@ -314,23 +351,20 @@ body {
   margin: 0 auto;
 }
 
-#intro, #grids {
+#intro {
   margin-top: 1.5em;
+  margin: 1.5em 1em 0;
 }
 
-#col3 {
-  width: 60%;
-}
-
-#col3 img {
+#gridContainer {
   text-align: center;
+  width: 80%;
 }
 
-#col3 button {
+#gridContainer div {
   background-color: #ededed;
-  margin-top: 1.6em;
-  padding: .6em 3em;
-  cursor: pointer;
+  padding: 1em;
+  margin: 1.5em 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -345,12 +379,12 @@ body {
             align-items: center;
     -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
         grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-    -ms-grid-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
-        grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+    -ms-grid-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
   }
   #gridContainer div {
+    text-align: center;
     background-color: #ededed;
-    padding: 1em auto;
   }
   #gridContainer #one1 {
     -ms-grid-column: 1;
@@ -358,6 +392,7 @@ body {
     grid-column: 1 / span 1;
     -ms-grid-row: 1;
     grid-row: 1;
+    background-color: #ededed;
   }
   #gridContainer #one2 {
     -ms-grid-column: 2;
@@ -365,6 +400,7 @@ body {
     grid-column: 2 / span 11;
     -ms-grid-row: 1;
     grid-row: 1;
+    background-color: #ededed;
   }
   #gridContainer #two1 {
     -ms-grid-column: 1;
