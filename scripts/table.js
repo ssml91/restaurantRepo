@@ -1,21 +1,22 @@
-$(document).ready(function(){
 
-        window.onload = () => {
-                loadTableData(storeInfo);
-            }
+
+       
 
     let sortDirection = false;
     let storeInfo = [
-                { 'image': '/cucumberRoll.png', 'address': 'Miramar Store, 97 Gates Road',     'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
-                {'image': '/tunaRoll.png','address': 'Mira Mesa Store, 202-B Laffey Circle',   'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
-                {'image': '/phillyRoll.png','address': 'Kearny Mesa Store, 1540 D Lovell Ct',   'phone' : '(619)851-4153', 'hours': '4:00pm-11:00pm'},
-                {'image': '/cucumberRoll.png', 'address': 'Clairemont Store, 4545 La Jolla Village Square', 'phone' : '(619)453-8562', 'hours': '9:00am-5:00pm'},
-                {'image': '/tunaRoll.png','address': 'University City Store, 2267 Lago Ventana',    'phone' : '(858)256-2044', 'hours': '9:00am-5:00pm'},
-                {'image': '/phillyRoll.png','address': 'San Diego Store, 1570 Iris Avenue',   'phone' : '(858)256-9651', 'hours': '4:00pm-11:00pm'},
+                { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Miramar Store, 97 Gates Road',     'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
+                { 'image': 'https://via.placeholder.com/400x200.png','address': 'Mira Mesa Store, 202-B Laffey Circle',   'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
+                { 'image': 'https://via.placeholder.com/400x200.png','address': 'Kearny Mesa Store, 1540 D Lovell Ct',   'phone' : '(619)851-4153', 'hours': '4:00pm-11:00pm'},
+                { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Clairemont Store, 4545 La Jolla Village Square', 'phone' : '(619)453-8562', 'hours': '9:00am-5:00pm'},
+                { 'image': 'https://via.placeholder.com/400x200.png','address': 'University City Store, 2267 Lago Ventana',    'phone' : '(858)256-2044', 'hours': '9:00am-5:00pm'},
+                {'image': 'https://via.placeholder.com/400x200.png','address': 'San Diego Store, 1570 Iris Avenue',   'phone' : '(858)256-9651', 'hours': '4:00pm-11:00pm'},
             ];
 
+            window.onload = () => {
+                loadTableData(storeInfo);
+            }
             
-
+            //search
             $('#search-input').on('keyup', function(){
                 var value = $(this).val()
                 console.log('value:',value)
@@ -40,6 +41,8 @@ $(document).ready(function(){
 
             //sort function
             $('th').on('click', function(){
+
+                
                 var column = $(this).data('column');
                 var order = $(this).data('order');
                 var text = $(this).html();
@@ -73,7 +76,8 @@ $(document).ready(function(){
                 
                 for(let info of storeInfo) {
                     dataHtml += `<tr>
-                                    <td>${'<img src="../images' + info.image +'">'}</td>
+                                    
+                                    <td>${'<img src="' + info.image +'">'}</td>
                                     <td>${info.address}</td>
                                     <td>${info.phone}</td>
                                     <td>${info.hours}</td>
@@ -83,6 +87,6 @@ $(document).ready(function(){
 
                 tableBody.innerHTML= dataHtml;
             } 
-});
+
 
             

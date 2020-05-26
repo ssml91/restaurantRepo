@@ -1,5 +1,7 @@
+@import 'variables';
 @import 'main';
 @import 'mixins';
+
 
 @import 'modules/backgrounds';
 @import 'modules/navigation';
@@ -8,3 +10,4 @@
 @import 'modules/grid';
 @import 'modules/forms';
 @import 'modules/carousel';
+@import 'modules/home';

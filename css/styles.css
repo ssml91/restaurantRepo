@@ -1,16 +1,19 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Convergence&family=Original+Surfer&family=Salsa&family=Spicy+Rice&display=swap");
 body {
   font-family: 'Lato', sans-serif;
 }
 
+.bodyHome {
+  margin-right: 15%;
+  margin-left: 15%;
+  line-height: 1.6;
+  color: #1b1343;
+  background-color: #9ec594;
+}
+
 .navbar {
   font-size: 18px;
-  background-color: pink;
+  background-color: #1b1343;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
 }
@@ -18,6 +21,10 @@ body {
 .navbar .main-nav {
   list-style-type: none;
   display: none;
+}
+
+.navbar .main-nav .currentNav a {
+  color: #deb608;
 }
 
 .navbar .main-nav .nav-links {
@@ -44,8 +51,10 @@ body {
 }
 
 .navbar li {
-  text-align: center;
-  margin: 15px auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 15px;
 }
 
 @media (min-width: 600px) {
@@ -91,7 +100,10 @@ body {
 }
 
 .main-nav.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-right: 100px;
 }
 
 .submenu {
@@ -126,7 +138,7 @@ body {
   .subflyout:hover .submenu {
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     background-color: #eee;
     color: #000;
@@ -234,6 +246,11 @@ tr:hover {
   background-color: black;
 }
 
+td img {
+  max-width: 100%;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -241,7 +258,6 @@ tr:hover {
 
 body {
   font-family: Arial, sans-serif;
-  width: 960px;
   margin: 0 auto;
 }
 
@@ -314,5 +330,39 @@ body {
 .carousel-container {
   width: 60%;
   margin: auto;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.bodyHome h1 {
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

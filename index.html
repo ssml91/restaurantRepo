@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Repo</title>
+    <title>Restaurant Repo: A Responsive Framework</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class=bodyHome>
   <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
       <i class="fas fa-bars"></i>
     </span>
-    <a href="#" class="logo">RR</a>
+    <a href="index.html" class="logo">RR</a>
     <ul class="main-nav" id="js-menu">
-        <li>
-            <a href="#" class="nav-links">Home</a>
+        <li class="currentNav">
+            <a href="index.html" class="nav-links">Home</a>
         </li>
         <li>
-            <a href="#" class="nav-links">Products</a>
+            <a href="#" class="nav-links">Where to Start</a>
+        </li>
+        
+        <li class="subflyout">
+            <a href="#" class="nav-links">Components</a>
+            <ul class="submenu">
+              <li><a href="pages/grid.html">Grids</a></li>
+              <li><a href="#">Forms</a></li>
+              <li><a href="pages/table.html">Tables</a></li>
+              <li><a href="pages/carousel.html">Carousel</a></li>
+              <li><a href="pages/iconFonts.html">Icons</a></li>
+              <li><a href="#">HTML</a></li>
+            </ul>
         </li>
         <li>
             <a href="#" class="nav-links">About Us</a>
@@ -26,20 +38,59 @@
         <li>
             <a href="#" class="nav-links">Contact Us</a>
         </li>
-        <li class="subflyout">
-            <a href="#" class="nav-links">Where to start</a>
-            <ul class="submenu">
-              <li><a href="#">Grids</a></li>
-              <li><a href="#">Forms</a></li>
-              <li><a href="#">Tables</a></li>
-              <li><a href="#">Carousel</a></li>
-              <li><a href="#">Icons</a></li>
-              <li><a href="#">HTML</a></li>
-            </ul>
-        </li>
     </ul>
 </nav>
 
+<h1>Restaurant Repo</h1>
+
+<h2>Why Restaurant Repo?</h2>
+<p>There are countless frameworks out there to help you build your website today. There are frameworks that are the equivalent of a Costco warehouse, with everything you could possibly need and then some.  There are also frameworks that are like going to your mom and pop grocery store on the corner, giving you just the basics, that you need to make a quick dinner.  Restaurant Repo is a framework that fits just in the middle of those two, we can get your website up and running quickly, but with more than just the bare bones.  We offer a variety of options for styling your website coupled with some efficient interactivity so you can maximize your customer's experience and deliver your bottomline.  We are offering you great solutions for showcasing the best of your business on the world wide web, all packaged nicely in an easy to use format.  We are focused on your web needs within the hospitality industry.  </p>
+
+
+
+
+<div class="carousel-container">
+    <i class="fas fa-chevron-left" id="prevBtn"></i>
+    <i class="fas fa-chevron-right" id="nextBtn"></i>
+    <div class="carousel-slide">
+        <!-- place last image here -->
+        <img src="images/coffee-04.jpg" id="lastClone" alt="carousel img placeholder">
+        <img src="images/coffee-01.jpg" alt="carousel img placeholder">
+        <img src="images/coffee-02.jpg" alt="carousel img placeholder">
+        <img src="images/coffee-03.jpg" alt="carousel img placeholder">
+        <img src="images/coffee-04.jpg" alt="carousel img placeholder">
+        <!-- place first image here -->
+        <img src="images/coffee-01.jpg" id="firstClone" alt="carousel img placeholder">
+    </div>
+</div>
+
+<pre>
+    <code>
+        
+&lt;div&gt; class="carousel-container">
+&lt;i&gt; class="fas fa-chevron-left" id="prevBtn">&lt;/i&gt;
+&lt;i&gt; class="fas fa-chevron-right" id="nextBtn">&lt;/i&gt;
+    &lt;div&gt;  class="carousel-slide">
+    &lt;!--&gt; place last image here &lt;--&gt;
+    &lt;img&gt; src="images/coffee-04.jpg" id="lastClone" alt="carousel img placeholder">
+    &lt;img&gt; src="images/coffee-01.jpg" alt="carousel img placeholder">
+    &lt;img&gt; src="images/coffee-02.jpg" alt="carousel img placeholder">
+    &lt;img&gt; src="images/coffee-03.jpg" alt="carousel img placeholder">
+    &lt;img&gt; src="images/coffee-04.jpg" alt="carousel img placeholder">
+    &lt;!--&gt; place last image here &lt;--&gt;
+    &lt;img&gt; src="images/coffee-01.jpg" id="firstClone" alt="carousel img placeholder">
+&lt;/div&gt;
+&lt;/div&gt;
+    </code>
+</pre>
+
+<p>Click to download
+<a href="images/coffee-01.jpg" download>
+    <button>Download</button>
+</a>
+</p>
+
     <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
 </body>
 </html>

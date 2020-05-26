@@ -11,23 +11,61 @@
     
 </head>
 <body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">RR</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="../index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+            <li class="subflyout">
+                <a href="#" class="nav-links">Where to start</a>
+                <ul class="submenu">
+                  <li><a href="grid.html">Grids</a></li>
+                  <li><a href="#">Forms</a></li>
+                  <li><a href="#" class="currentNav">Tables</a></li>
+                  <li><a href="carousel.html">Carousel</a></li>
+                  <li><a href="iconFonts.html">Icons</a></li>
+                  <li><a href="#">HTML</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
 
-    <h1>Our Locations</h1>
+
+    <h2>Tables</h2>
+    <p>Tables can be used in a variety of ways in your restaurant website.  Use them for displaying locations, menu descriptions, listing coupons or promos, and even customer reviews!  </p>
+    <br>
+    <p>Our tables come with a built in search, sort, and are responsive.  You can use our table to display information from an API or enter your information locally.</p>
+    <br>
+    <h3>Our Locations</h3>
 
     <div class="row">
         <div class="col">
             <div ><input type="text" id="search-input"><i class="fas fa-search"></i></div>
         </div>
     </div>
-    <table >
+   
 
    
     <table >
         <thead>  
         <tr >
             <th>Images</th>
-            <th>Address &#9650</th>
-            <th>Phone &#9650 </th>
+            <th id="column">Address &#9650</th>
+            <th>Phone &#9650</th>
             <th>Hours of Operation &#9650</th>
         </tr>
     </thead>    
@@ -36,7 +74,7 @@
         </tbody>
         </table>
 
-        
+        <script src="../scripts/main.js"></script>
         <script src="../scripts/table.js"></script>
         
 </body>
