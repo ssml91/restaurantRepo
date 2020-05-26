@@ -47,14 +47,14 @@ h1, h2 {
   @media screen and (min-width: 800px) {
   
     .fieldset3 {
-      width: 94%;
+      width: 92.5%;
     }
     .innerfieldset{
       width: 93%;
       margin-top: 15px;;
     }
 
-    .fieldset1, .fieldset2, .fieldset3 {
+    .fieldset1, .fieldset2 {
             background-color:#FFF;
             box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
             float: left;
@@ -68,6 +68,7 @@ h1, h2 {
        .checkoutp {
          padding:2px;
          max-width: 940px;
+         text-align: left;
        }
 
   }
