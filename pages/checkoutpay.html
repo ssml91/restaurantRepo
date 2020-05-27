@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A very useful form</title>
-  <link rel="stylesheet" href="../css/checkout.css">
+  <title>Credit Card Form</title>
+  <link rel="stylesheet" href="css/checkout.css">
 
   <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -15,25 +15,17 @@
 <body>
     <main>
         <header>
-            <h1>Checkout, complete your order</h1>
+            <h1 class= "checkouth1">Checkout, Complete your order</h1>
         </header>
         <!-- section>h2{Shipping Information}+form>div.cols>div.col.checkout>fieldset>legend{Promo or Coupon Code+label}+{Enter code to apply discount:} -->
         <section>
-            <h2>Shipping Information</h2>
-            <form action=" #" method="GET" id="checkoutFrom">
+            <h2 class= "checkouth">Shipping Information</h2>
+            <form action="#" method="GET" id="checkoutForm">
                 <div class="cols">
                     <div class="col checkout">
-                        <fieldset>
-                            <legend>Promo or Coupon Code</legend>
-                            <div class="row">
-                                <label for="promo">Enter code to apply discount: </label>
-                            <input type="text" name="promo" id="promo" placeholder="enter code here">
-                            <input type="button" value="Apply">  
-                           </div>
-                            
-                        </fieldset>
+                       
                         <!-- fieldset>legend{Ship to:}+div.row*6>label+input -->
-                        <fieldset>
+                        <fieldset class="fieldset1">
                             <legend>Ship to:</legend>
 
                             <div class="row">
@@ -108,21 +100,23 @@
 									<option value="WY">WY</option> 
                                 </select>
                             </div>
-                        </fieldset>
-                          <div class="row">
-                              <fieldset>
-                                  <legend>Aditional information</legend>
-                                  
-                                  <label for="email">Email address:</label>
-                                  <input type="email" name="email" id="email" required>
-
-                                  <label for="tel">Phone Number:</label>
-                                  <input type="tel" name="tel" id="tel" placeholder="123-456-7890" maxlength="12" pattern="^\d{3}-\d{3}-\d{4}$" required>
+                            <fieldset class="innerfieldset">
+                               
+                                        <legend>Aditional information</legend>
+                                        <div class="row">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" name="email" id="email" required>
+      
+                                        <label for="tel">Phone Number:</label>
+                                        <input type="tel" name="tel" id="tel" placeholder="123-456-7890" maxlength="12" pattern="^\d{3}-\d{3}-\d{4}$" required>
+                                      </div>
                               </fieldset>
-                          </div>
+                        </fieldset> 
+                       
+                         
                         
                           
-                            <fieldset>
+                            <fieldset class="fieldset2">
                                 <legend>Payment Details</legend>
                                 
                                 <div class="row">
@@ -149,19 +143,37 @@
                                         <label for="cvv">Security number</label>
                                         <input type="number" id="cvv" name="cvv" required pattern="[0-9]{3}">
                                    </div>
-                                </ul>
+                                   <fieldset class="innerfieldset">
+                                    <legend>Promo or Coupon Code</legend>
+                                    <div class="row">
+                                        <label for="promo">Enter code to apply discount: </label>
+                                    <input type="text" name="promo" id="promo" placeholder="enter code here">
+                                    <input type="button" value="Apply">  
+                                   </div>
+                                   <div class="row">
+                                    <label for="paygcard">Do you want to use Gift Card?:</label> </label>
+                                <input type="text" name="paygcard" id="paugcard" placeholder="enter your gift card number here">
+                                <input type="button" value="Apply">  
+                               </div>
+                                </fieldset>
+                                </fieldset>
+                                
                             </fieldset>
-                            <div class="row">
-                                <fieldset>
+                              <fieldset class="fieldset3">
                                     <legend>Submit your order</legend>
+                                    <div class="row">
                                     <input type="submit">
+                                    </div>
+                                    <p class= checkoutp>Do you need more help? &nbsp; &nbsp; Call us for assistance:</p>
+                                         <a href="tel:888-123-4567"> 888-123-4567 </a>
                                 </fieldset>
                             </div>
                       
                     </div> <!--end col-->
                 </div><!--end cols-->
+                
             </form>
-            <p>Do you need more help? Call us for assistance:  <a href="tel:888-123-4567"> 888-123-4567 </a></p>
+           
         </section>
     </main>
 </body>
