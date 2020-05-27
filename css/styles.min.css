@@ -6,7 +6,7 @@ h1 { font-family: 'Abril Fatface', cursive; }
 
 p { font-size: .8em; }
 
-#description { height: 500px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#description { width: 90%; height: 500px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 #description h1 { text-align: center; }
 
@@ -16,11 +16,15 @@ button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatfac
 
 #gridDesc { width: 85%; text-align: center; margin-bottom: 3em; }
 
-#gridDesc div { margin-bottom: 2em; }
+#gridDesc div { margin: 2em; }
+
+#example { text-align: center; }
 
 footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #fff; }
 
-@media screen and (min-width: 900px) { #gridDesc { display: -ms-grid; display: grid; -ms-grid-columns: 320px 320px 320px; grid-template-columns: 320px 320px 320px; -ms-grid-rows: 200px; grid-template-rows: 200px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin: 0 auto; padding-bottom: 4em; } }
+@media screen and (min-width: 900px) { #gridDesc { display: -ms-grid; display: grid; -ms-grid-columns: 320px 320px 320px; grid-template-columns: 320px 320px 320px; -ms-grid-rows: 200px; grid-template-rows: 200px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin: 0 auto; padding-bottom: 4em; }
+  #gridDesc div { margin: 0 3em; }
+  #example h1 { text-align: center; } }
 
 .navbar { font-size: .8em; background-color: #c4bdac; padding-bottom: 10px; }
 
@@ -103,7 +107,7 @@ body { width: 960px; margin: 0 auto; }
 
 #gridContainer div { background-color: #ededed; padding: 1em; margin: 1.5em 0; }
 
-@media screen and (min-width: 900px) { #gridContainer { font-family: 'Abril Fatface', sans-serif; margin: 0 auto; display: -ms-grid; display: grid; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; -ms-grid-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px; grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px; }
+@media screen and (min-width: 900px) { #gridContainer { font-family: 'Abril Fatface', sans-serif; margin: 0 auto; margin-bottom: 1.5em; display: -ms-grid; display: grid; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; -ms-grid-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px; grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px; }
   #gridContainer div { text-align: center; background-color: #ededed; }
   #gridContainer #one1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; background-color: #ededed; }
   #gridContainer #one2 { -ms-grid-column: 2; -ms-grid-column-span: 11; grid-column: 2 / span 11; -ms-grid-row: 1; grid-row: 1; background-color: #ededed; }
