@@ -44,12 +44,16 @@
         }
     }
     .logo {
+        font-style: bold;
         text-decoration: none;
-        color: rgba(255,255,255, 0.7);
+        color: $dkBlue;
+        background-color: $gold;
+
         display: inline-block;
         font-size: 22px;
         margin-top: 10px;
         margin-left: 20px;
+        padding: 5px 10px;
         @include break {
             margin-top: 0;
         }
@@ -111,22 +115,24 @@
                position: absolute;
                
               display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 
                
                 
-                background-color: #eee;
+                background-color: $gold;
                
-                color: #000;
+                color: $dkBlue;
                   
                 }
+                
                 a {
                    
                     padding: 4px;
                     text-decoration: none;
                     &:hover {
-                        background-color: #fff;
+                       color: #fff;
+                       background-color: $gold;
                     }
                 }
         }
