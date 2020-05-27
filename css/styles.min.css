@@ -18,7 +18,7 @@ button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatfac
 
 #gridDesc div { margin: 2em; }
 
-#example { text-align: center; margin: 3em auto; }
+#example { text-align: center; }
 
 footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #fff; }
 
@@ -134,5 +134,11 @@ body { width: 960px; margin: 0 auto; }
 
 * { padding: 0px; margin: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.carousel-container { width: 60%; margin: auto; }
+.carousel-container { width: 90%; margin: auto; overflow: hidden; position: relative; }
+
+.carousel-slide { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 500px; }
+
+#prevBtn { position: absolute; top: 50%; z-index: 10; left: 5%; font-size: 30px; color: white; opacity: 0.5; cursor: pointer; }
+
+#nextBtn { position: absolute; top: 50%; z-index: 10; right: 5%; font-size: 30px; color: white; opacity: 0.5; cursor: pointer; }
 /*# sourceMappingURL=styles.min.css.map */
