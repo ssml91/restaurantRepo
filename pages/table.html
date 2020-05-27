@@ -44,37 +44,67 @@
             
         </ul>
     </nav>
+    <section id="intro">
+        <h1>The Grid System</h1><br>
+        <p>Grids are a great way to organize content and create messages that are quick and easy for your audience to process. Take a look below at the grid layouts we have to choose from.</p><br><br>
+    </section>
+      </div>
+    <!-- GRID EXAMPLE -->
+    <section id="gridContainer">
+            <div id="one1" class="gridItem">ONE</div>
+            <div id="one2" class="gridItem">ELEVEN</div>
+            <div id="two1" class="gridItem">TWO</div>
+            <div id="two2" class="gridItem">TEN</div>
+            <div id="three1" class="gridItem">THREE</div>
+            <div id="three2" class="gridItem">NINE</div>
+            <div id="four1" class="gridItem">FOUR</div>
+            <div id="four2" class="gridItem">EIGHT</div>
+            <div id="five1" class="gridItem">FIVE</div>
+            <div id="five2" class="gridItem">SEVEN</div>
+            <div id="six1" class="gridItem">SIX</div>
+            <div id="six2" class="gridItem">SIX</div>
+            <div id="seven1" class="gridItem">SEVEN</div>
+            <div id="seven2" class="gridItem">FIVE</div>
+            <div id="eight1" class="gridItem">EIGHT</div>
+            <div id="eight2" class="gridItem">FOUR</div>
+            <div id="nine1" class="gridItem">NINE</div>
+            <div id="nine2" class="gridItem">THREE</div>
+            <div id="ten1" class="gridItem">TEN</div>
+            <div id="ten2" class="gridItem">TWO</div>
+            <div id="eleven1" class="gridItem">ELEVEN</div>
+            <div id="eleven2" class="gridItem">ONE</div>
+    </section>
+
+    <section class="tableSection">
+        <h1>Tables</h1>
+        <p>Tables can be used in a variety of ways in your restaurant website.  Use them for displaying locations, menu descriptions, listing coupons or promos, and even customer reviews!  </p>
+        <br>
+        <p>Our tables come with a built in search, sort, and are responsive.  You can use our table to display information from an API or enter your information locally.</p>
+        <br>
+        <h3>Our Locations</h3>
+
+        <div class="row">
+            <div class="col">
+                <div ><input type="text" id="search-input"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
     
 
+    
+        <table >
+            <thead>  
+            <tr >
+                <th>Images</th>
+                <th id="column">Address &#9650</th>
+                <th>Phone &#9650</th>
+                <th>Hours of Operation &#9650</th>
+            </tr>
+        </thead>    
+            <tbody id="tableData">
 
-    <h2>Tables</h2>
-    <p>Tables can be used in a variety of ways in your restaurant website.  Use them for displaying locations, menu descriptions, listing coupons or promos, and even customer reviews!  </p>
-    <br>
-    <p>Our tables come with a built in search, sort, and are responsive.  You can use our table to display information from an API or enter your information locally.</p>
-    <br>
-    <h3>Our Locations</h3>
-
-    <div class="row">
-        <div class="col">
-            <div ><input type="text" id="search-input"><i class="fas fa-search"></i></div>
-        </div>
-    </div>
-   
-
-   
-    <table >
-        <thead>  
-        <tr >
-            <th>Images</th>
-            <th id="column">Address &#9650</th>
-            <th>Phone &#9650</th>
-            <th>Hours of Operation &#9650</th>
-        </tr>
-    </thead>    
-        <tbody id="tableData">
-
-        </tbody>
-        </table>
+            </tbody>
+            </table>
+    </section>
 
         <script src="../scripts/main.js"></script>
         <script src="../scripts/table.js"></script>

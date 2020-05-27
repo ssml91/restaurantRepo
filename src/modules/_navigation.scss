@@ -1,15 +1,14 @@
 
 .navbar {
-    font-size: 18px;
-    background-color: $dkBlue;
-    border:1px solid rgba(0,0,0,0.2);
+    font-size: .8em;
+    background-color: #c4bdac;
     padding-bottom: 10px;
     .main-nav {
         list-style-type: none;
         display: none;
         
         .currentNav a {
-            color: $gold;
+            color: #000;
         }
         
         .nav-links {
@@ -46,9 +45,8 @@
     .logo {
         font-style: bold;
         text-decoration: none;
-        color: $dkBlue;
-        background-color: $gold;
-
+        color: #fff;
+        font-family: 'Abril Fatface', cursive;
         display: inline-block;
         font-size: 22px;
         margin-top: 10px;

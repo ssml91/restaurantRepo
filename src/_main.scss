@@ -7,21 +7,22 @@
     }
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .bodyHome {
    
     line-height: 1.6;
-    color: $dkBlue;
-    background-color: $mint;
+   
+    
 }
 .mainHome {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 10px 0 10px 0;
 }
 .sectionHome {
-    margin:  0 15%;
+
+    margin:  0 5%;
     ul {
         list-style-type: none;
         li {
@@ -39,7 +40,7 @@ body {
     }
     pre {
         display: none;
-        background-color: $gold;
+        background-color: #c4bdac;
         margin: 0 10% 0 10%;
         @include break(600px) {
             display: block;
@@ -47,32 +48,65 @@ body {
     
     }
 }
-// .grids {
-//     h3 {
-//         padding-bottom: 2em;
-
-//     }
-//     .col3 {
-       
-//         img {
-//             text-align: center;
-//         }
-//         button {
-//             background-color: #ededed;
-//             margin-top: 1.6em;
-//             padding: .6em 3em;
-//             cursor: pointer;
-//         }
-//     }
-    
-     
-//     .col3 {
-//         display: grid;
-//         grid-template-columns: 300px 300px 300px;
-//         grid-template-rows: 350px;
-//         align-items: center;
-//         justify-content: center;
-//         text-align: center;
-//         }
-    
-// }
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+p {
+    font-size: .8em;
+}
+#description {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+    }
+    i {
+        font-size: 2.5em;
+    }
+}
+button {
+    background-color: #efeeee;
+    padding: 1em 3em;
+    font-family: 'Abril Fatface', cursive;
+}
+#gridDesc {
+    width: 85%;
+    text-align: center;
+    margin-bottom: 3em;
+    div {
+        margin: 2em;
+    }
+}
+#example {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: #c4bdac;
+    padding: 1.5em;
+    color: #fff;
+}
+@media screen and (min-width: 900px) {
+    #gridDesc {
+        display: grid;
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 4em;
+        div {
+            margin: 0 3em;
+        }
+    }
+    #example h1 {
+        text-align: center;
+    }
+}
