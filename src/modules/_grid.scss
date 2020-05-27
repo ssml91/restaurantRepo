@@ -16,12 +16,11 @@ body {
     div {
         background-color: #ededed;
         padding: 1em;
-        margin: 1.5em 0;
+        margin: .7em 0;
     }
 }
 @media screen and (min-width: 900px) {
 #gridContainer {
-    font-family: 'Abril Fatface', sans-serif;
     margin: 0 auto;
     margin-bottom: 1.5em;
     display: grid;
@@ -33,6 +32,9 @@ body {
        text-align: center;
        background-color: #ededed;
      }
+     .gridItem {
+        width: 98%;
+    }
     #one1 {
         grid-column: 1 / span 1;
         grid-row: 1;
