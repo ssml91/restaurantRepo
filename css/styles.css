@@ -509,11 +509,6 @@ body {
 }
 
 /* logom form======================================== */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 main {
   max-width: 960px;
   width: 90%;
