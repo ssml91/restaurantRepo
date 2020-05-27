@@ -18,7 +18,7 @@ button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatfac
 
 #gridDesc div { margin: 2em; }
 
-#example { text-align: center; }
+#example { text-align: center; margin: 3em auto; }
 
 footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #fff; }
 
