@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Convergence&family=Original+Surfer&family=Salsa&family=Spicy+Rice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&display=swap");
 * {
   box-sizing: border-box;
@@ -67,7 +67,7 @@ p {
   font-size: .8em;
 }
 
-#description {
+#homeDescription {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
@@ -78,15 +78,15 @@ p {
   justify-content: center;
 }
 
-#description h1 {
+#homeDescription h1 {
   text-align: center;
 }
 
-#description i {
+#homeDescription i {
   font-size: 2.5em;
 }
 
-button {
+#homeDescription button {
   background-color: #efeeee;
   padding: 1em 3em;
   font-family: 'Abril Fatface', cursive;
@@ -260,6 +260,7 @@ footer {
 @media (min-width: 600px) {
   .subflyout:hover .submenu {
     position: absolute;
+    left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -511,13 +512,6 @@ body {
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 300;
-  width: 100%;
-  height: 100%;
 }
 
 main {
