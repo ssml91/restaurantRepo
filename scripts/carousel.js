@@ -1,37 +1,60 @@
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide img');
+const slides = document.querySelectorAll('.slide');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+const auto = true;
+const intervalTime = 7000;
+let slideInterval;
 
+const nextSlide = () => {
+    //get current class
+    const current = document.querySelector('.current');
+    //removes current class
+    current.classList.remove('current');
+    //check for next slide
+    if(current.nextElementSibling) {
+        //add current to next sibling
+        current.nextElementSibling.classList.add('current');
+    } else {
+        //add current to start
+        slides[0].classList.add('current');
+    }
+    setTimeout(() => current.classList.remove('current'));
+}
 
-//buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const prevSlide = () => {
+    //get current class
+    const current = document.querySelector('.current');
+    //removes current class
+    current.classList.remove('current');
+    //check for prev slide
+    if(current.previousElementSibling) {
+        //add current to prev sibling
+        current.previousElementSibling.classList.add('current');
+    } else {
+        //add current to last
+        slides[slides.length -1].classList.add('current');
+    }
+    setTimeout(() => current.classList.remove('current'));
+}
 
-//counter
-let counter = 1;
-const size = carouselImages[0].clientWidth;
-
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-//button listeners
-nextBtn.addEventListener('click', () => {
-    if(counter >= carouselImages.length -1) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-prevBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter--;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-//transition n (event listener that triggers transition after event finishes)
-carouselSlide.addEventListener('transitionend', () => {
-    if(carouselImages[counter].id === 'lastClone') {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length -2;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//button events
+next.addEventListener('click', e => {
+    nextSlide();
+    if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
     }
 });
+prev.addEventListener('click', e => {
+    prevSlide();
+    if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+});
+
+//auto slide
+if(auto) {
+    //run next slide at interval time
+    slideInterval = setInterval(nextSlide, intervalTime);
+}

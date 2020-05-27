@@ -13,7 +13,6 @@ p {
     font-size: .8em;
 }
 #description {
-    width: 90%;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -30,6 +29,7 @@ button {
     background-color: #efeeee;
     padding: 1em 3em;
     font-family: 'Abril Fatface', cursive;
+    cursor: pointer;
 }
 #gridDesc {
     width: 85%;

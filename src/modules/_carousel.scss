@@ -6,9 +6,7 @@
 //FIRST CAROUSEL
 .slider {
     position: relative;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vh;
+    height: 80vh;
 }
 .slide {
     position: absolute;
@@ -21,7 +19,48 @@
 }
 .slide.current {
     opacity: 1;
+    .content {
+        opacity: 1;
+        transform: translateX(600px);
+        transition: all .7s ease-in-out .3s;
+    }
 }
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255,255,255, .8);
+    color: #333;
+    padding: 35px;
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+.buttons {
+    button#next {
+        position: absolute;
+        top: 40%;
+        right: 15px;
+    }
+    button#prev {
+        position: absolute;
+        top: 40%;
+        left: 15px;
+    }
+}
+@media(max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+}
+
 //background images
 .slide:first-child {
     background: url('../../images/coffee-01.jpg') no-repeat center center/cover;
@@ -34,37 +73,4 @@
 }
 .slide:nth-child(4) {
     background: url('../../images/coffee-04.jpg') no-repeat center top/cover;
-}
-
-// SECOND CAROUSEL
-.carousel-container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-}
-.carousel-slide {
-    display: flex;
-    width: 100%;
-    height: 500px;
-}
-#prevBtn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
-}
-#nextBtn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
 }
