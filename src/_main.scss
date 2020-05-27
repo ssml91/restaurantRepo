@@ -13,6 +13,7 @@ p {
     font-size: .8em;
 }
 #description {
+    width: 90%;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -38,6 +39,9 @@ button {
         margin: 2em;
     }
 }
+#example {
+    text-align: center;
+}
 footer {
     text-align: center;
     background-color: #c4bdac;
@@ -54,8 +58,11 @@ footer {
         text-align: center;
         margin: 0 auto;
         padding-bottom: 4em;
+        div {
+            margin: 0 3em;
+        }
     }
-    div {
-        padding: 0 1.5em;
+    #example h1 {
+        text-align: center;
     }
 }
