@@ -1,7 +1,7 @@
 
 .navbar {
     font-size: .8em;
-    background-color: #c4bdac;
+    background-color: $dkGray;
     padding-bottom: 10px;
     .main-nav {
         list-style-type: none;
@@ -122,7 +122,7 @@
                 
                
                 
-                background-color: $gold;
+                background-color: $mdGray;
                
                 color: $dkBlue;
                   
@@ -134,7 +134,7 @@
                     text-decoration: none;
                     &:hover {
                        color: #fff;
-                       background-color: $gold;
+                       background-color: $mdGray;
                     }
                 }
         }
