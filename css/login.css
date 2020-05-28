@@ -45,6 +45,9 @@ fieldset {
 
   /* Bordered form */
 form {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 95%;
     border: 3px solid #f1f1f1;
   }
   
@@ -85,12 +88,6 @@ form {
   .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
   }
   
   /* Add padding to containers */

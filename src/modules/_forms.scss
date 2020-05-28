@@ -1,4 +1,4 @@
-/* logom form======================================== */
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@
     position: relative;
     overflow: hidden;
   }
-fieldset {
+  fieldset {
     padding: 1em;
   }
   legend {
@@ -42,10 +42,18 @@ fieldset {
   label[for="city"], label[for="state"] {
       display: inline-block;
   }
-
+  
   /* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
+  form {
+    border: 1px solid #f1f1f1;
+    max-width: 94%;
+    margin-left: 20px;
+   
+  }
+  .contact_container {
+    
+    margin-left: 20px;
+    padding-left: 15px;
   }
   
   /* Full-width inputs */
@@ -58,63 +66,10 @@ form {
     box-sizing: border-box;
   }
   
-  /* Set a style for all buttons */
-  button {
-    background-color: #fff;
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border:ipx solod gray;
-    cursor: pointer;
-    width: 100%;
-  }
   
-  /* Add a hover effect for buttons */
-  button:hover {
-    opacity: 0.8;
-  }
   
-  /* Extra style for the cancel button (red) */
-   .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    border: 1px solod gray;
-  }
   
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
   
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
-  
-  /* The "Forgot password" text */
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-  }
-
   /* ===================================================== */
   h1 {
     text-align: center;
@@ -125,7 +80,7 @@ form {
     margin: 15px;
     padding: 15px;
     line-height: 1.7;
-
+  
   }
   
   .contact_email, .contact_reason, .contact_text {
@@ -139,9 +94,9 @@ form {
     
     
   }
-  /* ==checkout form */
+  /* ======================================================checkout form */
   /*form styles*/
-* {
+  * {
     margin: 0 auto;
   
   }
@@ -161,7 +116,7 @@ form {
       margin-bottom: .5em;
     }
     input {
-      border: solid 1px #99b8a8;
+      border: solid 1px #ccc;
       padding: .2em;
     }
     label {
@@ -180,28 +135,34 @@ form {
     padding-left: 5px;
   }
   
-  /* .container {
-      width: 90%;
-      max-width: 960px;
-      margin: 0 auto;
-  } */
+  
   
     @media screen and (min-width: 800px) {
     
       .fieldset3 {
-        width: 92.5%;
+        width: 96%;
+        margin-left: 15px;
+        margin-right: 15px;
       }
       .innerfieldset{
         width: 93%;
         margin-top: 15px;;
       }
-  
+      .checkoutcol {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+      }
+      .checkoutcols {
+        max-width: 100%;
+        padding: 10px;
+        margin:10px;
+      }
       .fieldset1, .fieldset2 {
               background-color:#FFF;
               box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
               float: left;
-              width: calc(100% - 56%);
-              margin-right: 10px;
+              width: calc(100% - 50%);
               overflow: hidden;
             }
          .clear {
@@ -212,93 +173,93 @@ form {
            max-width: 940px;
            text-align: left;
          }
-  
     }
+  /* ================================================================= */
     /* gift card form */
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&display=swap');
-*{
+  *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
+  }
+  body {
   background-color: #fff;
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
   width: 100%;
   height: 100%;
- 
-}
-#gCard_main {
+  
+  }
+  #gCard_main {
   width: 100%;
   border: 1px solid #ccc;
   list-style: none;
   justify-content: center;
   text-align: center;
   padding-top: 20px; 
-}
-#gCard_col1 {
+  }
+  #gCard_col1 {
   width: 100%;
-}
-#gCard_col2 {
+  }
+  #gCard_col2 {
   width:100%;
   padding-top: 10px;
-}
-
-main {
+  }
+  
+  main {
   width: 98%;
   margin: auto;
   /* padding: 1em; */
   background-color: rgba(255,255,255,.8);
   position: relative;
   overflow: hidden;
-}
-h1 {
+  }
+  h1 {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 2.8em;
   font-weight: 700;
-
-}
-h3 {
+  
+  }
+  h3 {
   font-size: 2em;
   font-weight: 600;
-}
-.info {
+  }
+  .info {
   margin-bottom: 1em;
   width: 90%;
   padding-left: 10px;
-}
-article {
+  }
+  article {
   margin-top: 15px;
-}
-#description {
+  }
+  #gCard_description {
   list-style: none;
   justify-content: center;
   text-align: center;
   
-}
-/* ================================================ */
-@media screen and (min-width: 660px) {
+  }
+  /* ================================================ */
+  @media screen and (min-width: 660px) {
   body {
     width: 100%;
     background-color :#fff;
-}
-.info {
+  }
+  .info {
   margin-bottom: 1em;
   width: 90%;
   padding-left: 10px;
-}
-#gCard_col1 {
+  }
+  #gCard_col1 {
   width: 100%;
-}
-#gCard_col2 {
+  }
+  #gCard_col2 {
   width:100%;
   padding-top: 10px;
-}
-
-#gCard_main {
+  }
+  
+  #gCard_main {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: 400px 400px;
@@ -307,27 +268,27 @@ article {
   text-align: center;
   border: solid 1px #ccc;
   padding-top: 20px;  
-}
-#description {
+  }
+  #description {
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
   padding-top: 15px;
-}
-
-.gCard_detail{
+  }
+  
+  .gCard_detail{
   list-style: none;
   
-}
-}
-/* =============================================================== */
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (min-width: 960px) {
+  }
+  }
+  /* =============================================================== */
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (min-width: 960px) {
   body {
     width: 960px;
     background-color: #fff ;
   }
- #gCard_main {
+  #gCard_main {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 400px;
@@ -337,30 +298,31 @@ article {
     border: solid 1px #ccc;
     padding-top: 20px;  
   }
-#gCard_description {
+  #gCard_description {
   justify-content: center;
   text-align: center;
   padding-top: 15px;
-}
-
- #gCard_col1, #gCard_col2 {
+  }
+  
+  #gCard_col1, #gCard_col2 {
   box-sizing: border-box;
-}
-#gCard_col1 {
+  }
+  #gCard_col1 {
   width: 100%;
-}
-#gCard_col2 {
+  }
+  #gCard_col2 {
   width:100%;
   padding-top: 10px;
-}
-
-
- .gCard_detail{
+  }
+  
+  
+  .gCard_detail{
   list-style: none;
   margin-left: 0;
   text-align: center;
   align-items: center;
   border: 1px solid #ccc;
-}
-}
-
+  }
+  }
+  
+  
