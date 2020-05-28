@@ -3,34 +3,74 @@
     margin: 0px;
     box-sizing: border-box;
 }
-.carousel-container {
-    width: 70%;
-    margin: auto;
-    overflow: hidden;
+//FIRST CAROUSEL
+.slider {
+    position: relative;
+    height: 80vh;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.slide.current {
+    opacity: 1;
+    .content {
+        opacity: 1;
+        transform: translateX(600px);
+        transition: all .7s ease-in-out .3s;
+    }
+}
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255,255,255, .8);
+    color: #333;
+    padding: 35px;
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+.buttons {
+    button#next {
+        position: absolute;
+        top: 40%;
+        right: 15px;
+    }
+    button#prev {
+        position: absolute;
+        top: 40%;
+        left: 15px;
+    }
+}
+@media(max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
 }
 
-.carousel-slide {
-    display: flex;
-    width: 100%;
-    height: 500px;
+//background images
+.slide:first-child {
+    background: url('../../images/coffee-01.jpg') no-repeat center center/cover;
 }
-#prevBtn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
+.slide:nth-child(2) {
+    background: url('../../images/coffee-02.jpg') no-repeat center top/cover;
 }
-#nextBtn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 5%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
+.slide:nth-child(3) {
+    background: url('../../images/coffee-03.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(4) {
+    background: url('../../images/coffee-04.jpg') no-repeat center top/cover;
 }

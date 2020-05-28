@@ -68,38 +68,72 @@ p {
 }
 
 #homeDescription {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  align-items: center;
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-#homeDescription h1 {
-  text-align: center;
+#homeDescription p {
+  padding-bottom: 10px;
 }
 
-#homeDescription i {
+#homeDescription p i {
+  padding: 5px;
   font-size: 2.5em;
 }
 
-#homeDescription button {
+@media (min-width: 400px) {
+  #homeDescription p i {
+    display: none;
+  }
+}
+
+#homeDescription p button {
   background-color: #efeeee;
   padding: 1em 3em;
   font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
 }
 
 #gridDesc {
-  width: 85%;
-  text-align: center;
-  margin-bottom: 3em;
+  display: none;
 }
 
-#gridDesc div {
-  margin: 2em;
+@media (min-width: 450px) {
+  #gridDesc {
+    padding-top: 5em;
+  }
+}
+
+@media (min-width: 400px) {
+  #gridDesc {
+    margin-top: 10px;
+    padding-top: 50px;
+    width: 85%;
+    text-align: center;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 3em;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #gridDesc div {
+    margin: 2em;
+  }
+  #gridDesc h1 {
+    text-align: center;
+  }
 }
 
 #example {
@@ -398,12 +432,11 @@ body {
 #gridContainer div {
   background-color: #ededed;
   padding: 1em;
-  margin: 1.5em 0;
+  margin: .7em 0;
 }
 
 @media screen and (min-width: 900px) {
   #gridContainer {
-    font-family: 'Abril Fatface', sans-serif;
     margin: 0 auto;
     margin-bottom: 1.5em;
     display: grid;
@@ -415,6 +448,9 @@ body {
   #gridContainer div {
     text-align: center;
     background-color: #ededed;
+  }
+  #gridContainer .gridItem {
+    width: 98%;
   }
   #gridContainer #one1 {
     grid-column: 1 / span 1;
@@ -564,7 +600,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+.formButton {
   background-color: #fff;
   color: black;
   padding: 14px 20px;
@@ -730,12 +766,25 @@ label[for="visa"], label[for="mc"], label[for="amex"] {
   box-sizing: border-box;
 }
 
-body {
+.giftCardBody {
   background-color: #fff;
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
   width: 100%;
   height: 100%;
+}
+
+.giftCardBody h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+.giftCardBody h3 {
+  font-size: 2em;
+  font-weight: 600;
 }
 
 #gCard_main {
@@ -763,19 +812,6 @@ main {
   background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   overflow: hidden;
-}
-
-h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2.8em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 2em;
-  font-weight: 600;
 }
 
 .info {
@@ -880,43 +916,82 @@ article {
   box-sizing: border-box;
 }
 
-.carousel-container {
-  width: 70%;
-  margin: auto;
-  overflow: hidden;
+.slider {
+  position: relative;
+  height: 80vh;
 }
 
-.carousel-slide {
-  display: flex;
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 500px;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
-#prevBtn {
+.slide.current {
+  opacity: 1;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all .7s ease-in-out .3s;
+}
+
+.slide .content {
   position: absolute;
-  top: 50%;
-  z-index: 10;
-  left: 5%;
-  font-size: 30px;
-  color: white;
-  opacity: 0.5;
-  cursor: pointer;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
 }
 
-#nextBtn {
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.buttons button#next {
   position: absolute;
-  top: 50%;
-  z-index: 10;
-  right: 5%;
-  font-size: 30px;
-  color: white;
-  opacity: 0.5;
-  cursor: pointer;
+  top: 40%;
+  right: 15px;
 }
 
-.bodyHome h1 {
-  margin: 15px;
-  padding: 10px;
-  text-align: center;
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+.slide:first-child {
+  background: url("../../images/coffee-01.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url("../../images/coffee-02.jpg") no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("../../images/coffee-03.jpg") no-repeat center top/cover;
+}
+
+.slide:nth-child(4) {
+  background: url("../../images/coffee-04.jpg") no-repeat center top/cover;
 }
 /*# sourceMappingURL=styles.css.map */

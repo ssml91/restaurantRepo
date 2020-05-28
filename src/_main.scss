@@ -12,6 +12,7 @@ body {
 .bodyHome {
    
     line-height: 1.6;
+    
    
     
 }
@@ -54,36 +55,65 @@ h1 {
 p {
     font-size: .8em;
 }
+
 #homeDescription {
+   margin-top: 5%;
+   margin-bottom: 5%;
+   padding-bottom: 5%;
+    align-items: center;
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-    height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    h1 {
-        text-align: center;
-    }
-    i {
-        font-size: 2.5em;
-    }
-    button {
-        background-color: #efeeee;
-        padding: 1em 3em;
-        font-family: 'Abril Fatface', cursive;
+    p { padding-bottom: 10px;
+        i { @include break(400px) {
+            display: none;
+        }
+            padding: 5px;
+            font-size: 2.5em;
+        }
+        button {
+            background-color: #efeeee;
+            padding: 1em 3em;
+            font-family: 'Abril Fatface', cursive;
+            cursor: pointer;
+        }
+        
     }
 }
-
 #gridDesc {
-    width: 85%;
-    text-align: center;
-    margin-bottom: 3em;
-    div {
-        margin: 2em;
+    display: none;
+
+    @include break (450px) {
+        padding-top: 5em;
     }
-}
+        @include break(400px) {
+        margin-top: 10px;
+        padding-top: 50px;
+        width: 85%;
+        text-align: center;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-bottom: 3em;
+        div {
+            margin: 2em;
+        }
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        h1 {
+            text-align: center;
+        }
+    }
+    
+    
+    }
 #example {
     text-align: center;
 }
