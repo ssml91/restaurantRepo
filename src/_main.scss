@@ -41,7 +41,7 @@ body {
     }
     pre {
         display: none;
-        background-color: #c4bdac;
+        background-color: $dkGray;
         margin: 0 10% 0 10%;
         @include break(600px) {
             display: block;
@@ -119,7 +119,7 @@ p {
 }
 footer {
     text-align: center;
-    background-color: #c4bdac;
+    background-color: $dkGray;
     padding: 1.5em;
     color: #fff;
 }
