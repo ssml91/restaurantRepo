@@ -305,7 +305,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #deb608;
+    background-color: #efeeee;
     color: #1b1343;
   }
 }
@@ -317,7 +317,7 @@ footer {
 
 .subflyout:hover .submenu a:hover {
   color: #fff;
-  background-color: #deb608;
+  background-color: #efeeee;
 }
 
 .container {
@@ -398,13 +398,13 @@ th {
 
 @media (min-width: 600px) {
   th {
-    background: #333;
+    background: #c4bdac;
     color: white;
   }
 }
 
 tr:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: #efeeee;
 }
 
 tr:hover {
