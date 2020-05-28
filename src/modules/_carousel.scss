@@ -63,14 +63,14 @@
 
 //background images
 .slide:first-child {
-    background: url('../images/coffee-01.jpg') no-repeat center center/cover; //image path must be relative to CSS file not SASS file
+    background: url('../images/carousel-01.jpg') no-repeat center center/cover; //image path must be relative to CSS file not SASS file
 }
 .slide:nth-child(2) {
-    background: url('../images/coffee-02.jpg') no-repeat center top/cover;
+    background: url('../images/carousel-02.jpg') no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-    background: url('../images/coffee-03.jpg') no-repeat center top/cover;
+    background: url('../images/carousel-03.jpg') no-repeat center top/cover;
 }
 .slide:nth-child(4) {
-    background: url('../images/coffee-04.jpg') no-repeat center top/cover;
+    background: url('../images/carousel-04.jpg') no-repeat center top/cover;
 }
