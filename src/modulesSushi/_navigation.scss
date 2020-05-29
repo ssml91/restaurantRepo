@@ -1,5 +1,6 @@
 
 .navbar {
+    
     font-size: .8em;
     background-color: $wasabi;
     padding-bottom: 10px;
@@ -8,7 +9,7 @@
         display: none;
         
         .currentNav a {
-            color:$grey;
+            color: #000;
         }
         
         .nav-links {
@@ -122,7 +123,7 @@
                 
                
                 
-                background-color: $gold;
+                background-color: $mdGray;
                
                 color: $dkBlue;
                   
@@ -134,7 +135,7 @@
                     text-decoration: none;
                     &:hover {
                        color: #fff;
-                       background-color: $gold;
+                       background-color: $mdGray;
                     }
                 }
         }

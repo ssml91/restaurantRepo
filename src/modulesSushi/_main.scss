@@ -1,16 +1,21 @@
 body {
     color: $black;
     font-size: 2em;
-    font-family: Verdana, 'sans-serif';
-    background-color: black;
+    font-family: 'Spicy Rice', 'sans-serif';
+    background: url('../images/sushi-354628_640.jpg') no-repeat;
+    @include break(600px) {
+        
     @include backImage('../images/sushi-354628_640.jpg');
 
+    }
 }   
 .sushiWrapper {
+    font-family: 'Roboto', 'sans-serif';
     background-color: rgba(255, 255, 255, .5);
 } 
 h1 {
     
+    font-family: 'Spicy Rice', 'sans-serif';
     text-align: center;
 
 }
