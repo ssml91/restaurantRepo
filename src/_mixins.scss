@@ -11,3 +11,15 @@
         }
     }
 }
+
+@mixin backImage($image, $height: 600px) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    height: $height;
+    
+    
+}
