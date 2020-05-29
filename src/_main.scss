@@ -2,9 +2,52 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    a {
+        cursor: pointer;
+    }
 }
 body {
     font-family: 'Montserrat', sans-serif;
+}
+.bodyHome {
+   
+    line-height: 1.6;
+    
+   
+    
+}
+.mainHome {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px 0 10px 0;
+}
+.sectionHome {
+
+    margin:  0 5%;
+    ul {
+        list-style-type: none;
+        li {
+            padding: 10px 0 10px 0;
+            a {
+                text-decoration: none;
+                color: $dkBlue;
+                font-weight: bold;
+                
+                &:hover {
+                    color: $rust;
+                }
+            }
+        }
+    }
+    pre {
+        display: none;
+        background-color: #c4bdac;
+        margin: 0 10% 0 10%;
+        @include break(600px) {
+            display: block;
+        }
+    
+    }
 }
 h1 {
     font-family: 'Abril Fatface', cursive;
@@ -12,33 +55,65 @@ h1 {
 p {
     font-size: .8em;
 }
-#description {
-    height: 500px;
+
+#homeDescription {
+   margin-top: 5%;
+   margin-bottom: 5%;
+   padding-bottom: 5%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    h1 {
-        text-align: center;
+    p { padding-bottom: 10px;
+        i { @include break(400px) {
+            display: none;
+        }
+            padding: 5px;
+            font-size: 2.5em;
+        }
+        button {
+            background-color: #efeeee;
+            padding: 1em 3em;
+            font-family: 'Abril Fatface', cursive;
+            cursor: pointer;
+        }
+        
     }
-    i {
-        font-size: 2.5em;
-    }
-}
-button {
-    background-color: #efeeee;
-    padding: 1em 3em;
-    font-family: 'Abril Fatface', cursive;
-    cursor: pointer;
 }
 #gridDesc {
-    width: 85%;
-    text-align: center;
-    margin-bottom: 3em;
-    div {
-        margin: 2em;
+    display: none;
+
+    @include break (450px) {
+        padding-top: 5em;
     }
-}
+        @include break(400px) {
+        margin-top: 10px;
+        padding-top: 50px;
+        width: 85%;
+        text-align: center;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-bottom: 3em;
+        div {
+            margin: 2em;
+        }
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        h1 {
+            text-align: center;
+        }
+    }
+    
+    
+    }
 #example {
     text-align: center;
 }

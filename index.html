@@ -1,63 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Repo</title>
+    <title>Restaurant Repo: A Responsive Framework</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fas fa-bars"></i>
-    </span>
-    <a href="#" class="logo"><img src="images/logo-01.png" alt=""></a>
-    <ul class="main-nav" id="js-menu">
-        <li>
-            <a href="#" class="nav-links">HOME</a>
-        </li>
-        <li>
-            <a href="#" class="nav-links">EXAMPLES</a>
-        </li>
-        <li class="subflyout">
-            <a href="#" class="nav-links">WHERE TO START</a>
-            <ul class="submenu">
-              <li><a href="pages/grid.html">GRIDS</a></li>
-              <li><a href="#">FORMS</a></li>
-              <li><a href="pages/table.html">TABLES</a></li>
-              <li><a href="pages/carousel.html">CAROUSEL</a></li>
-              <li><a href="#">ICONS</a></li>
-              <li><a href="#">HTML</a></li>
+
+<body class=bodyHome>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">RR</a>
+        <ul class="main-nav" id="js-menu">
+            <li class="currentNav">
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#WhereToStart" class="nav-links" >Where to Start</a>
+            </li>
+            
+            <li class="subflyout">
+                <a href="pages/components.html" class="nav-links">Components</a>
+                <ul class="submenu">
+                <li><a href="pages/components.html#intro">Grids</a></li>
+                <li><a href="pages/components.html#componentsForms">Forms</a></li>
+                <li><a href="pages/components.html#componentsTables">Tables</a></li>
+                <li><a href="pages/components.html#componentsCarousel">Carousel</a></li>
+                <li><a href="pages/iconFonts.html">Icons</a></li>
+                <li><a href="#html">HTML</a></li>
+                </ul>
+            </li>
+            <li class=" subflyout">
+                <a href="stylesAndLayouts.html" class="nav-links">Styles and Layouts</a>
+                <ul class="submenu">
+                    <li><a href="pages/stylesAndLayouts.html#typography">Typography</a></li>
+                    <li><a href="pages/stylesAndLayouts.html#typography#formStyling">Form Styling</a></li>
+                    <li><a href="pages/stylesAndLayouts.html#themes" >Themes</a></li>
+                    <li><a href="pages/stylesAndLayouts.html#buttonStyles">Buttons</a></li>
+                    <li><a href="pages/stylesAndLayouts.html#iconFonts">Icons</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="pages/contactUs.html" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="homeDescription">
+        <h1>Restaurant Repo</h1>
+        <h1>A simple, responsive framework for your restaurant or cafe</h1><br>
+        <p>Use this framework to build your site quickly and efficiently! Easy to use HTML &amp; CSS to create your website in no time.</p>
+        <p class="homeStartButton"><i class="fas fa-utensils"></i></p>
+        <p class="homeStartButton"><button>GET STARTED NOW</button></p> 
+        
+        
+        </section>
+        <!--3 COLUMN DESCRIPTION-->
+        <section id="gridDesc">
+            <div><img src="images/small-icons-02.png" alt=""><br>
+            <h1>simple + easy application</h1><br>
+            <p>Our framework is easy and simple to use with seamless application and the potential to create something powerful.</p>
+            </div>
+            <div><img src="images/small-icons-03.png" alt=""><br>
+            <h1>customize it your way</h1><br>
+            <p>With our framework, there are endless possibilities! You can create a one and only design that will be unique to only you and your brand.</p>
+        </div>
+            <div><img src="images/small-icons-04.png" alt=""><br>
+            <h1>24/7 support</h1><br>
+            <p>Contact us at any time regarding any issues you may face, and our support team will be sure to guide you through your problems.</p>
+            </div>
+        </section>
+    
+
+
+   
+
+    <section class="sectionHome"><a id="WhereToStart"><h2>Where To Start</h2></a>
+        <h3>The Basics</h3>
+            <ul>
+                <li><a href="#" id="html">HTML</a>
+                    <p>We set up our pages using HTML5, using the most current doctype, and set up to be built responsively.   <a href="">Download our template</a></p>
+                </li>
+                       
+                <li><a href="#">Interactivity</a>
+                    <p>The interactivity of our components are built with javascript and jQuery.  jQuery can be applied with the latest CDN.  <a href="">Download our template</a>  </p>
+                </li>
+                <li></li>
+                
+
+<pre>
+    <code>
+        <!DOCTYPE html> &lt;!--  THIS IS  THE STANDARD HTML5 DOCTYPE --&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;metacharset="UTF-8">
+            &lt;metaname="viewport;" content="width=device-width, initial-scale=1.0">
+
+            &lt;!-- THIS IS THE FONT AWESOME CDN --&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/
+            libs/font-awesome/5.13.0/css/all.min.css">
+
+            &lt;!-- THIS IS THE LINK TO OUR CUSTOM STYLES --&gt;
+            &lt;link rel="stylesheet" href="css/styles.css">
+
+            &lt;!-- THIS IS THE LINK TO jQUERY --&gt;
+            &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"
+                integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+                crossorigin="anonymous">&lt;script&gt;
+
+            &lt;!-- THE GOOGLE FONTS CDN CAN BE FOUND IN styles.scss --&gt;
+
+            &lt;title&gt;Starting Template&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            
+        &lt;/body&gt;
+        &lt;html&gt;
+    </code>
+</pre>
+                
+
+                <li><a href="pages/components.html#intro">Grids</a></li>
+                    <p>We have a responsive grid system that is class based.  You will find it easy to use and its uses are limitless.  You can apply it to menus, </p>
+
+                <li><a href="pages/components.html#componentsForms">Forms</a>
+                    <p>With any business, your online presence will at least a form or two.  We've created forms to support your restaurant needs.  Checkout our options for <a href="pages/components.html#giftCardBody">gift cards</a>, <a href="pages/components.html#orderOnlineBody">processing online orders</a>, or <a href="pages/components.html#memberLoginBody">becoming a member</a>... </p>
+                </li>
+
+                <li><a href="pages/components.html#componentsTables">Tables</a>
+                    <p>Tables are yet another option for you to display your information to your guests.  We've seen our customers use them for an assortment of ways, from a locations table, to a glossary to describe their sushi rolls.  Our table can be searched, sorted, and you can bring your data in from an API.  </p>
+                </li>
+                <li><a href="pages/stylesAndLayouts.html">Styles and Layouts</a>
+
+                    <p>We have a selection of fonts and icons that we recommend for our pages, but you can choose to use as many or as little as your prefer.                        
+                    </p>
+                    <p>We like to use GoogleFonts because they have a large selection, you wil be able to find almost any style to suit your needs.  We like to use FontAwesome for our icons.  Like GoogleFonts, they have a huge selection and are easy to use.  Both GoogleFonts and FontAwesome are available through CDN.  <a href="">Download our template</a> </p>
+                </li>
             </ul>
-        </li>
-        <li>
-            <a href="#" class="nav-links">CONTACT US</a>
-        </li>
-    </ul>
-</nav>
-<section id="description">
-<h1>A simple, responsive framework for your restaurant or cafe</h1><br>
-<p>Use this framework to build your site quickly and efficiently! Easy to use HTML &amp; CSS to create your website in no time.</p><br><br>
-<i class="fas fa-utensils"></i><br><br>
-<button>GET STARTED NOW</button>
-</section>
-<!--3 COLUMN DESCRIPTION-->
-<section id="gridDesc">
-    <div><img src="images/small-icons-02.png" alt=""><br>
-    <h1>simple + easy application</h1><br>
-    <p>Our framework is easy and simple to use with seamless application and the potential to create something powerful.</p>
-    </div>
-    <div><img src="images/small-icons-03.png" alt=""><br>
-    <h1>customize it your way</h1><br>
-    <p>With our framework, there are endless possibilities! You can create a one and only design that will be unique to only you and your brand.</p>
-</div>
-    <div><img src="images/small-icons-04.png" alt=""><br>
-    <h1>24/7 support</h1><br>
-    <p>Contact us at any time regarding any issues you may face, and our support team will be sure to guide you through your problems.</p>
-    </div>
-</section>
+
+
+
+    </section>
+
+    
+
+
+
+
+<body>
+  
+
 <!--EXAMPLES-->
 <section id="example">
     <h1>Take a look at our examples:</h1>
@@ -66,6 +163,8 @@
 <footer>
     &copy; RESTAURANT REPO 2020
 </footer>
+
     <script src="scripts/main.js"></script>
+   
 </body>
 </html>

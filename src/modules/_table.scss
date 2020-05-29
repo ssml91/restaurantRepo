@@ -34,6 +34,7 @@
 
     td:nth-of-type(1) {
         padding-left: 0;
+        
     }
 }
 
@@ -60,16 +61,23 @@ th {
     font-weight: bold;
     text-transform: uppercase;
     @include break(600px) {
-        background: #333;
+        background: $dkGray;
         color: white;
     }
 }
 tr:nth-child(odd){
-    background-color: #dddddd;
+    background-color: $mdGray;
 }
 tr:hover {
     color: white;
     background-color: black;
+}
+
+td {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 // td:first-child {
 //     width: 100%;

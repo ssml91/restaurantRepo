@@ -1,14 +1,14 @@
 
 .navbar {
     font-size: .8em;
-    background-color: $dkGray;
+    background-color: $blue;
     padding-bottom: 10px;
     .main-nav {
         list-style-type: none;
         display: none;
         
         .currentNav a {
-            color: #000;
+            color:$grey;
         }
         
         .nav-links {
@@ -46,7 +46,7 @@
         font-style: bold;
         text-decoration: none;
         color: #fff;
-        font-family: 'Abril Fatface', cursive;
+        font-family: 'Spicy Rice', sans-serif;
         display: inline-block;
         font-size: 22px;
         margin-top: 10px;
@@ -122,7 +122,7 @@
                 
                
                 
-                background-color: $mdGray;
+                background-color: $gold;
                
                 color: $dkBlue;
                   
@@ -134,7 +134,7 @@
                     text-decoration: none;
                     &:hover {
                        color: #fff;
-                       background-color: $mdGray;
+                       background-color: $gold;
                     }
                 }
         }
