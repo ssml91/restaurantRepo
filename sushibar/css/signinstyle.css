@@ -206,3 +206,20 @@ button.ghost {
     transform: translateX(20%);
 }
 
+
+.signcontainer {
+    min-height: cal( 100vh - 20px );
+    margin-bottom: 50px;
+}
+
+.footer{
+
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    padding: 10px 20px 20px 20px;
+    background-color: #666;
+    border-radius: 10px;
+    text-align: center;
+   
+}
