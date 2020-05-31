@@ -1,4 +1,4 @@
-body {
+.bodySushi {
     color: $black;
     font-size: 2em;
     font-family: 'Spicy Rice', 'sans-serif';
@@ -8,10 +8,11 @@ body {
     @include backImage('../images/sushi-354628_640.jpg');
 
     }
-}   
+} 
+  
 .sushiWrapper {
     font-family: 'Roboto', 'sans-serif';
-    background-color: transparentize($color: #fff, $amount: 1);
+    //background-color: transparentize($color: #fff, $amount: 1);
 } 
 h1 {
     
@@ -34,4 +35,12 @@ h1 {
 }
 .middle {
     background-color: rgba(255, 255, 255, .5);
+}
+.bodyMenu {
+    color: $black;
+    font-size: 2em;
+    font-family: 'Spicy Rice', 'sans-serif';
+    background: url('../images/sushi-354628_640.jpg') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
 }
