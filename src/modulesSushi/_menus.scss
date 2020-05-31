@@ -5,7 +5,7 @@ img {
 @media only screen and (max-width: 601px) {
     table, thead, tbody, th, td,tr {
         display: block;
-
+       
     }
     thead tr {
         position: absolute;
@@ -65,6 +65,7 @@ th, td {
     }
 }
 th {
+    
     font-weight: bold;
     text-transform: uppercase;
     @include break(600px) {

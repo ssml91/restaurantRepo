@@ -92,7 +92,13 @@
 
         <div class="row">
             <div class="col">
-                <div ><input type="text" id="search-input" placeholder="search "></div>
+              
+
+
+
+
+                <div ><input type="text" id="search-input" placeholder="search "><span class="tableSearchButton"><i class="fa fa-search" aria-hidden="true"></i>
+                </span></div>
             </div>
         </div>
     
@@ -101,10 +107,12 @@
         <table >
             <thead>  
             <tr >
-                <th>Images</th>
-                <th id="column">Address &#9650</th>
-                <th>Phone &#9650</th>
-                <th>Hours of Operation &#9650</th>
+              <tr > <!-- To enable the sorting correctly, you must enter your data-type as string or number.-->
+                <th data-column="image" data-type="image"></th>
+                <th data-column="address" id="column" data-order="desc" data-type="string" class="order">Address &#9660</th>
+                <th data-column="phone" data-order="desc" data-type="string">Phone &#9660</th> 
+                <th data-column="hours" data-order="desc" data-type="time">Hours of Operation</th>
+            </tr>
             </tr>
         </thead>    
             <tbody id="tableData">

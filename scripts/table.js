@@ -2,7 +2,7 @@
 
        
 
-    let sortDirection = false;
+   
     let storeInfo = [
                 { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Miramar Store, 97 Gates Road',     'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
                 { 'image': 'https://via.placeholder.com/400x200.png','address': 'Mira Mesa Store, 202-B Laffey Circle',   'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
@@ -15,6 +15,7 @@
             window.onload = () => {
                 loadTableData(storeInfo);
             }
+
             
             //search
             $('#search-input').on('keyup', function(){
@@ -31,38 +32,69 @@
 
                 for(var i=0; i< data.length; i++ ){
                     value = value.toLowerCase()
-                    var address = data[i].address.toLowerCase()
-
+                    var address = data[i].address.toLowerCase();
+                    var phone = data[i].phone.toLowerCase();
                     if (address.includes(value)){
+                        filterData.push(data[i])
+                    } else if (phone.includes(value)) {
                         filterData.push(data[i])
                     }
                 } return filterData
             }
 
             //sort function
-            $('th').on('click', function(){
+            $('th').on('click', function(column){
 
                 
                 var column = $(this).data('column');
                 var order = $(this).data('order');
                 var text = $(this).html();
                 text = text.substring(0, text.length -1)
+                var dataType = $(this).data('type');
 
-                console.log('column was clicked', column, order);
+                console.log('column was clicked', column, order, dataType);
+                if( (dataType == 'image') || (dataType =='time')) {
+                   
+                    return;
 
+                }
+              
                 if(order == 'desc') {
                     $(this).data('order', 'asc')
-                    storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
-                    text += '&#9660'
-                }else {
-                    $(this).data('order', 'desc')
-                    storeInfo = storeInfo.sort((a,b) => a[column] < b[column] ? 1: -1)
+                    $(this).addClass('asc');
+                    $(this).removeClass('desc');
+                    if(dataType == 'number'){
+                        storeInfo = storeInfo.sort((a,b) => parseFloat( a[column]) > parseFloat(b[column]) ? 1: -1)
+                        
+                    } else {
+                        storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
+                        
+                    }
+                   
                     text += '&#9650'
+                }else {
+
+                    $(this).data('order', 'desc')
+                    $(this).addClass('desc');
+                    $(this).removeClass('asc');
+                    if(dataType == 'number'){
+                        storeInfo = storeInfo.sort((a,b) => parseFloat( a[column]) < parseFloat(b[column]) ? 1: -1)
+                        
+                    } else {
+                        
+                        storeInfo = storeInfo.sort((a,b) => a[column] < b[column] ? 1: -1)
+                    }
+
+                    
+                    text += '&#9660'
                 }
                 $(this).html(text)
 
                 loadTableData(storeInfo)
             })
+
+//END SORT
+
 
 
             //table data load
@@ -88,5 +120,7 @@
                 tableBody.innerHTML= dataHtml;
             } 
 
+
+            
 
             

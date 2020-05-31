@@ -52,8 +52,9 @@
                 var dataType = $(this).data('type');
 
                 console.log('column was clicked', column, order, dataType);
-                if(dataType == 'image') {
-                    console.log('your cannot sort this');
+               
+                if( (dataType == 'image') || (dataType =='time')) {
+                   
                     return;
 
                 }
@@ -64,11 +65,10 @@
                     $(this).removeClass('desc');
                     if(dataType == 'number'){
                         storeInfo = storeInfo.sort((a,b) => parseFloat( a[column]) > parseFloat(b[column]) ? 1: -1)
-                        console.log('price was clicked');
+                        
                     } else {
                         storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
-                        console.log('something else was clicked');
-
+                       
                     }
                    
                     text += '&#9650'
