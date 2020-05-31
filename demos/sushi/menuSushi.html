@@ -48,11 +48,11 @@
     
         <table >
             <thead>  
-            <tr >
-                <th></th>
-                <th data-column="item" id="column"  class="order">Item &#9660</th>
-                <th data-column="price">Price &#9660</th>
-                <th data-column="description">Description &#9660</th>
+            <tr > <!-- To enable the sorting correctly, you must enter your data-type as string or number.-->
+                <th data-column="image" data-type="image"></th>
+                <th data-column="item" id="column" data-order="desc" data-type="string" class="order">Item &#9660</th>
+                <th data-column="price" data-order="desc" data-type="number">Price &#9660</th> 
+                <th data-column="description" data-order="desc" data-type="string">Description &#9660</th>
             </tr>
         </thead>    
             <tbody id="tableData">
