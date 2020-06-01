@@ -16,7 +16,7 @@ body { font-family: 'Montserrat', sans-serif; }
 
 .mainHome { margin-left: 5%; margin-right: 5%; padding: 10px 0 10px 0; }
 
-.sectionHome { margin: 5em auto; }
+.sectionHome { margin: 2em auto; }
 
 .sectionHome ul { list-style-type: none; }
 
@@ -26,52 +26,62 @@ body { font-family: 'Montserrat', sans-serif; }
 
 .sectionHome ul li a:hover { color: #bb3a1e; }
 
-.sectionHome #whereToStartGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 180px 100px; grid-template-rows: 180px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; }
+.sectionHome #whereToStartGrid { width: 80%; text-align: center; margin: 0 auto; margin-bottom: 5em; }
 
-.sectionHome #whereToStartGrid div { margin: 0 1em; }
+.sectionHome #whereToStartGrid div { margin-bottom: 1.5em; }
 
 .sectionHome #whereToStartGrid a { text-decoration: none; color: #000; font-family: 'Abril Fatface', serif; }
 
-.sectionHome #whereToStartGrid #startGrid1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; }
+@media (min-width: 900px) { .sectionHome #whereToStartGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 180px 100px; grid-template-rows: 180px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; }
+  .sectionHome #whereToStartGrid div { margin: 0 1em; }
+  .sectionHome #whereToStartGrid #startGrid1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; }
+  .sectionHome #whereToStartGrid #startGrid2 { -ms-grid-column: 2; -ms-grid-column-span: 1; grid-column: 2 / span 1; -ms-grid-row: 1; grid-row: 1; }
+  .sectionHome #whereToStartGrid #startGrid3 { -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; -ms-grid-row: 2; grid-row: 2; } }
 
-.sectionHome #whereToStartGrid #startGrid2 { -ms-grid-column: 2; -ms-grid-column-span: 1; grid-column: 2 / span 1; -ms-grid-row: 1; grid-row: 1; }
+.sectionHome .displayCode { display: none; background-color: #c4bdac; margin: 0 10%; background-color: #c4bdac; margin: 0 10% 0 10%; }
 
-.sectionHome #whereToStartGrid #startGrid3 { -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; -ms-grid-row: 2; grid-row: 2; }
-
-.sectionHome .displayCode { display: none; background-color: #c4bdac; margin: 0 10%; margin-bottom: 3em; background-color: #c4bdac; margin: 0 10% 0 10%; }
-
-@media (min-width: 600px) { .sectionHome .displayCode { display: block; } }
+@media (min-width: 600px) { .sectionHome .displayCode { display: block; margin-bottom: 4em; } }
 
 h1 { font-family: 'Abril Fatface', cursive; }
 
 p { font-size: .8em; }
 
-button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatface', cursive; cursor: pointer; }
+button { background-color: #efeeee; padding: 1em 3em; border: solid 1px #dddbdb; font-family: 'Abril Fatface', cursive; cursor: pointer; }
 
-#homeDescription { width: 80%; margin: 8em auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#homeDescription { width: 80%; margin: 6em auto 0; text-align: center; }
 
-#homeDescription p { padding-bottom: 10px; }
+#homeDescription i { padding: 5px; font-size: 2em; }
 
-#homeDescription p i { padding: 5px; font-size: 5em; }
+@media (min-width: 900px) { #homeDescription { width: 80%; margin: 8em auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  #homeDescription p { padding-bottom: 10px; } }
 
-@media (min-width: 400px) { #gridDesc { text-align: center; margin: 3em auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  #gridDesc div { margin: 2em; }
-  #gridDesc h1 { text-align: center; } }
+#gridDesc { width: 85%; text-align: center; margin: 3em auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-#componentGrid { width: 80%; text-align: center; margin: 0 auto; }
+#gridDesc div { margin: .7em; }
+
+#gridDesc h1 { text-align: center; }
+
+@media (min-width: 900px) { #gridDesc { display: -ms-grid; display: grid; -ms-grid-columns: 320px 320px 320px; grid-template-columns: 320px 320px 320px; -ms-grid-rows: 200px; grid-template-rows: 200px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin: 0 auto; padding-bottom: 4em; }
+  #gridDesc div { margin: 0 3em; }
+  #gridDesc #example h1 { text-align: center; } }
+
+#componentGrid { width: 80%; text-align: center; margin: 0 auto; margin-bottom: 5em; }
+
+#componentGrid div { margin-bottom: 2em; }
 
 #componentGrid a { text-decoration: none; color: #000; font-family: 'Abril Fatface', serif; }
 
-@media (min-width: 900px) { #componentGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 250px 380px 100px; grid-template-rows: 250px 380px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; }
-  #componentGrid div { margin: 0 1em; } }
+@media (min-width: 900px) { #componentGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 250px 350px 100px; grid-template-rows: 250px 350px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; text-align: left; }
+  #componentGrid div { margin: 0 1em; }
+  #componentGrid #comp1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; }
+  #componentGrid #comp2 { -ms-grid-column: 2; -ms-grid-column-span: 1; grid-column: 2 / span 1; -ms-grid-row: 1; grid-row: 1; }
+  #componentGrid #comp3 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 2; grid-row: 2; }
+  #componentGrid #comp4 { -ms-grid-column: 2; -ms-grid-column-span: 1; grid-column: 2 / span 1; -ms-grid-row: 2; grid-row: 2; }
+  #componentGrid #comp5 { -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; -ms-grid-row: 3; grid-row: 3; text-align: center; } }
 
 #example { text-align: center; }
 
 footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #fff; }
-
-@media screen and (min-width: 900px) { #gridDesc { display: -ms-grid; display: grid; -ms-grid-columns: 320px 320px 320px; grid-template-columns: 320px 320px 320px; -ms-grid-rows: 200px; grid-template-rows: 200px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; margin: 0 auto; padding-bottom: 4em; }
-  #gridDesc div { margin: 0 3em; }
-  #example h1 { text-align: center; } }
 
 .top { border: solid 1px #000; border-radius: 10px; background-color: #efeeee; float: right; color: #000; text-decoration: none; width: 100px; text-align: center; }
 

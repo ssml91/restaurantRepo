@@ -39,7 +39,7 @@ body {
 }
 
 .sectionHome {
-  margin: 5em auto;
+  margin: 2em auto;
 }
 
 .sectionHome ul {
@@ -61,23 +61,14 @@ body {
 }
 
 .sectionHome #whereToStartGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 370px 370px;
-      grid-template-columns: 370px 370px;
-  -ms-grid-rows: 180px 100px;
-      grid-template-rows: 180px 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 3em;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5em;
 }
 
 .sectionHome #whereToStartGrid div {
-  margin: 0 1em;
+  margin-bottom: 1.5em;
 }
 
 .sectionHome #whereToStartGrid a {
@@ -86,35 +77,52 @@ body {
   font-family: 'Abril Fatface', serif;
 }
 
-.sectionHome #whereToStartGrid #startGrid1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / span 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.sectionHome #whereToStartGrid #startGrid2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / span 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.sectionHome #whereToStartGrid #startGrid3 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
-  -ms-grid-row: 2;
-  grid-row: 2;
+@media (min-width: 900px) {
+  .sectionHome #whereToStartGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 370px 370px;
+        grid-template-columns: 370px 370px;
+    -ms-grid-rows: 180px 100px;
+        grid-template-rows: 180px 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3em;
+  }
+  .sectionHome #whereToStartGrid div {
+    margin: 0 1em;
+  }
+  .sectionHome #whereToStartGrid #startGrid1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .sectionHome #whereToStartGrid #startGrid2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .sectionHome #whereToStartGrid #startGrid3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
 }
 
 .sectionHome .displayCode {
   display: none;
   background-color: #c4bdac;
   margin: 0 10%;
-  margin-bottom: 3em;
   background-color: #c4bdac;
   margin: 0 10% 0 10%;
 }
@@ -122,6 +130,7 @@ body {
 @media (min-width: 600px) {
   .sectionHome .displayCode {
     display: block;
+    margin-bottom: 4em;
   }
 }
 
@@ -136,43 +145,26 @@ p {
 button {
   background-color: #efeeee;
   padding: 1em 3em;
+  border: solid 1px #dddbdb;
   font-family: 'Abril Fatface', cursive;
   cursor: pointer;
 }
 
 #homeDescription {
   width: 80%;
-  margin: 8em auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 6em auto 0;
+  text-align: center;
 }
 
-#homeDescription p {
-  padding-bottom: 10px;
-}
-
-#homeDescription p i {
+#homeDescription i {
   padding: 5px;
-  font-size: 5em;
+  font-size: 2em;
 }
 
-@media (min-width: 400px) {
-  #gridDesc {
-    text-align: center;
-    margin: 3em auto;
+@media (min-width: 900px) {
+  #homeDescription {
+    width: 80%;
+    margin: 8em auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -180,66 +172,48 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #gridDesc div {
-    margin: 2em;
-  }
-  #gridDesc h1 {
-    text-align: center;
+  #homeDescription p {
+    padding-bottom: 10px;
   }
 }
 
-#componentGrid {
-  width: 80%;
+#gridDesc {
+  width: 85%;
   text-align: center;
-  margin: 0 auto;
+  margin: 3em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#componentGrid a {
-  text-decoration: none;
-  color: #000;
-  font-family: 'Abril Fatface', serif;
+#gridDesc div {
+  margin: .7em;
+}
+
+#gridDesc h1 {
+  text-align: center;
 }
 
 @media (min-width: 900px) {
-  #componentGrid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 370px 370px;
-        grid-template-columns: 370px 370px;
-    -ms-grid-rows: 250px 380px 100px;
-        grid-template-rows: 250px 380px 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 3em;
-  }
-  #componentGrid div {
-    margin: 0 1em;
-  }
-}
-
-#example {
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  background-color: #c4bdac;
-  padding: 1.5em;
-  color: #fff;
-}
-
-@media screen and (min-width: 900px) {
   #gridDesc {
     display: -ms-grid;
     display: grid;
@@ -260,9 +234,95 @@ footer {
   #gridDesc div {
     margin: 0 3em;
   }
-  #example h1 {
+  #gridDesc #example h1 {
     text-align: center;
   }
+}
+
+#componentGrid {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+#componentGrid div {
+  margin-bottom: 2em;
+}
+
+#componentGrid a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Abril Fatface', serif;
+}
+
+@media (min-width: 900px) {
+  #componentGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 370px 370px;
+        grid-template-columns: 370px 370px;
+    -ms-grid-rows: 250px 350px 100px;
+        grid-template-rows: 250px 350px 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3em;
+    text-align: left;
+  }
+  #componentGrid div {
+    margin: 0 1em;
+  }
+  #componentGrid #comp1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #componentGrid #comp2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #componentGrid #comp3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #componentGrid #comp4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #componentGrid #comp5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    text-align: center;
+  }
+}
+
+#example {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #c4bdac;
+  padding: 1.5em;
+  color: #fff;
 }
 
 .top {

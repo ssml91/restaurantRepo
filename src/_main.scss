@@ -22,7 +22,7 @@ body {
     padding: 10px 0 10px 0;
 }
 .sectionHome {
-    margin: 5em auto;
+    margin: 2em auto;
     ul {
         list-style-type: none;
     li {
@@ -37,8 +37,20 @@ body {
         }
     }
     }
-    
     #whereToStartGrid {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5em;
+        div {
+            margin-bottom: 1.5em;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Abril Fatface', serif;
+        }
+        @include break(900px) {
         display: grid;
         grid-template-columns: 370px 370px;
         grid-template-rows: 180px 100px;
@@ -47,11 +59,6 @@ body {
         margin-bottom: 3em;
         div {
             margin: 0 1em;
-        }
-        a {
-            text-decoration: none;
-            color: #000;
-            font-family: 'Abril Fatface', serif;
         }
         #startGrid1 {
             grid-column: 1 / span 1;
@@ -66,15 +73,16 @@ body {
             grid-row: 2;
         }
     }
+    }
     .displayCode {
         display: none;
         background-color: #c4bdac;
         margin: 0 10%;
-        margin-bottom: 3em;
         background-color: $dkGray;
         margin: 0 10% 0 10%;
         @include break(600px) {
             display: block;
+            margin-bottom: 4em;
         }
     
     }
@@ -88,73 +96,46 @@ p {
 button {
     background-color: #efeeee;
     padding: 1em 3em;
+    border: solid 1px #dddbdb;
     font-family: 'Abril Fatface', cursive;
     cursor: pointer;
 }
 #homeDescription {
     width: 80%;
-    margin: 8em auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    p { padding-bottom: 10px;
-        i {
-            padding: 5px;
-            font-size: 5em;
+    margin: 6em auto 0;
+    text-align: center;
+    i {
+        padding: 5px;
+        font-size: 2em;
+    }
+    @include break (900px) {
+        width: 80%;
+        margin: 8em auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        p { 
+            padding-bottom: 10px;
         }
     }
 }
 #gridDesc {
-    @include break(400px) {
-        text-align: center;
-        margin: 3em auto;
-        div {
-            margin: 2em;
-        }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       
-        h1 {
-            text-align: center;
-        }
-    }
-    }
-#componentGrid {
-    width: 80%;
+    width: 85%;
     text-align: center;
-    margin: 0 auto;
-    a {
-        text-decoration: none;
-        color: #000;
-        font-family: 'Abril Fatface', serif;
-    }
-    @include break(900px) {
-    display: grid;
-    grid-template-columns: 370px 370px;
-    grid-template-rows: 250px 380px 100px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
+    margin: 3em auto;
     div {
-        margin: 0 1em;
+        margin: .7em;
     }
-}
-}
-#example {
-    text-align: center;
-}
-footer {
-    text-align: center;
-    background-color: $dkGray;
-    padding: 1.5em;
-    color: #fff;
-}
-@media screen and (min-width: 900px) {
-    #gridDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+    }
+    @include break (900px) {
         display: grid;
         grid-template-columns: 320px 320px 320px;
         grid-template-rows: 200px;
@@ -166,10 +147,67 @@ footer {
         div {
             margin: 0 3em;
         }
+        #example h1 {
+            text-align: center;
+        }
     }
-    #example h1 {
+    }
+#componentGrid {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5em;
+
+    div {
+        margin-bottom: 2em;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Abril Fatface', serif;
+    }
+    @include break(900px) {
+    display: grid;
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 250px 350px 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    text-align: left;
+    div {
+        margin: 0 1em;
+    }
+    #comp1 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+    #comp2 {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+    #comp3 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+    }
+    #comp4 {
+        grid-column: 2 / span 1;
+        grid-row: 2;
+    }
+    #comp5 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
         text-align: center;
     }
+}
+}
+#example {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: $dkGray;
+    padding: 1.5em;
+    color: #fff;
 }
 
 .top {
