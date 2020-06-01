@@ -4,12 +4,13 @@
 
     
     let storeInfo = [
-                { 'image': '../../images/cucumberRoll.png', 'item': 'California Roll',     'price' : '10.50', 'description': 'avocado, mango, crab'},
-                { 'image': 'https://via.placeholder.com/400x200.png','item': 'Caterpillar Roll ',   'price' : '12.95', 'description': 'avocado, tuna, eel sauce'},
-                { 'image': 'https://via.placeholder.com/400x200.png','item': 'Crunchy Roll',   'price' : '12.50', 'description': 'tempura crusted, salmon'},
-                { 'image': 'https://via.placeholder.com/400x200.png', 'item': 'Eel Roll', 'price' : '10.95', 'description': 'eel, cucumber, jalapeno'},
-                { 'image': 'https://via.placeholder.com/400x200.png','item': 'Shrimp Tempura Roll',    'price' : '10.25', 'description': 'shrimp, daikon'},
-                {'image': 'https://via.placeholder.com/400x200.png','item': 'Spicy Tuna Roll',   'price' : '8.00', 'description': 'tuna, cream cheese, spicy sauce'},
+                { 'image': '../../images/californiaRoll.png', 'item': 'California Roll',     'price' : '10.50', 'description': 'avocado, mango, crab'},
+                { 'image': '../../images/caterpillarRoll.png','item': 'Caterpillar Roll ',   'price' : '12.95', 'description': 'avocado, tuna, eel sauce'},
+                { 'image': '../../images/sushi-crunchy-roll.png','item': 'Crunchy Roll',   'price' : '12.50', 'description': 'tempura crusted, salmon'},
+                { 'image': '../../images/rainbowRoll.png', 'item': 'Rainbow Roll', 'price' : '10.95', 'description': 'salmon, yellowtail, tuna, egg'},
+                { 'image': '../../images/salmonSashimi.png','item': 'Salmon Sashimi',    'price' : '10.25', 'description': 'salmon and sushi rice'},
+               
+                {'image': '../../images/kidsBentoSushi.png','item': 'Kids Bento',   'price' : '8.00', 'description': 'onigiri for the kids'}
             ];
 
             window.onload = () => {

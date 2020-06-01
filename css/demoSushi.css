@@ -90,6 +90,37 @@ td img {
   height: auto;
 }
 
+.col div {
+  width: 300px;
+}
+
+#search-input {
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 1px #000;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  width: 300px;
+  float: left;
+}
+
+.tableSearchButton {
+  border: solid 1px #000;
+  background-color: #849137;
+  padding: 10px 20px;
+  float: left;
+  margin: 20px 0;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  color: #000;
+}
+
+.col div {
+  display: flex;
+  flex-direction: row;
+}
+
 .bodySushi {
   color: #000;
   font-size: 2em;

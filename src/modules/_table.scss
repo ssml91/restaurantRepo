@@ -87,7 +87,7 @@ td {
     
     margin: 20px 0;
     padding: 10px; 
-    border: solid 1px #ccc;
+    border: solid 1px $black;
     border-radius: 4px 0 0 4px;
     box-sizing: border-box;
     width: 300px;
@@ -104,4 +104,8 @@ td {
     cursor: pointer;
     border-radius: 0 4px 4px 0;
     color:$black;
+}
+.col div {
+    display: flex;
+    flex-direction: row;
 }

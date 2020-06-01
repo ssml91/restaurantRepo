@@ -93,3 +93,34 @@ td {
 // td:first-child {
 //     width: 100%;
 // }
+
+.col div {
+    width: 300px;
+   
+}
+#search-input {
+    
+    margin: 20px 0;
+    padding: 10px; 
+    border: solid 1px $black;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float:left;
+   
+}
+.tableSearchButton {
+    border: solid 1px $black;
+    background-color:$wasabi;
+    padding: 10px 20px;
+    float: left;
+    margin: 20px 0;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    color:$black;
+}
+.col div {
+    display: flex;
+    flex-direction: row;
+}

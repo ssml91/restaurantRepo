@@ -424,7 +424,7 @@ td img {
 #search-input {
   margin: 20px 0;
   padding: 10px;
-  border: solid 1px #ccc;
+  border: solid 1px #000;
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   width: 300px;
@@ -441,6 +441,11 @@ td img {
   cursor: pointer;
   border-radius: 0 4px 4px 0;
   color: #000;
+}
+
+.col div {
+  display: flex;
+  flex-direction: row;
 }
 
 * {
@@ -1020,5 +1025,85 @@ article {
 
 .slide:nth-child(4) {
   background: url("../images/carousel-04.jpg") no-repeat center top/cover;
+}
+
+.componentsParallax {
+  height: 600px;
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana,  Tahoma, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1, .pimg2, .pimg3 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /*
+    fixed = parallax
+    scroll = normal
+    */
+}
+
+@media (min-width: 600px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: fixed;
+  }
+}
+
+.pimg1 {
+  background-image: url("../images/farmersMarket.png");
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url("../images/berries.png");
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url("../images/flowers.png");
+  min-height: 400px;
+}
+
+.componentsParallax section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .trans {
+  background-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */
