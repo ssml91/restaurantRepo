@@ -22,7 +22,7 @@ body {
     padding: 10px 0 10px 0;
 }
 .sectionHome {
-    margin: 2em auto;
+    margin: 2em 0 auto;
     ul {
         list-style-type: none;
     li {
@@ -195,18 +195,18 @@ p {
 }
 }
 #comp5 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2em 0;
-    text-align: center;
-    margin-bottom: 4em;
+    width: 90%;
     background-color: #c4bdac;
-    h1 {
-        font-size: 1.5em;
-    }
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 4em;
     i {
         font-size: 2em;
     }
+    @include break (600px) {
+    width: 80%;
+}
 }
 #example {
     text-align: center;
