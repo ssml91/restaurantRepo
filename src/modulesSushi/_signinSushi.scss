@@ -3,27 +3,27 @@
     * {
         box-sizing: border-box;
     }
-    // body {
-    //     font-family: 'Inria Sans', sans-serif;
-    //     background-image: url(../images/dish4.jpg); 
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     display: flex;
-    //     height: 100vh;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     margin: -20px 0 30px;
-    //     font-weight: 400;
-    //     font-size: 24px;
+    .sushiBody {
+        font-family: 'Inria Sans', sans-serif;
+        background-image: url(../images/dish4.jpg); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: -20px 0 30px;
+        font-weight: 400;
+        font-size: 24px;
       
-    // }
+    }
 
     .signinh2 {
         font-weight: bold;
         margin: 0;
         font-family: 'Inria Sans', sans-serif;
-    }
+    
 
     .signinp {
         font-size: 14px;
@@ -299,4 +299,4 @@ a.logo {
       /* -webkit-align-items: center; */
         
     }
-}
+}}
