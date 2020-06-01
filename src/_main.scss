@@ -36,9 +36,54 @@ body {
 
         
     }
+<<<<<<< HEAD
     }
     #componentsContainer {
         width: 960px;
+=======
+    
+    #whereToStartGrid {
+        @include break(900px) {
+        display: grid;
+        grid-template-columns: 370px 370px;
+        grid-template-rows: 180px 100px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+        div {
+            margin: 0 1em;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Abril Fatface', serif;
+        }
+        #startGrid1 {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+        }
+        #startGrid2 {
+            grid-column: 2 / span 1;
+            grid-row: 1;
+        }
+        #startGrid3 {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+    }
+    }
+    .displayCode {
+        display: none;
+        background-color: #c4bdac;
+        margin: 0 10%;
+        margin-bottom: 3em;
+        background-color: $dkGray;
+        margin: 0 10% 0 10%;
+        @include break(600px) {
+            display: block;
+        }
+    
+>>>>>>> d06816340c244c10da928b28faa3f7315ac99fee
     }
 #whereToStartGrid {
     display: grid;
@@ -91,7 +136,7 @@ button {
     cursor: pointer;
 }
 #homeDescription {
-    width: 800px;
+    width: 80%;
     margin: 8em auto;
     display: flex;
     flex-direction: column;
@@ -123,6 +168,15 @@ button {
     }
     }
 #componentGrid {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Abril Fatface', serif;
+    }
+    @include break(900px) {
     display: grid;
     grid-template-columns: 370px 370px;
     grid-template-rows: 250px 380px 100px;
@@ -132,11 +186,7 @@ button {
     div {
         margin: 0 1em;
     }
-    a {
-        text-decoration: none;
-        color: #000;
-        font-family: 'Abril Fatface', serif;
-    }
+}
 }
 #example {
     text-align: center;
