@@ -282,14 +282,15 @@ a.logo {
     }
     .signinfooter{
         width: 100%;
-        display:absolute;
+        position:absolute;
+        bottom:0;
         display: inline-flex;
         align-items: center;
         text-align: center;
         width: 100%;
         height:50px;
         padding-top: 10px;
-        padding-bottom:10px;
+       
         margin-top: 20px;
         background-color: #111;
         color:#fff;
@@ -299,4 +300,5 @@ a.logo {
       /* -webkit-align-items: center; */
         
     }
+    
 }
