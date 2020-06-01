@@ -36,12 +36,7 @@ body {
 
         
     }
-<<<<<<< HEAD
     }
-    #componentsContainer {
-        width: 960px;
-=======
-    
     #whereToStartGrid {
         @include break(900px) {
         display: grid;
@@ -83,7 +78,6 @@ body {
             display: block;
         }
     
->>>>>>> d06816340c244c10da928b28faa3f7315ac99fee
     }
 #whereToStartGrid {
     display: grid;
@@ -143,11 +137,12 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    p { padding-bottom: 10px;
-        i {
-            padding: 5px;
-            font-size: 5em;
-        }
+    p { 
+        padding-bottom: 10px;
+    }
+    i {
+        padding: 5px;
+        font-size: 2.5em;
     }
 }
 #gridDesc {
@@ -178,11 +173,12 @@ button {
     }
     @include break(900px) {
     display: grid;
-    grid-template-columns: 370px 370px;
+    grid-template-columns: 400px 400px;
     grid-template-rows: 250px 380px 100px;
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
+    text-align: left;
     div {
         margin: 0 1em;
     }
