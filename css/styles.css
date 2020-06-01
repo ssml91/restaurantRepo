@@ -1120,4 +1120,18 @@ article {
 .ptext .trans {
   background-color: transparent;
 }
+
+.typography ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.typography ul li h1, .typography ul li h2 {
+  text-align: left;
+}
+
+.typography ul li h3, .typography ul li h4, .typography ul li h5, .typography ul li h6 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
