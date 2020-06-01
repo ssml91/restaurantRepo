@@ -5,7 +5,7 @@
     }
     .sushiBody {
         font-family: 'Inria Sans', sans-serif;
-        background-image: url(../images/dish4.jpg); 
+        background-image: url('../images/dish4.jpg'); 
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -23,7 +23,7 @@
         font-weight: bold;
         margin: 0;
         font-family: 'Inria Sans', sans-serif;
-    
+    }
 
     .signinp {
         font-size: 14px;
@@ -215,7 +215,8 @@ button.ghost {
 
 .signinfooter{
     width: 100%;
-    display:absolute;
+    position:absolute;
+    bottom:0;
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -231,6 +232,7 @@ button.ghost {
   /* -webkit-align-items: center; */
     
 }
+
 .social-container {
   margin-right: 20px 0;
 }
@@ -299,4 +301,4 @@ a.logo {
       /* -webkit-align-items: center; */
         
     }
-}}
+}
