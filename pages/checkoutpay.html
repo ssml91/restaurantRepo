@@ -19,15 +19,14 @@
         </header>
         <!-- section>h2{Shipping Information}+form>div.cols>div.col.checkout>fieldset>legend{Promo or Coupon Code+label}+{Enter code to apply discount:} -->
         <section>
-            <h2 class= "checkouth">Shipping Information</h2>
+            <h2 class="checkouth2">Shipping Information</h2>
             <form action="#" method="GET" id="checkoutForm">
                 <div class="checkout_cols">
                     <div class="checkoutcol">
                        
-                        <!-- fieldset>legend{Ship to:}+div.row*6>label+input -->
-                        <fieldset class="fieldset1">
-                            <legend>Ship to:</legend>
-
+          <!-- fieldset>legend{Ship to:}+div.row*6>label+input -->
+                     <fieldset class="fieldset1">
+                       <legend>Ship to:</legend>
                             <div class="row">
                                 <label for="fNmae">First Name:</label>
                                 <input type="text" name="fNmae" id="fName" required></div>
@@ -46,14 +45,12 @@
                             
                                 <label for="state">State:</label>
                                 <select name="state" id="state">
-                                    
-									<option value="CA">CA</option>
-						
-                                </select>
+                                <option value="CA">CA</option>
+						        </select>
                             </div>
-                            <fieldset class="innerfieldset">
+                               <fieldset class="innerfieldset">
                                
-                                        <legend>Aditional information</legend>
+                                  <legend>Aditional information</legend>
                                         <div class="row">
                                         <label for="email">Email address:</label>
                                         <input type="email" name="email" id="email" required>
@@ -67,9 +64,8 @@
                          
                         
                           
-                            <fieldset class="fieldset2">
-                                <legend>Payment Details</legend>
-                                
+                        <fieldset class="fieldset2">
+                            <legend>Payment Details</legend>
                                 <div class="row">
                                         <input type="radio" id="visa" name="cc">
                                         <label for="visa">Visa</label>
@@ -78,47 +74,47 @@
                                         <input type="radio" id="amex" name="cc">
                                         <label for="amex">American Express</label>
                                 </div>
-                                    <div class="row">
+                                <div class="row">
                                         <label for="cardName">Name <span>as it appears on your card</span></label>
                                         <input type="text" id="cardName" name="cc_name" required>
-                                    </div>
-                                    <div class="row">
+                                 </div>
+                                  <div class="row">
                                         <label for="cardNum">Card Number</label>
                                         <input type="number" id="cardNum" name="card_number" required>
-                                    </div>
-                                    <div class="row">
+                                  </div>
+                                  <div class="row">
                                         <label for="exp">Expire date</label>
                                         <input type="month" id="exp" name="experiation" required>
-                                    </div>
-                                    <div class="row">
+                                  </div>
+                                   <div class="row">
                                         <label for="cvv">Security number</label>
                                         <input type="number" id="cvv" name="cvv" required pattern="[0-9]{3}">
                                    </div>
-                                   <fieldset class="innerfieldset">
-                                    <legend>Promo or Coupon Code</legend>
-                                    <div class="row">
-                                        <label for="promo">Enter code to apply discount: </label>
-                                    <input type="text" name="promo" id="promo" placeholder="enter code here">
-                                    <input type="button" value="Apply">  
-                                   </div>
-                                   <div class="row">
-                                    <label for="paygcard">Do you want to use Gift Card?:</label> </label>
-                                <input type="text" name="paygcard" id="paugcard" placeholder="enter your gift card number here">
-                                <input type="button" value="Apply">  
-                               </div>
-                                </fieldset>
+                                     <fieldset class="innerfieldset">
+                                        <legend>Promo or Coupon Code</legend>
+                                           <div class="row">
+                                             <label for="promo">Enter code to apply discount: </label>
+                                             <input type="text" name="promo" id="promo" placeholder="enter code here">
+                                             <input type="button" value="Apply">  
+                                          </div>
+                                          <div class="row">
+                                            <label for="paygcard">Do you want to use Gift Card?:</label> 
+                                           <input type="text" name="paygcard" id="paugcard" placeholder="enter your gift card number here">
+                                           <input type="button" value="Apply">  
+                                          </div>
+                                      </fieldset>
                                 </fieldset>
                             </div> <!--end checkoutcol--> 
-                            </fieldset>
+                        
                               <fieldset class="fieldset3">
                                     <legend>Submit your order</legend>
                                     <div class="row">
-                                    <input type="submit">
-                                    </div>
-                                    <p class= checkoutp>Do you need more help? &nbsp; &nbsp; Call us for assistance:</p>
-                                         <a href="tel:888-123-4567"> 888-123-4567 </a>
+                                     <input type="submit">
+                                      <p class= checkoutp>Do you need more help?</p> <p class= checkoutp>Call us for assistance:<a href="tel:888-123-4567"> 888-123-4567 </a></p>
+                                         
+                                        </div>
                                 </fieldset>
-                            </div>
+                          
                       
                     
                 </div><!--end checkout_cols-->

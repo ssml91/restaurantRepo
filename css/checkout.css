@@ -2,7 +2,7 @@
   margin: 0 auto;
 
 }
-h1, h2 {
+.checkouth1, .checkouth2 {
   text-align: center;
   margin-top:10px ;
   margin-bottom: 10px;
@@ -17,11 +17,11 @@ h1, h2 {
   .row {
     margin-bottom: .5em;
   }
-  input {
-    border: solid 1px #99b8a8;
+  .row input {
+    border: solid 1px #999;
     padding: .2em;
   }
-  label {
+  .row label {
     display: block;
   }
   input[id="address"] {
@@ -35,14 +35,19 @@ h1, h2 {
 }
 .checkoutp {
   padding-left: 5px;
+  text-align: left;
+}
+.fieldset3 .row {
+  text-align: left;
+  letter-spacing: 1px;
 }
 
 
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
   
     .fieldset3 {
-      width: 96%;
+      width: 89%;
       margin-left: 15px;
       margin-right: 15px;
     }
@@ -66,8 +71,21 @@ h1, h2 {
          clear: both;
        }
        .checkoutp {
-         padding:2px;
-         max-width: 940px;
+         padding: 2px;
+         /* max-width: 940px; */
          text-align: left;
        }
+      .fieldset3 .row {
+        display: flex;
+        /* flex-direction: column;
+        justify-content: center; */
+        
+      }
+  }
+  @media screen and (min-width: 960px) {
+    .fieldset3 {
+      width: 93%;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
   }
