@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="../../css/blueRoom.css">
+    <link rel="stylesheet" href="../../css/demoCoffee.css">
     <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Lato&display=swap" rel="stylesheet">
     <title>Blue Room Coffee</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+            </span>
         <div class="logo"><h1><a href="#">Blue Room Coffee</a></h1></div>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="blueRoomMenu.html">MENU</a></li>
-            <li><a href="#">CONTACT US</a></li>
+        <ul class="main-nav" id="js-menu">
+            <li class="currentNav"><a href="#" class="nav-links">HOME</a></li>
+            <li><a href="blueRoomMenu.html" class="nav-links">MENU</a></li>
+            <li><a href="#" class="nav-links">CONTACT US</a></li>
         </ul>
     </nav>
     <div class="slider">
@@ -63,6 +66,6 @@
         &copy; 2020 BLUE ROOM COFFEE
     </footer>
     <script src="../../scripts/carousel.js"></script>
-    <script src="../../scripts/coffeeNav.js"></script>
+    <script src="../../scripts/main.js"></script>
 </body>
 </html>
