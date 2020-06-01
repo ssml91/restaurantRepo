@@ -69,7 +69,8 @@ input[type=text], input[type=password] {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* ===================================================== */
@@ -91,7 +92,8 @@ h1 {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* ======================================================checkout form */
@@ -157,6 +159,8 @@ label[for="visa"], label[for="mc"], label[for="amex"] {
   .checkoutcol {
     padding-left: 10px;
     padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .checkoutcols {
@@ -166,7 +170,8 @@ label[for="visa"], label[for="mc"], label[for="amex"] {
   }
   .fieldset1, .fieldset2 {
     background-color: #FFF;
-    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
     float: left;
     width: calc(100% - 50%);
     overflow: hidden;
@@ -186,7 +191,8 @@ label[for="visa"], label[for="mc"], label[for="amex"] {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -201,7 +207,9 @@ body {
   width: 100%;
   border: 1px solid #ccc;
   list-style: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding-top: 20px;
 }
@@ -249,7 +257,9 @@ article {
 
 #gCard_description {
   list-style: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -272,18 +282,27 @@ article {
     padding-top: 10px;
   }
   #gCard_main {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 400px 400px;
+    -ms-grid-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
+    -ms-grid-rows: 400px 400px;
+        grid-template-rows: 400px 400px;
     /* align-items: start; */
-    justify-content: top;
+    -webkit-box-pack: top;
+        -ms-flex-pack: top;
+            justify-content: top;
     text-align: center;
     border: solid 1px #ccc;
     padding-top: 20px;
   }
   #description {
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: 1px solid #ccc;
     padding-top: 15px;
   }
@@ -300,22 +319,30 @@ article {
     background-color: #fff;
   }
   #gCard_main {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 400px;
+    -ms-grid-columns: 300px 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+    -ms-grid-rows: 400px;
+        grid-template-rows: 400px;
     /* align-items: start; */
-    justify-content: top;
+    -webkit-box-pack: top;
+        -ms-flex-pack: top;
+            justify-content: top;
     text-align: center;
     border: solid 1px #ccc;
     padding-top: 20px;
   }
   #gCard_description {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     padding-top: 15px;
   }
   #gCard_col1, #gCard_col2 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   #gCard_col1 {
     width: 100%;
@@ -328,7 +355,9 @@ article {
     list-style: none;
     margin-left: 0;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #ccc;
   }
 }
