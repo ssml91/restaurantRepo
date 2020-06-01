@@ -34,11 +34,8 @@
     li {
         
        //text-align: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left:5px;
-        margin-right: 15px;
-        @include break(600px) {
+       margin: 15px 30px;
+        @include break(701px) {
             margin: 0;
         }
     }

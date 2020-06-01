@@ -1,9 +1,9 @@
-// * {
-//     padding: 0px;
-//     margin: 0px;
-//     box-sizing: border-box;
-// }
-//FIRST CAROUSEL
+body {
+    overflow-x: hidden;
+}
+.componentsCarousel {
+    margin: 5em auto;
+}
 .slider {
     position: relative;
     height: 80vh;
@@ -41,12 +41,12 @@
 .buttons {
     button#next {
         position: absolute;
-        top: 40%;
+        top: 50%;
         right: 15px;
     }
     button#prev {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 15px;
     }
 }
