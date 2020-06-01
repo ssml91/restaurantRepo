@@ -141,7 +141,7 @@ button {
 }
 
 #homeDescription {
-  width: 800px;
+  width: 80%;
   margin: 8em auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,29 +196,36 @@ button {
 }
 
 #componentGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 370px 370px;
-      grid-template-columns: 370px 370px;
-  -ms-grid-rows: 250px 380px 100px;
-      grid-template-rows: 250px 380px 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 3em;
-}
-
-#componentGrid div {
-  margin: 0 1em;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #componentGrid a {
   text-decoration: none;
   color: #000;
   font-family: 'Abril Fatface', serif;
+}
+
+@media (min-width: 900px) {
+  #componentGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 370px 370px;
+        grid-template-columns: 370px 370px;
+    -ms-grid-rows: 250px 380px 100px;
+        grid-template-rows: 250px 380px 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3em;
+  }
+  #componentGrid div {
+    margin: 0 1em;
+  }
 }
 
 #example {
@@ -788,10 +795,6 @@ body {
 }
 
 /* logom form======================================== */
-body {
-  width: 960px;
-}
-
 main {
   max-width: 960px;
   width: 90%;

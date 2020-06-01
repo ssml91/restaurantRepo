@@ -92,7 +92,7 @@ button {
     cursor: pointer;
 }
 #homeDescription {
-    width: 800px;
+    width: 80%;
     margin: 8em auto;
     display: flex;
     flex-direction: column;
@@ -124,6 +124,15 @@ button {
     }
     }
 #componentGrid {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Abril Fatface', serif;
+    }
+    @include break(900px) {
     display: grid;
     grid-template-columns: 370px 370px;
     grid-template-rows: 250px 380px 100px;
@@ -133,11 +142,7 @@ button {
     div {
         margin: 0 1em;
     }
-    a {
-        text-decoration: none;
-        color: #000;
-        font-family: 'Abril Fatface', serif;
-    }
+}
 }
 #example {
     text-align: center;

@@ -48,7 +48,7 @@ p { font-size: .8em; }
 
 button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatface', cursive; cursor: pointer; }
 
-#homeDescription { width: 800px; margin: 8em auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#homeDescription { width: 80%; margin: 8em auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 #homeDescription p { padding-bottom: 10px; }
 
@@ -58,11 +58,12 @@ button { background-color: #efeeee; padding: 1em 3em; font-family: 'Abril Fatfac
   #gridDesc div { margin: 2em; }
   #gridDesc h1 { text-align: center; } }
 
-#componentGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 250px 380px 100px; grid-template-rows: 250px 380px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; }
-
-#componentGrid div { margin: 0 1em; }
+#componentGrid { width: 80%; text-align: center; margin: 0 auto; }
 
 #componentGrid a { text-decoration: none; color: #000; font-family: 'Abril Fatface', serif; }
+
+@media (min-width: 900px) { #componentGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 250px 380px 100px; grid-template-rows: 250px 380px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; }
+  #componentGrid div { margin: 0 1em; } }
 
 #example { text-align: center; }
 
@@ -194,8 +195,6 @@ body { margin: 0 auto; }
   #gridContainer #eleven2 { -ms-grid-column: 12; -ms-grid-column-span: 1; grid-column: 12 / span 1; -ms-grid-row: 11; grid-row: 11; } }
 
 /* logom form======================================== */
-body { width: 960px; }
-
 main { max-width: 960px; width: 90%; margin: auto; padding: 1em; background-color: #fff; position: relative; overflow: hidden; }
 
 fieldset { padding: 1em; }
