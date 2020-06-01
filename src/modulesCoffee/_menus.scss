@@ -1,7 +1,7 @@
 #menuGrid {
     text-align: center;
     margin: 3em 0;
-    @include break (600px) {
+    @include break (760px) {
         display: grid;
         grid-template-columns: 400px 350px;
         grid-template-rows: 410px 410px 410px 410px;
