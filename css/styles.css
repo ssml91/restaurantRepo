@@ -185,9 +185,9 @@ body {
   padding-bottom: 10px;
 }
 
-.sectionHome #homeDescription p i {
+.sectionHome #homeDescription i {
   padding: 5px;
-  font-size: 5em;
+  font-size: 2.5em;
 }
 
 @media (min-width: 400px) {
@@ -222,11 +222,12 @@ body {
 @media (min-width: 900px) {
   .sectionHome #componentGrid {
     display: grid;
-    grid-template-columns: 370px 370px;
+    grid-template-columns: 400px 400px;
     grid-template-rows: 250px 380px 100px;
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
+    text-align: left;
   }
   .sectionHome #componentGrid div {
     margin: 0 1em;
