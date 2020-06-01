@@ -2,20 +2,20 @@
 
        
 
-   
+    
     let storeInfo = [
-                { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Miramar Store, 97 Gates Road',     'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
-                { 'image': 'https://via.placeholder.com/400x200.png','address': 'Mira Mesa Store, 202-B Laffey Circle',   'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
-                { 'image': 'https://via.placeholder.com/400x200.png','address': 'Kearny Mesa Store, 1540 D Lovell Ct',   'phone' : '(619)851-4153', 'hours': '4:00pm-11:00pm'},
-                { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Clairemont Store, 4545 La Jolla Village Square', 'phone' : '(619)453-8562', 'hours': '9:00am-5:00pm'},
-                { 'image': 'https://via.placeholder.com/400x200.png','address': 'University City Store, 2267 Lago Ventana',    'phone' : '(858)256-2044', 'hours': '9:00am-5:00pm'},
-                {'image': 'https://via.placeholder.com/400x200.png','address': 'San Diego Store, 1570 Iris Avenue',   'phone' : '(858)256-9651', 'hours': '4:00pm-11:00pm'},
+                { 'image': '../../images/californiaRoll.png', 'item': 'California Roll',     'price' : '10.50', 'description': 'avocado, mango, crab'},
+                { 'image': '../../images/caterpillarRoll.png','item': 'Caterpillar Roll ',   'price' : '12.95', 'description': 'avocado, tuna, eel sauce'},
+                { 'image': '../../images/sushi-crunchy-roll.png','item': 'Crunchy Roll',   'price' : '12.50', 'description': 'tempura crusted, salmon'},
+                { 'image': '../../images/rainbowRoll.png', 'item': 'Rainbow Roll', 'price' : '10.95', 'description': 'salmon, yellowtail, tuna, egg'},
+                { 'image': '../../images/salmonSashimi.png','item': 'Salmon Sashimi',    'price' : '10.25', 'description': 'salmon and sushi rice'},
+               
+                {'image': '../../images/kidsBentoSushi.png','item': 'Kids Bento',   'price' : '8.00', 'description': 'onigiri for the kids'}
             ];
 
             window.onload = () => {
                 loadTableData(storeInfo);
             }
-
             
             //search
             $('#search-input').on('keyup', function(){
@@ -32,11 +32,11 @@
 
                 for(var i=0; i< data.length; i++ ){
                     value = value.toLowerCase()
-                    var address = data[i].address.toLowerCase();
-                    var phone = data[i].phone.toLowerCase();
-                    if (address.includes(value)){
+                    var description = data[i].description.toLowerCase();
+                    var item = data[i].item.toLowerCase();
+                    if (description.includes(value)){
                         filterData.push(data[i])
-                    } else if (phone.includes(value)) {
+                    } else if (item.includes(value)) {
                         filterData.push(data[i])
                     }
                 } return filterData
@@ -53,6 +53,7 @@
                 var dataType = $(this).data('type');
 
                 console.log('column was clicked', column, order, dataType);
+               
                 if( (dataType == 'image') || (dataType =='time')) {
                    
                     return;
@@ -68,7 +69,7 @@
                         
                     } else {
                         storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
-                        
+                       
                     }
                    
                     text += '&#9650'
@@ -79,9 +80,9 @@
                     $(this).removeClass('asc');
                     if(dataType == 'number'){
                         storeInfo = storeInfo.sort((a,b) => parseFloat( a[column]) < parseFloat(b[column]) ? 1: -1)
-                        
+                        console.log('price was clicked');
                     } else {
-                        
+                        console.log('something else was clicked');
                         storeInfo = storeInfo.sort((a,b) => a[column] < b[column] ? 1: -1)
                     }
 
@@ -110,9 +111,9 @@
                     dataHtml += `<tr>
                                     
                                     <td>${'<img src="' + info.image +'">'}</td>
-                                    <td>${info.address}</td>
-                                    <td>${info.phone}</td>
-                                    <td>${info.hours}</td>
+                                    <td>${info.item}</td>
+                                    <td>${info.price}</td>
+                                    <td>${info.description}</td>
                                 </tr>`;
                 }
                 console.log(dataHtml);
@@ -120,7 +121,5 @@
                 tableBody.innerHTML= dataHtml;
             } 
 
-
-            
 
             

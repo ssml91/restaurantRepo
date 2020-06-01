@@ -1,19 +1,20 @@
 
 .navbar {
+    
     font-size: .8em;
-    background-color: $blue;
+    // background-color: $wasabi;
     padding-bottom: 10px;
     .main-nav {
         list-style-type: none;
         display: none;
         
         .currentNav a {
-            color:$grey;
+            color: #000;
         }
         
         .nav-links {
             text-decoration: none;
-            color: rgba(255,255,255, 0.7);
+            color: $wasabi;
             @include break(600px) {
                 margin-left: 40px;
                 &:hover {
@@ -28,6 +29,7 @@
             margin-right: 30px;
             flex-direction: row;
             justify-content: flex-end;
+            align-items: left;
         }
     }
     
@@ -122,7 +124,7 @@
                 
                
                 
-                background-color: $gold;
+                background-color: $mdGray;
                
                 color: $dkBlue;
                   
@@ -134,7 +136,7 @@
                     text-decoration: none;
                     &:hover {
                        color: #fff;
-                       background-color: $gold;
+                       background-color: $mdGray;
                     }
                 }
         }
