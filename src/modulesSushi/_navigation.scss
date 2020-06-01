@@ -2,19 +2,19 @@
 .navbar {
     
     font-size: .8em;
-    // background-color: $wasabi;
+    background-color: $black;
     padding-bottom: 10px;
     .main-nav {
         list-style-type: none;
         display: none;
         
         .currentNav a {
-            color: #000;
+            color: orangered;
         }
         
         .nav-links {
             text-decoration: none;
-            color: $wasabi;
+            
             @include break(600px) {
                 margin-left: 40px;
                 &:hover {
@@ -48,7 +48,7 @@
         font-style: bold;
         text-decoration: none;
         color: #fff;
-        font-family: 'Spicy Rice', sans-serif;
+       
         display: inline-block;
         font-size: 22px;
         margin-top: 10px;
