@@ -56,6 +56,10 @@ body {
   color: #bb3a1e;
 }
 
+.sectionHome #componentsContainer {
+  width: 960px;
+}
+
 .sectionHome #whereToStartGrid {
   display: -ms-grid;
   display: grid;
@@ -107,7 +111,6 @@ body {
 }
 
 .sectionHome .displayCode {
-  display: none;
   background-color: #c4bdac;
   margin: 0 10%;
   margin-bottom: 3em;
@@ -129,8 +132,9 @@ p {
 
 button {
   background-color: #efeeee;
-  padding: 1em 3em;
+  padding: .8em 2.5em;
   font-family: 'Abril Fatface', cursive;
+  border: solid 1px #c7c7c7;
   cursor: pointer;
 }
 
@@ -1131,6 +1135,10 @@ body {
   overflow-x: hidden;
 }
 
+.componentsCarousel {
+  margin: 5em auto;
+}
+
 .slider {
   position: relative;
   height: 80vh;
@@ -1176,13 +1184,13 @@ body {
 
 .buttons button#next {
   position: absolute;
-  top: 575%;
+  top: 50%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 575%;
+  top: 50%;
   left: 15px;
 }
 

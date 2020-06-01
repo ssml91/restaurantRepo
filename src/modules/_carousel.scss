@@ -1,6 +1,9 @@
 body {
     overflow-x: hidden;
 }
+.componentsCarousel {
+    margin: 5em auto;
+}
 .slider {
     position: relative;
     height: 80vh;
@@ -38,12 +41,12 @@ body {
 .buttons {
     button#next {
         position: absolute;
-        top: 575%;
+        top: 50%;
         right: 15px;
     }
     button#prev {
         position: absolute;
-        top: 575%;
+        top: 50%;
         left: 15px;
     }
 }
