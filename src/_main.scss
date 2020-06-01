@@ -87,16 +87,17 @@ body {
     
     }
 }
-h1 {
+.bodyHome h1 {
     font-family: 'Abril Fatface', cursive;
+    font-size: 1.5em;
 }
 p {
     font-size: .8em;
 }
-button {
-    background-color: #efeeee;
+#homeDescription button, .sectionHome button, #homeComponents button{
+    color: #fff;
+    background-color: rgb(37, 37, 37);
     padding: 1em 3em;
-    border: solid 1px #dddbdb;
     font-family: 'Abril Fatface', cursive;
     cursor: pointer;
 }
@@ -157,7 +158,6 @@ button {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5em;
-
     div {
         margin-bottom: 2em;
     }
@@ -169,11 +169,10 @@ button {
     @include break(900px) {
     display: grid;
     grid-template-columns: 370px 370px;
-    grid-template-rows: 250px 350px 100px;
+    grid-template-rows: 250px 350px;
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
-    text-align: left;
     div {
         margin: 0 1em;
     }
@@ -193,12 +192,21 @@ button {
         grid-column: 2 / span 1;
         grid-row: 2;
     }
-    #comp5 {
-        grid-column: 1 / span 2;
-        grid-row: 3;
-        text-align: center;
-    }
 }
+}
+#comp5 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 4em;
+    background-color: #c4bdac;
+    h1 {
+        font-size: 1.5em;
+    }
+    i {
+        font-size: 2em;
+    }
 }
 #example {
     text-align: center;
