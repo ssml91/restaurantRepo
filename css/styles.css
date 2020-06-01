@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+* h1, * h2 {
+  font-family: "Abril Fatface", cursive;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -171,6 +175,17 @@ footer {
   #example h1 {
     text-align: center;
   }
+}
+
+.top {
+  border: solid 1px #000;
+  border-radius: 10px;
+  background-color: #efeeee;
+  float: right;
+  color: #000;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
 }
 
 .navbar {
@@ -438,7 +453,6 @@ td img {
   float: left;
   margin: 20px 0;
   width: 100px;
-  cursor: pointer;
   border-radius: 0 4px 4px 0;
   color: #000;
 }
