@@ -35,7 +35,7 @@
         
        //text-align: center;
        margin: 15px 30px;
-        @include break(701px) {
+        @include break(600px) {
             margin: 0;
         }
     }

@@ -60,69 +60,7 @@ body {
   color: #bb3a1e;
 }
 
-@media (min-width: 900px) {
-  .sectionHome ul #whereToStartGrid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 370px 370px;
-        grid-template-columns: 370px 370px;
-    -ms-grid-rows: 180px 100px;
-        grid-template-rows: 180px 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 3em;
-  }
-  .sectionHome ul #whereToStartGrid div {
-    margin: 0 1em;
-  }
-  .sectionHome ul #whereToStartGrid a {
-    text-decoration: none;
-    color: #000;
-    font-family: 'Abril Fatface', serif;
-  }
-  .sectionHome ul #whereToStartGrid #startGrid1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / span 1;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-  .sectionHome ul #whereToStartGrid #startGrid2 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / span 1;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-  .sectionHome ul #whereToStartGrid #startGrid3 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / span 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-}
-
-.sectionHome ul .displayCode {
-  display: none;
-  background-color: #c4bdac;
-  margin: 0 10%;
-  margin-bottom: 3em;
-  background-color: #c4bdac;
-  margin: 0 10% 0 10%;
-}
-
-@media (min-width: 600px) {
-  .sectionHome ul .displayCode {
-    display: block;
-  }
-}
-
-.sectionHome ul #whereToStartGrid {
+.sectionHome #whereToStartGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 370px 370px;
@@ -138,17 +76,17 @@ body {
   margin-bottom: 3em;
 }
 
-.sectionHome ul #whereToStartGrid div {
+.sectionHome #whereToStartGrid div {
   margin: 0 1em;
 }
 
-.sectionHome ul #whereToStartGrid a {
+.sectionHome #whereToStartGrid a {
   text-decoration: none;
   color: #000;
   font-family: 'Abril Fatface', serif;
 }
 
-.sectionHome ul #whereToStartGrid #startGrid1 {
+.sectionHome #whereToStartGrid #startGrid1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / span 1;
@@ -156,7 +94,7 @@ body {
   grid-row: 1;
 }
 
-.sectionHome ul #whereToStartGrid #startGrid2 {
+.sectionHome #whereToStartGrid #startGrid2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
@@ -164,7 +102,7 @@ body {
   grid-row: 1;
 }
 
-.sectionHome ul #whereToStartGrid #startGrid3 {
+.sectionHome #whereToStartGrid #startGrid3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
@@ -172,35 +110,37 @@ body {
   grid-row: 2;
 }
 
-.sectionHome ul .displayCode {
+.sectionHome .displayCode {
+  display: none;
   background-color: #c4bdac;
   margin: 0 10%;
   margin-bottom: 3em;
+  background-color: #c4bdac;
+  margin: 0 10% 0 10%;
 }
 
 @media (min-width: 600px) {
-  .sectionHome ul .displayCode {
+  .sectionHome .displayCode {
     display: block;
   }
 }
 
-.sectionHome h1 {
+h1 {
   font-family: 'Abril Fatface', cursive;
 }
 
-.sectionHome p {
+p {
   font-size: .8em;
 }
 
-.sectionHome button {
+button {
   background-color: #efeeee;
-  padding: .8em 2.5em;
+  padding: 1em 3em;
   font-family: 'Abril Fatface', cursive;
-  border: solid 1px #c7c7c7;
   cursor: pointer;
 }
 
-.sectionHome #homeDescription {
+#homeDescription {
   width: 80%;
   margin: 8em auto;
   display: -webkit-box;
@@ -220,17 +160,17 @@ body {
           align-items: center;
 }
 
-.sectionHome #homeDescription p {
+#homeDescription p {
   padding-bottom: 10px;
 }
 
-.sectionHome #homeDescription i {
+#homeDescription p i {
   padding: 5px;
-  font-size: 2.5em;
+  font-size: 5em;
 }
 
 @media (min-width: 400px) {
-  .sectionHome #gridDesc {
+  #gridDesc {
     text-align: center;
     margin: 3em auto;
     display: -webkit-box;
@@ -247,32 +187,32 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .sectionHome #gridDesc div {
+  #gridDesc div {
     margin: 2em;
   }
-  .sectionHome #gridDesc h1 {
+  #gridDesc h1 {
     text-align: center;
   }
 }
 
-.sectionHome #componentGrid {
+#componentGrid {
   width: 80%;
   text-align: center;
   margin: 0 auto;
 }
 
-.sectionHome #componentGrid a {
+#componentGrid a {
   text-decoration: none;
   color: #000;
   font-family: 'Abril Fatface', serif;
 }
 
 @media (min-width: 900px) {
-  .sectionHome #componentGrid {
+  #componentGrid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 400px 400px;
-        grid-template-columns: 400px 400px;
+    -ms-grid-columns: 370px 370px;
+        grid-template-columns: 370px 370px;
     -ms-grid-rows: 250px 380px 100px;
         grid-template-rows: 250px 380px 100px;
     -webkit-box-pack: center;
@@ -282,18 +222,17 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 3em;
-    text-align: left;
   }
-  .sectionHome #componentGrid div {
+  #componentGrid div {
     margin: 0 1em;
   }
 }
 
-.sectionHome #example {
+#example {
   text-align: center;
 }
 
-.sectionHome footer {
+footer {
   text-align: center;
   background-color: #c4bdac;
   padding: 1.5em;
@@ -301,7 +240,7 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  .sectionHome #gridDesc {
+  #gridDesc {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 320px 320px 320px;
@@ -318,15 +257,15 @@ body {
     margin: 0 auto;
     padding-bottom: 4em;
   }
-  .sectionHome #gridDesc div {
+  #gridDesc div {
     margin: 0 3em;
   }
-  .sectionHome #example h1 {
+  #example h1 {
     text-align: center;
   }
 }
 
-.sectionHome .top {
+.top {
   border: solid 1px #000;
   border-radius: 10px;
   background-color: #efeeee;
@@ -386,7 +325,7 @@ body {
   margin: 15px 30px;
 }
 
-@media (min-width: 701px) {
+@media (min-width: 600px) {
   .navbar li {
     margin: 0;
   }
@@ -1248,10 +1187,6 @@ body {
   overflow-x: hidden;
 }
 
-.componentsCarousel {
-  margin: 5em auto;
-}
-
 .slider {
   position: relative;
   height: 80vh;
@@ -1297,13 +1232,13 @@ body {
 
 .buttons button#next {
   position: absolute;
-  top: 50%;
+  top: 575%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 50%;
+  top: 575%;
   left: 15px;
 }
 

@@ -10,7 +10,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .bodyHome {
-    line-height: 1.6; 
+   
+    line-height: 1.6;
+    
+   
+    
 }
 .mainHome {
     margin-left: 5%;
@@ -30,14 +34,11 @@ body {
     &:hover {
         color: $rust;
         }
-
+        }
     }
-  
-
-        
-    }   
+    }
+    
     #whereToStartGrid {
-        @include break(900px) {
         display: grid;
         grid-template-columns: 370px 370px;
         grid-template-rows: 180px 100px;
@@ -65,7 +66,6 @@ body {
             grid-row: 2;
         }
     }
-    }
     .displayCode {
         display: none;
         background-color: #c4bdac;
@@ -78,42 +78,6 @@ body {
         }
     
     }
-#whereToStartGrid {
-    display: grid;
-    grid-template-columns: 370px 370px;
-    grid-template-rows: 180px 100px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
-    div {
-        margin: 0 1em;
-    }
-    a {
-        text-decoration: none;
-        color: #000;
-        font-family: 'Abril Fatface', serif;
-    }
-    #startGrid1 {
-        grid-column: 1 / span 1;
-        grid-row: 1;
-    }
-    #startGrid2 {
-        grid-column: 2 / span 1;
-        grid-row: 1;
-    }
-    #startGrid3 {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }
-}
-.displayCode {
-    background-color: #c4bdac;
-    margin: 0 10%;
-    margin-bottom: 3em;
-    @include break(600px) {
-        display: block;
-    }
-}
 }
 h1 {
     font-family: 'Abril Fatface', cursive;
@@ -123,9 +87,8 @@ p {
 }
 button {
     background-color: #efeeee;
-    padding: .8em 2.5em;
+    padding: 1em 3em;
     font-family: 'Abril Fatface', cursive;
-    border: solid 1px rgb(199, 199, 199);
     cursor: pointer;
 }
 #homeDescription {
@@ -136,12 +99,11 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    p { 
-        padding-bottom: 10px;
-    }
-    i {
-        padding: 5px;
-        font-size: 2.5em;
+    p { padding-bottom: 10px;
+        i {
+            padding: 5px;
+            font-size: 5em;
+        }
     }
 }
 #gridDesc {
@@ -172,12 +134,11 @@ button {
     }
     @include break(900px) {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 370px 370px;
     grid-template-rows: 250px 380px 100px;
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
-    text-align: left;
     div {
         margin: 0 1em;
     }
@@ -220,5 +181,4 @@ footer {
     text-decoration: none;
     width: 100px;
     text-align: center;
-}
 }
