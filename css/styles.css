@@ -60,12 +60,8 @@ body {
   color: #bb3a1e;
 }
 
-.sectionHome .componentsContainer {
-  width: 960px;
-}
-
 @media (min-width: 900px) {
-  .sectionHome .componentsContainer #whereToStartGrid {
+  .sectionHome ul #whereToStartGrid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 370px 370px;
@@ -80,29 +76,29 @@ body {
             align-items: center;
     margin-bottom: 3em;
   }
-  .sectionHome .componentsContainer #whereToStartGrid div {
+  .sectionHome ul #whereToStartGrid div {
     margin: 0 1em;
   }
-  .sectionHome .componentsContainer #whereToStartGrid a {
+  .sectionHome ul #whereToStartGrid a {
     text-decoration: none;
     color: #000;
     font-family: 'Abril Fatface', serif;
   }
-  .sectionHome .componentsContainer #whereToStartGrid #startGrid1 {
+  .sectionHome ul #whereToStartGrid #startGrid1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / span 1;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .sectionHome .componentsContainer #whereToStartGrid #startGrid2 {
+  .sectionHome ul #whereToStartGrid #startGrid2 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .sectionHome .componentsContainer #whereToStartGrid #startGrid3 {
+  .sectionHome ul #whereToStartGrid #startGrid3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
@@ -111,7 +107,7 @@ body {
   }
 }
 
-.sectionHome .componentsContainer .displayCode {
+.sectionHome ul .displayCode {
   display: none;
   background-color: #c4bdac;
   margin: 0 10%;
@@ -121,12 +117,12 @@ body {
 }
 
 @media (min-width: 600px) {
-  .sectionHome .componentsContainer .displayCode {
+  .sectionHome ul .displayCode {
     display: block;
   }
 }
 
-.sectionHome .componentsContainer #whereToStartGrid {
+.sectionHome ul #whereToStartGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 370px 370px;
@@ -142,17 +138,17 @@ body {
   margin-bottom: 3em;
 }
 
-.sectionHome .componentsContainer #whereToStartGrid div {
+.sectionHome ul #whereToStartGrid div {
   margin: 0 1em;
 }
 
-.sectionHome .componentsContainer #whereToStartGrid a {
+.sectionHome ul #whereToStartGrid a {
   text-decoration: none;
   color: #000;
   font-family: 'Abril Fatface', serif;
 }
 
-.sectionHome .componentsContainer #whereToStartGrid #startGrid1 {
+.sectionHome ul #whereToStartGrid #startGrid1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / span 1;
@@ -160,7 +156,7 @@ body {
   grid-row: 1;
 }
 
-.sectionHome .componentsContainer #whereToStartGrid #startGrid2 {
+.sectionHome ul #whereToStartGrid #startGrid2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
@@ -168,7 +164,7 @@ body {
   grid-row: 1;
 }
 
-.sectionHome .componentsContainer #whereToStartGrid #startGrid3 {
+.sectionHome ul #whereToStartGrid #startGrid3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
@@ -176,14 +172,14 @@ body {
   grid-row: 2;
 }
 
-.sectionHome .componentsContainer .displayCode {
+.sectionHome ul .displayCode {
   background-color: #c4bdac;
   margin: 0 10%;
   margin-bottom: 3em;
 }
 
 @media (min-width: 600px) {
-  .sectionHome .componentsContainer .displayCode {
+  .sectionHome ul .displayCode {
     display: block;
   }
 }
@@ -205,7 +201,6 @@ body {
 }
 
 .sectionHome #homeDescription {
-  text-align: center;
   width: 80%;
   margin: 8em auto;
   display: -webkit-box;
@@ -860,25 +855,9 @@ body {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  /* Bordered form */
-  /* Full-width inputs */
-  /* ===================================================== */
-  /* ======================================================checkout form */
-  /*form styles*/
-  /* ================================================================= */
-  /* gift card form */
-  /* ================================================ */
-  /* =============================================================== */
-  /* On screens that are 992px or less, set the background color to blue */
-}
-
-body main {
+/* logom form======================================== */
+main {
+  max-width: 960px;
   width: 90%;
   margin: auto;
   padding: 1em;
@@ -887,47 +866,42 @@ body main {
   overflow: hidden;
 }
 
-body fieldset {
+fieldset {
   padding: 1em;
 }
 
-body legend {
+legend {
   color: #fff;
 }
 
-body .row {
+.row {
   margin-bottom: .5em;
 }
 
-body input {
+input {
   border: solid 1px;
   padding: .2em;
 }
 
-body label {
+label {
   display: block;
 }
 
-body input[id="address"] {
+input[id="address"] {
   width: 250px;
 }
 
-body label[for="city"], body label[for="state"] {
+label[for="city"], label[for="state"] {
   display: inline-block;
 }
 
-body form {
-  border: 1px solid #f1f1f1;
-  max-width: 94%;
-  margin-left: 20px;
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
 }
 
-body .contact_container {
-  margin-left: 20px;
-  padding-left: 15px;
-}
-
-body input[type=text], body input[type=password] {
+/* Full-width inputs */
+input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -937,11 +911,69 @@ body input[type=text], body input[type=password] {
           box-sizing: border-box;
 }
 
-body h1 {
+/* Set a style for all buttons */
+.formButton {
+  background-color: #fff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: ipx solod gray;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  border: 1px solod gray;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* ===================================================== */
+h1 {
   text-align: center;
 }
 
-body .contact_container {
+.contact_container {
   width: 90%;
   border: 2px solid #ccc;
   margin: 15px;
@@ -949,7 +981,7 @@ body .contact_container {
   line-height: 1.7;
 }
 
-body .contact_email, body .contact_reason, body .contact_text {
+.contact_email, .contact_reason, .contact_text {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -959,102 +991,97 @@ body .contact_email, body .contact_reason, body .contact_text {
           box-sizing: border-box;
 }
 
-body * {
+/* ==checkout form */
+/*form styles*/
+* {
   margin: 0 auto;
 }
 
-body h1, body h2 {
+h1, h2 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-body .fieldset1, body .fieldset2, body .fieldset3 {
+.fieldset1, .fieldset2, .fieldset3 {
   padding: 1em;
   margin: 5px;
 }
 
-body legend {
+legend {
   color: #999;
 }
 
-body .row {
+.row {
   margin-bottom: .5em;
 }
 
-body input {
-  border: solid 1px #ccc;
+input {
+  border: solid 1px #99b8a8;
   padding: .2em;
 }
 
-body label {
+label {
   display: block;
 }
 
-body input[id="address"] {
+input[id="address"] {
   width: 250px;
 }
 
-body label[for="city"], body label[for="state"] {
+label[for="city"], label[for="state"] {
   display: inline-block;
 }
 
-body label[for="visa"], body label[for="mc"], body label[for="amex"] {
+label[for="visa"], label[for="mc"], label[for="amex"] {
   display: inline-block;
 }
 
-body .checkoutp {
+.checkoutp {
   padding-left: 5px;
 }
 
+/* .container {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;
+  } */
 @media screen and (min-width: 800px) {
-  body .fieldset3 {
-    width: 96%;
-    margin-left: 15px;
-    margin-right: 15px;
+  .fieldset3 {
+    width: 92.5%;
   }
-  body .innerfieldset {
+  .innerfieldset {
     width: 93%;
     margin-top: 15px;
   }
-  body .checkoutcol {
-    padding-left: 10px;
-    padding-right: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  body .checkoutcols {
-    max-width: 100%;
-    padding: 10px;
-    margin: 10px;
-  }
-  body .fieldset1, body .fieldset2 {
+  .fieldset1, .fieldset2 {
     background-color: #FFF;
     -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
     float: left;
-    width: calc(100% - 50%);
+    width: calc(100% - 56%);
+    margin-right: 10px;
     overflow: hidden;
   }
-  body .clear {
+  .clear {
     clear: both;
   }
-  body .checkoutp {
+  .checkoutp {
     padding: 2px;
     max-width: 940px;
     text-align: left;
   }
 }
 
-body * {
+/* gift card form */
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body .giftCardBody {
+.giftCardBody {
   background-color: #fff;
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
@@ -1062,7 +1089,20 @@ body .giftCardBody {
   height: 100%;
 }
 
-body #gCard_main {
+.giftCardBody h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+.giftCardBody h3 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#gCard_main {
   width: 100%;
   border: 1px solid #ccc;
   list-style: none;
@@ -1073,16 +1113,16 @@ body #gCard_main {
   padding-top: 20px;
 }
 
-body #gCard_col1 {
+#gCard_col1 {
   width: 100%;
 }
 
-body #gCard_col2 {
+#gCard_col2 {
   width: 100%;
   padding-top: 10px;
 }
 
-body main {
+main {
   width: 98%;
   margin: auto;
   /* padding: 1em; */
@@ -1091,30 +1131,17 @@ body main {
   overflow: hidden;
 }
 
-body .contactContainer h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2.8em;
-  font-weight: 700;
-}
-
-body h3 {
-  font-size: 2em;
-  font-weight: 600;
-}
-
-body .info {
+.info {
   margin-bottom: 1em;
   width: 90%;
   padding-left: 10px;
 }
 
-body article {
+article {
   margin-top: 15px;
 }
 
-body #gCard_description {
+#description {
   list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1122,24 +1149,25 @@ body #gCard_description {
   text-align: center;
 }
 
+/* ================================================ */
 @media screen and (min-width: 660px) {
-  body body {
+  body {
     width: 100%;
     background-color: #fff;
   }
-  body .info {
+  .info {
     margin-bottom: 1em;
     width: 90%;
     padding-left: 10px;
   }
-  body #gCard_col1 {
+  #gCard_col1 {
     width: 100%;
   }
-  body #gCard_col2 {
+  #gCard_col2 {
     width: 100%;
     padding-top: 10px;
   }
-  body #gCard_main {
+  #gCard_main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px 300px;
@@ -1154,7 +1182,7 @@ body #gCard_description {
     border: solid 1px #ccc;
     padding-top: 20px;
   }
-  body #description {
+  #description {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1164,17 +1192,15 @@ body #gCard_description {
     border: 1px solid #ccc;
     padding-top: 15px;
   }
-  body .gCard_detail {
+  .gCard_detail {
     list-style: none;
   }
 }
 
+/* =============================================================== */
+/* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 960px) {
-  body .componentsContainer {
-    width: 960px;
-    background-color: #fff;
-  }
-  body #gCard_main {
+  #gCard_main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px 300px 300px;
@@ -1189,25 +1215,25 @@ body #gCard_description {
     border: solid 1px #ccc;
     padding-top: 20px;
   }
-  body #gCard_description {
+  #gCard_description {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
     padding-top: 15px;
   }
-  body #gCard_col1, body #gCard_col2 {
+  #gCard_col1, #gCard_col2 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  body #gCard_col1 {
+  #gCard_col1 {
     width: 100%;
   }
-  body #gCard_col2 {
+  #gCard_col2 {
     width: 100%;
     padding-top: 10px;
   }
-  body .gCard_detail {
+  .gCard_detail {
     list-style: none;
     margin-left: 0;
     text-align: center;
