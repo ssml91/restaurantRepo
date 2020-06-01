@@ -99,8 +99,7 @@ td img {
   padding: 10px;
   border: solid 1px #000;
   border-radius: 4px 0 0 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 300px;
   float: left;
 }
@@ -117,13 +116,8 @@ td img {
 }
 
 .col div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .bodySushi {
@@ -209,20 +203,11 @@ h1 {
 
 @media (min-width: 600px) {
   .navbar .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-right: 30px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: left;
   }
 }
 
@@ -266,21 +251,12 @@ h1 {
 
 @media (min-width: 600px) {
   .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .navbar .navbar-toggle {
     display: none;
@@ -288,16 +264,9 @@ h1 {
 }
 
 .main-nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  flex-direction: column;
+  justify-content: left;
   padding-right: 100px;
 }
 
@@ -333,16 +302,9 @@ h1 {
   .subflyout:hover .submenu {
     position: absolute;
     left: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: #efeeee;
     color: #1b1343;
   }

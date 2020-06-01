@@ -36,11 +36,9 @@ body {
 
         
     }
-<<<<<<< HEAD
     }
-    #componentsContainer {
+    .componentsContainer {
         width: 960px;
-=======
     
     #whereToStartGrid {
         @include break(900px) {
@@ -83,7 +81,6 @@ body {
             display: block;
         }
     
->>>>>>> d06816340c244c10da928b28faa3f7315ac99fee
     }
 #whereToStartGrid {
     display: grid;
@@ -136,6 +133,7 @@ button {
     cursor: pointer;
 }
 #homeDescription {
+    text-align: center;
     width: 80%;
     margin: 8em auto;
     display: flex;
@@ -149,6 +147,7 @@ button {
             font-size: 5em;
         }
     }
+   
 }
 #gridDesc {
     @include break(400px) {
@@ -225,4 +224,5 @@ footer {
     text-decoration: none;
     width: 100px;
     text-align: center;
+}
 }
