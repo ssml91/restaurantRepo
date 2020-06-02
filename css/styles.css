@@ -39,7 +39,7 @@ body {
 }
 
 .sectionHome {
-  margin: 2em auto;
+  margin: 2em 0 auto;
 }
 
 .sectionHome ul {
@@ -134,18 +134,19 @@ body {
   }
 }
 
-h1 {
+.bodyHome h1 {
   font-family: 'Abril Fatface', cursive;
+  font-size: 1.5em;
 }
 
 p {
   font-size: .8em;
 }
 
-button {
-  background-color: #efeeee;
+#homeDescription button, .sectionHome button, #homeComponents button {
+  color: #fff;
+  background-color: #252525;
   padding: 1em 3em;
-  border: solid 1px #dddbdb;
   font-family: 'Abril Fatface', cursive;
   cursor: pointer;
 }
@@ -262,8 +263,8 @@ button {
     display: grid;
     -ms-grid-columns: 370px 370px;
         grid-template-columns: 370px 370px;
-    -ms-grid-rows: 250px 350px 100px;
-        grid-template-rows: 250px 350px 100px;
+    -ms-grid-rows: 250px 350px;
+        grid-template-rows: 250px 350px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -271,7 +272,6 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 3em;
-    text-align: left;
   }
   #componentGrid div {
     margin: 0 1em;
@@ -304,13 +304,24 @@ button {
     -ms-grid-row: 2;
     grid-row: 2;
   }
-  #componentGrid #comp5 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / span 2;
-    -ms-grid-row: 3;
-    grid-row: 3;
-    text-align: center;
+}
+
+#comp5 {
+  width: 90%;
+  background-color: #c4bdac;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 4em;
+}
+
+#comp5 i {
+  font-size: 2em;
+}
+
+@media (min-width: 600px) {
+  #comp5 {
+    width: 80%;
   }
 }
 
