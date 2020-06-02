@@ -70,18 +70,7 @@ body {
         }
     }
     }
-    .displayCode {
-        display: none;
-        background-color: #c4bdac;
-        margin: 0 10%;
-        background-color: $dkGray;
-        margin: 0 10% 0 10%;
-        @include break(600px) {
-            display: block;
-            margin-bottom: 4em;
-        }
-    
-    }
+   
 }
 .bodyHome h1 {
     font-family: 'Abril Fatface', cursive;
@@ -225,4 +214,16 @@ footer {
 .maxWidth {
     max-width: 960px;
     margin: 0 auto;
+}
+.displayCode {
+    display: none;
+    background-color: #c4bdac;
+    margin: 0 10%;
+    background-color: $dkGray;
+    margin: 0 10% 0 10%;
+    @include break(600px) {
+        display: block;
+        margin-bottom: 4em;
+    }
+
 }
