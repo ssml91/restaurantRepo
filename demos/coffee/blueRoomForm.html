@@ -22,29 +22,23 @@
     </nav>
 <!--CONTACT/ ORDER FORM-->
 <form action="action_page.php" method="post">
-    
-    <h1>Contact</h1>
-      <!-- <div class="imgcontainer">
-        <img src="#" alt="card" class="card">
-      </div> -->
-      
-    
+    <h1 id="topH1">Contact Us</h1>
       <div class="contact_container">
            <label for="fName">First Name:</label>
           <input type="text" name="fNmae" id="fName" required>
           <label for="lName">Last Name:</label>
           <input type="text" name="lName" id="lName" required>
-          <label for="exampleEmailInput">Your email</label>
+          <label for="exampleEmailInput">Email:</label>
           <input class="contact_email" type="email" placeholder="email@mailbox.com" id="exampleEmailInput">
           
              <label for="exampleRecipientInput">Reason for contacting</label>
               <select class="contact_reason" id="exampleRecipientInput">
-                <option value="Option 1">Questions</option>
-                <option value="Option 2">Admiration</option>
+                <option value="Option 1">General Questions</option>
+                <option value="Option 2">Catering</option>
                 <option value="Option 3">Can I get your number?</option>
               </select>
               <label for="exampleMessage">Message</label>
-              <textarea class="contact_text" placeholder="Input your message here" id="exampleMessage"></textarea>
+              <textarea class="contact_text" placeholder="Type your message here" id="exampleMessage" rows="8"></textarea>
               <label class="example-send-yourself-copy">
               <input type="checkbox">
               <span class="label-body">Send a copy to yourself</span>

@@ -93,64 +93,23 @@ footer { text-align: center; background-color: #d1dcfd; padding: 1.5em; display:
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* logom form======================================== */
-main { max-width: 960px; width: 90%; margin: auto; padding: 1em; background-color: #fff; position: relative; overflow: hidden; }
-
-fieldset { padding: 1em; }
-
-legend { color: #fff; }
-
-.row { margin-bottom: .5em; }
-
 input { border: solid 1px; padding: .2em; }
 
 label { display: block; }
-
-input[id="address"] { width: 250px; }
-
-label[for="city"], label[for="state"] { display: inline-block; }
-
-/* Bordered form */
-form { border: 3px solid #f1f1f1; }
 
 /* Full-width inputs */
 input[type=text], input[type=password] { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* Set a style for all buttons */
-.formButton { background-color: #fff; color: black; padding: 14px 20px; margin: 8px 0; border: ipx solod gray; cursor: pointer; width: 100%; }
+.formButton { background-color: #dedede; color: black; padding: 14px 20px; margin: 8px 0; border: 1px solid #949494; cursor: pointer; width: 100%; }
 
-/* Add a hover effect for buttons */
-button:hover { opacity: 0.8; }
+#topH1 { margin-top: 1.3em; }
 
-/* Extra style for the cancel button (red) */
-.cancelbtn { width: auto; padding: 10px 18px; border: 1px solod gray; }
+.contact_container { width: 90%; margin: 2em auto 5em; border: 2px solid #ccc; padding: 15px; line-height: 1.7; }
 
-/* Center the avatar image inside this container */
-.imgcontainer { text-align: center; margin: 24px 0 12px 0; }
+@media (min-width: 800px) { .contact_container { max-width: 800px; } }
 
-/* Avatar image */
-img.avatar { width: 40%; border-radius: 50%; }
-
-/* Add padding to containers */
-.container { padding: 16px; }
-
-/* The "Forgot password" text */
-span.psw { float: right; padding-top: 16px; }
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) { span.psw { display: block; float: none; }
-  .cancelbtn { width: 100%; } }
-
-/* ===================================================== */
-h1 { text-align: center; }
-
-.contact_container { width: 90%; border: 2px solid #ccc; margin: 15px; padding: 15px; line-height: 1.7; }
-
-.contact_email, .contact_reason, .contact_text { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* ==checkout form */
-/*form styles*/
-* { margin: 0 auto; }
+.contact_email, .contact_reason, .contact_text { width: 100%; padding: 12px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 h1, h2 { text-align: center; margin-top: 10px; margin-bottom: 10px; }
 
