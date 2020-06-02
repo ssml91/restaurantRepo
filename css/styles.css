@@ -1302,13 +1302,13 @@ body {
 
 .buttons button#next {
   position: absolute;
-  top: 575%;
+  top: 40%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 575%;
+  top: 40%;
   left: 15px;
 }
 

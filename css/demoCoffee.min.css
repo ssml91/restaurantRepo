@@ -48,24 +48,38 @@ body { font-family: 'Lato', sans-serif; }
 
 h1 { font-family: 'Dawning of a New Day', cursive; font-size: 2.8em; }
 
-#indexGrid { text-align: center; padding: 7em; }
+#indexGrid { text-align: center; padding: 1em; }
 
 #indexGrid h1 { margin-bottom: 1em; font-family: 'Dawning of a New Day', cursive; font-size: 2.7em; }
 
 #indexGrid p { margin-top: 2em; }
 
-@media (min-width: 600px) { #indexGrid { text-align: center; } }
+@media (min-width: 600px) { #indexGrid { text-align: center; padding: 7em; } }
 
-#orderOnline img { width: 95%; height: auto; }
+#orderOnline img { width: 90%; margin: 0 auto; }
 
 @media (min-width: 1000px) { #orderOnline { display: -ms-grid; display: grid; -ms-grid-columns: 500px 500px; grid-template-columns: 500px 500px; -ms-grid-rows: 400px; grid-template-rows: 400px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; margin: 0 auto; }
   #orderOnline div { padding: 0 2em; line-height: 2; } }
 
 #orderOnline button { padding: 1.5em 2em; font-size: 1em; border: solid 1px #949494; }
 
+#hoursGrid { padding: 1em; }
+
+#hoursGrid h1 { text-align: center; font-size: 2.7em; }
+
+#hoursGrid p { line-height: 1.6; text-align: left; }
+
+@media (min-width: 600px) { #hoursGrid { text-align: center; padding-bottom: 7em; } }
+
+@media (min-width: 1000px) { #hoursContainer { display: -ms-grid; display: grid; -ms-grid-columns: 500px 500px; grid-template-columns: 500px 500px; -ms-grid-rows: 280px; grid-template-rows: 280px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; margin: 0 auto; }
+  #hoursContainer div { padding: 0 2em; line-height: 2; }
+  #hoursContainer h3 { text-align: center; } }
+
 button { padding: 1.5em; background-color: #dedede; cursor: pointer; }
 
-.slider { position: relative; height: 85vh; }
+body { overflow-x: hidden; }
+
+.slider { position: relative; height: 80vh; }
 
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; -webkit-transition: opacity 0.4s ease-in-out; transition: opacity 0.4s ease-in-out; }
 
@@ -80,6 +94,9 @@ button { padding: 1.5em; background-color: #dedede; cursor: pointer; }
 .buttons button#next { position: absolute; top: 40%; right: 15px; }
 
 .buttons button#prev { position: absolute; top: 40%; left: 15px; }
+
+@media (max-width: 500px) { .slide .content { bottom: -300px; left: 0; width: 100%; }
+  .slide.current .content { -webkit-transform: translateY(-300px); transform: translateY(-300px); } }
 
 .slide:first-child { background: url("../../images/coffee-01.jpg") no-repeat center center/cover; }
 

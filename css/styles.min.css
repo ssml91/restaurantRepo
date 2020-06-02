@@ -349,9 +349,9 @@ body { overflow-x: hidden; }
 
 .slide .content h1 { margin-bottom: 10px; }
 
-.buttons button#next { position: absolute; top: 575%; right: 15px; }
+.buttons button#next { position: absolute; top: 40%; right: 15px; }
 
-.buttons button#prev { position: absolute; top: 575%; left: 15px; }
+.buttons button#prev { position: absolute; top: 40%; left: 15px; }
 
 @media (max-width: 500px) { .slide .content { bottom: -300px; left: 0; width: 100%; }
   .slide.current .content { -webkit-transform: translateY(-300px); transform: translateY(-300px); } }

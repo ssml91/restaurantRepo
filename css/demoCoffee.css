@@ -183,7 +183,7 @@ h1 {
 
 #indexGrid {
   text-align: center;
-  padding: 7em;
+  padding: 1em;
 }
 
 #indexGrid h1 {
@@ -199,12 +199,13 @@ h1 {
 @media (min-width: 600px) {
   #indexGrid {
     text-align: center;
+    padding: 7em;
   }
 }
 
 #orderOnline img {
-  width: 95%;
-  height: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
@@ -236,15 +237,66 @@ h1 {
   border: solid 1px #949494;
 }
 
+#hoursGrid {
+  padding: 1em;
+}
+
+#hoursGrid h1 {
+  text-align: center;
+  font-size: 2.7em;
+}
+
+#hoursGrid p {
+  line-height: 1.6;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  #hoursGrid {
+    text-align: center;
+    padding-bottom: 7em;
+  }
+}
+
+@media (min-width: 1000px) {
+  #hoursContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px 500px;
+        grid-template-columns: 500px 500px;
+    -ms-grid-rows: 280px;
+        grid-template-rows: 280px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #hoursContainer div {
+    padding: 0 2em;
+    line-height: 2;
+  }
+  #hoursContainer h3 {
+    text-align: center;
+  }
+}
+
 button {
   padding: 1.5em;
   background-color: #dedede;
   cursor: pointer;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .slider {
   position: relative;
-  height: 85vh;
+  height: 80vh;
 }
 
 .slide {
@@ -296,6 +348,18 @@ button {
   position: absolute;
   top: 40%;
   left: 15px;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+  .slide.current .content {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
 }
 
 .slide:first-child {
