@@ -313,13 +313,18 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 100vh;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: -20px 0 30px;
+  margin: 100px 0 30px;
   font-weight: 400;
   font-size: 24px;
+}
+
+@media (min-width: 600px) {
+  .sushiBody {
+    flex-direction: column;
+  }
 }
 
 .signinh2 {
@@ -390,7 +395,7 @@ a {
   padding: 12px;
   padding: 12px 15px;
   margin: 8px 0;
-  width: 100%;
+  width: 50%;
 }
 
 button {
@@ -519,7 +524,6 @@ button.ghost {
 }
 
 .signcontainer {
-  min-height: calc( 100vh - 50px);
   margin: 0 auto;
 }
 
