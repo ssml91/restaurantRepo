@@ -64,12 +64,12 @@ body {
 }
 
 .navbar .main-nav .currentNav a {
-  color: #fff;
+  font-weight: bold;
 }
 
 .navbar .main-nav .nav-links {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #000;
 }
 
 @media (min-width: 600px) {
@@ -121,7 +121,7 @@ body {
 
 .navbar .navbar-toggle {
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
@@ -172,13 +172,17 @@ h1 {
 
 #indexGrid {
   text-align: center;
-  padding: 7em;
+  padding: 7em 1.5em;
 }
 
 #indexGrid h1 {
   margin-bottom: 1em;
   font-family: 'Dawning of a New Day', cursive;
   font-size: 2.7em;
+}
+
+#indexGrid p {
+  margin-top: 2.5em;
 }
 
 @media (min-width: 600px) {

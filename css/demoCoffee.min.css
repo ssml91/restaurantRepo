@@ -20,9 +20,9 @@ body { font-family: 'Lato', sans-serif; }
 
 .navbar .main-nav { list-style-type: none; display: none; }
 
-.navbar .main-nav .currentNav a { color: #fff; }
+.navbar .main-nav .currentNav a { font-weight: bold; }
 
-.navbar .main-nav .nav-links { text-decoration: none; color: rgba(255, 255, 255, 0.7); }
+.navbar .main-nav .nav-links { text-decoration: none; color: #000; }
 
 @media (min-width: 600px) { .navbar .main-nav .nav-links { margin-left: 40px; }
   .navbar .main-nav .nav-links:hover { color: white; } }
@@ -35,7 +35,7 @@ body { font-family: 'Lato', sans-serif; }
 
 .navbar a { text-decoration: none; color: #000; display: inline-block; margin-top: 10px; margin-left: 20px; padding: 5px 10px; }
 
-.navbar .navbar-toggle { position: absolute; top: 10px; right: 20px; cursor: pointer; color: rgba(255, 255, 255, 0.8); font-size: 24px; }
+.navbar .navbar-toggle { position: absolute; top: 25px; right: 20px; cursor: pointer; color: rgba(255, 255, 255, 0.8); font-size: 24px; }
 
 @media (min-width: 600px) { .navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-bottom: 0; height: 70px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .navbar .navbar-toggle { display: none; } }
@@ -44,9 +44,11 @@ body { font-family: 'Lato', sans-serif; }
 
 h1 { font-family: 'Dawning of a New Day', cursive; font-size: 2.8em; }
 
-#indexGrid { text-align: center; padding: 7em; }
+#indexGrid { text-align: center; padding: 7em 1.5em; }
 
 #indexGrid h1 { margin-bottom: 1em; font-family: 'Dawning of a New Day', cursive; font-size: 2.7em; }
+
+#indexGrid p { margin-top: 2.5em; }
 
 @media (min-width: 600px) { #indexGrid { text-align: center; } }
 
