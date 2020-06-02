@@ -44,349 +44,176 @@
             
         </ul>
     </nav>
-    <section id="intro">
-        <h1>The Grid System</h1><br>
-        <p>Grids are a great way to organize content and create messages that are quick and easy for your audience to process. Take a look below at the grid layouts we have to choose from.</p><br><br>
-    </section>
-      </div>
-    <!-- GRID EXAMPLE -->
-    <section id="gridContainer">
-            <div id="one1" class="gridItem">ONE</div>
-            <div id="one2" class="gridItem">ELEVEN</div>
-            <div id="two1" class="gridItem">TWO</div>
-            <div id="two2" class="gridItem">TEN</div>
-            <div id="three1" class="gridItem">THREE</div>
-            <div id="three2" class="gridItem">NINE</div>
-            <div id="four1" class="gridItem">FOUR</div>
-            <div id="four2" class="gridItem">EIGHT</div>
-            <div id="five1" class="gridItem">FIVE</div>
-            <div id="five2" class="gridItem">SEVEN</div>
-            <div id="six1" class="gridItem">SIX</div>
-            <div id="six2" class="gridItem">SIX</div>
-            <div id="seven1" class="gridItem">SEVEN</div>
-            <div id="seven2" class="gridItem">FIVE</div>
-            <div id="eight1" class="gridItem">EIGHT</div>
-            <div id="eight2" class="gridItem">FOUR</div>
-            <div id="nine1" class="gridItem">NINE</div>
-            <div id="nine2" class="gridItem">THREE</div>
-            <div id="ten1" class="gridItem">TEN</div>
-            <div id="ten2" class="gridItem">TWO</div>
-            <div id="eleven1" class="gridItem">ELEVEN</div>
-            <div id="eleven2" class="gridItem">ONE</div>
-    </section>
 
-    <section class="componentsTables" id=componentsTable>
-        <h1>Tables</h1>
-        <p>Tables can be used in a variety of ways in your restaurant website.  Use them for displaying locations, menu descriptions, listing coupons or promos, and even customer reviews!  </p>
-        <br>
-        <p>Our tables come with a built in search, sort, and are responsive.  You can use our table to display information from an API or enter your information locally.</p>
-        <br>
-        <h3>Our Locations</h3>
+<div class="displayCode">
+    <pre>
+      <code>
 
-        <div class="row">
-            <div class="col">
-                <div ><input type="text" id="search-input"><i class="fas fa-search"></i></div>
-            </div>
-        </div>
-    
-
-    
-        <table >
-            <thead>  
-            <tr >
-                <th>Images</th>
-                <th id="column">Address &#9650</th>
-                <th>Phone &#9650</th>
-                <th>Hours of Operation &#9650</th>
-            </tr>
-        </thead>    
-            <tbody id="tableData">
-
-            </tbody>
-            </table>
-    </section>
-
-    <section class=componentsForms id=componentsForms>
-        <main>
-            <header>
-                <h1 class= "checkouth1">Checkout, Complete your order</h1>
-            </header>
-            <!-- section>h2{Shipping Information}+form>div.cols>div.col.checkout>fieldset>legend{Promo or Coupon Code+label}+{Enter code to apply discount:} -->
-            <section>
-                <h2 class= "checkouth">Shipping Information</h2>
-                <form action="#" method="GET" id="checkoutForm">
-                    <div class="cols">
-                        <div class="col checkout">
-                           
-                            <!-- fieldset>legend{Ship to:}+div.row*6>label+input -->
-                            <fieldset class="fieldset1">
-                                <legend>Ship to:</legend>
-    
-                                <div class="row">
-                                    <label for="fNmae">First Name:</label>
-                                    <input type="text" name="fNmae" id="fName" required></div>
-                                <div class="row">
-                                    <label for="lName">Last Name:</label>
-                                    <input type="text" name="lName" id="lName" required></div>
-                                <div class="row">
-                                    <label for="Address">Address:</label>
-                                    <input type="text" name="Address" id="Address" required></div>
-                                <div class="row">
-                                    <label for="zip">Zip Code:</label>
-                                    <input type="text" name="zip" id="zip" required></div>
-                                <div class="row">
-                                    <label for="city">City:</label>
-                                    <input type="text" name="city" id="city" required>
-                                
-                                    <label for="state">State:</label>
-                                    <select name="state" id="state">
-                                        <option value=" " selected></option>
-                                       <option value="AL">AL</option>
-                                       <option value="AK">AK</option>
-                                        <option value="AZ">AZ</option>
-                                        <option value="AR">AR</option>
-                                        <option value="CA">CA</option>
-                                        <option value="CO">CO</option>
-                                        <option value="CT">CT</option>
-                                        <option value="DE">DE</option>
-                                        <option value="DC">DC</option>
-                                        <option value="FL">FL</option>
-                                        <option value="GA">GA</option>
-                                        <option value="HI">HI</option>
-                                        <option value="ID">ID</option>					
-                                        <option value="IL">IL</option>					
-                                        <option value="IN">IN</option>					
-                                        <option value="IA">IA</option>					
-                                        <option value="KS">KS</option>					
-                                        <option value="KY">KY</option>					
-                                        <option value="LA">LA</option>					
-                                        <option value="ME">ME</option>					
-                                        <option value="MD">MD<option>                       
-                                        <option value="MA">MA</option>					
-                                        <option value="MI">MI</option>					
-                                        <option value="MN">MN</option>					
-                                        <option value="MS">MS</option>					
-                                        <option value="MO">MO</option>					
-                                        <option value="MT">MT</option>					
-                                        <option value="NE">NE</option>					
-                                        <option value="NV">NV</option>					
-                                        <option value="NH">NH</option>
-                                        <option value="NJ">NJ</option>
-                                        <option value="NM">NM</option>
-                                        <option value="NY">NY</option>
-                                        <option value="NC">NC</option>
-                                        <option value="ND">ND</option>
-                                        <option value="OH">OH</option>
-                                        <option value="OK">OK</option>
-                                        <option value="OR">OR</option>
-                                        <option value="PA">PA</option>
-                                        <option value="RI">RI</option>
-                                        <option value="SC">SC</option>
-                                        <option value="SD">SD</option> 
-                                          <option value="TN">TN</option>
-                                        <option value="TX">TX</option>
-                                        <option value="UT">UT</option>
-                                        <option value="VT">VT</option>
-                                        <option value="VA">VA</option>
-                                        <option value="WA">WA</option>
-                                        <option value="WV">WV</option>
-                                        <option value="WI">WI</option>
-                                        <option value="WY">WY</option> 
-                                    </select>
-                                </div>
-                                <fieldset class="innerfieldset">
-                                   
-                                            <legend>Aditional information</legend>
-                                            <div class="row">
-                                            <label for="email">Email address:</label>
-                                            <input type="email" name="email" id="email" required>
-          
-                                            <label for="tel">Phone Number:</label>
-                                            <input type="tel" name="tel" id="tel" placeholder="123-456-7890" maxlength="12" pattern="^\d{3}-\d{3}-\d{4}$" required>
-                                          </div>
-                                  </fieldset>
-                            </fieldset> 
-                           
-                             
-                            
-                              
-                                <fieldset class="fieldset2">
-                                    <legend>Payment Details</legend>
-                                    
-                                    <div class="row">
-                                            <input type="radio" id="visa" name="cc">
-                                            <label for="visa">Visa</label>
-                                            <input type="radio" id="mc" name="cc">
-                                            <label for="mc">Mastercard</label>
-                                            <input type="radio" id="amex" name="cc">
-                                            <label for="amex">American Express</label>
-                                    </div>
-                                        <div class="row">
-                                            <label for="cardName">Name <span>as it appears on your card</span></label>
-                                            <input type="text" id="cardName" name="cc_name" required>
-                                        </div>
-                                        <div class="row">
-                                            <label for="cardNum">Card Number</label>
-                                            <input type="number" id="cardNum" name="card_number" required>
-                                        </div>
-                                        <div class="row">
-                                            <label for="exp">Expire date</label>
-                                            <input type="month" id="exp" name="experiation" required>
-                                        </div>
-                                        <div class="row">
-                                            <label for="cvv">Security number</label>
-                                            <input type="number" id="cvv" name="cvv" required pattern="[0-9]{3}">
-                                       </div>
-                                       <fieldset class="innerfieldset">
-                                        <legend>Promo or Coupon Code</legend>
-                                        <div class="row">
-                                            <label for="promo">Enter code to apply discount: </label>
-                                        <input type="text" name="promo" id="promo" placeholder="enter code here">
-                                        <input type="button" value="Apply">  
-                                       </div>
-                                       <div class="row">
-                                        <label for="paygcard">Do you want to use Gift Card?:</label> </label>
-                                    <input type="text" name="paygcard" id="paugcard" placeholder="enter your gift card number here">
-                                    <input type="button" value="Apply">  
-                                   </div>
-                                    </fieldset>
-                                    </fieldset>
-                                    
-                                </fieldset>
-                                  <fieldset class="fieldset3">
-                                        <legend>Submit your order</legend>
-                                        <div class="row">
-                                        <input type="submit">
-                                        </div>
-                                        <p class= checkoutp>Do you need more help? &nbsp; &nbsp; Call us for assistance:</p>
-                                             <a href="tel:888-123-4567"> 888-123-4567 </a>
-                                    </fieldset>
-                                </div>
-                          
-                        </div> <!--end col-->
-                    </div><!--end cols-->
-                    
-                </form>
-               
-            </section>
-       
-        <form action="action_page.php" method="post">
-    
-            <h1>Login page </h1>
-              <!-- <div class="imgcontainer">
-                <img src="#" alt="card" class="card">
-              </div> -->
-              
-            
-              <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-            
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-            
-                <button type="submit">Login</button>
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-              </div>
-            
-              <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-              </div>
-            </form>
-        </main>
-        <main>
-            <header>
-              <h1>Gift Card</h1>
-            </header>
-            <section id="gCard_col1">
-              <ul id="gCard_main">
-                <li>
-                  <article>
-                    <a href="#"><img src="http://via.placeholder.com/275x175"  alt="placeholder"></a>
-                    <h4>Gift Card $150</h4>
-                    <p>Some text about the gift card...</p>
-                    <div class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
-                  </article>
-                </li>
-                <li>
-                  <article>
-                    <a href="#"><img src="http://via.placeholder.com/275x175"  alt="placeholder"></a>
-                    <h4>Gift Card $200</h4>
-                    <p>Some text about the gift card..</p>
-                    <div class="info">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
-                  </article>
-                </li>
-                <li>
-                  <article>
-                    <a href="#"><img src="http://via.placeholder.com/275x175"  alt="placeholder"></a>
-                    <h4>Gift Card $100</h4>
-                    <p>Some text about the gift card...</p>
-                    <div class="info">MLorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.!</div>
-                  </article>
-                </li>
-              </ul>
-            </section>
+    &lt;section class="componentsTables" id=componentsTable&gt;
+        &lt;h1&gt;Tables&lt;/h1&gt;
+        &lt;p&gt;Tables can be used in a variety of ways in your restaurant website.  Use them for displaying locations, menu descriptions, listing coupons or promos, and even customer reviews!  &lt;/p&gt;
+        &lt;br&gt;
+        &lt;p&gt;Our tables come with a built in search, sort, and are responsive.  You can use our table to display information from an API or enter your information locally.&lt;/p&gt;
+        &lt;br&gt;
         
-          
-            <section id="gCard_col2">
-              <ul id="gCard_description">
-                <li>
-                  <div id="gCard_detail">
-                    
-                    <a href="#"><img src="http://via.placeholder.com/100x78"  alt="placeholder"></a>
-                    <a href="#"><img src="http://via.placeholder.com/100x78"  alt="placeholder"></a>
-                    <a href="#"><img src="http://via.placeholder.com/100x78"  alt="placeholder"></a>
-                    <a href="#"><img src="http://via.placeholder.com/100x78"  alt="placeholder"></a>
-                    <a href="#"><img src="http://via.placeholder.com/100x78"  alt="placeholder"></a>
-                    <h3>Choose for yourself and your friend.</h3>
-                    <p>Choose a perfect gift for yourself and your friend.</p>
-                  </div>
-                </li>
-              </ul>
-            </section>
-          </main>
-          <form action="action_page.php" method="post">
+
+        
+       
+        &lt;div; class="row"&gt;
+            &lt;div; class="col"&gt;
+                &lt;div; &gt; &lt;input&gt; type="text" id="search-input" &gt;  &lt;i&gt; class="fas fa-search" &lt;/i&gt;  &lt;/input&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
     
-            <h1>This is contact page </h1>
-              <!-- <div class="imgcontainer">
-                <img src="#" alt="card" class="card">
-              </div> -->
-              
+
+    
+        &lt;table&gt;
+            &lt;thead&gt;  
+            &lt;tr&gt;
+                &lt;th&gt;Images&lt;/th&gt;
+                &lt;th id="column"&gt;Address &#9650&lt;/th&gt;
+                &lt;th&gt;Phone &#9650&lt;/th&gt;
+                &lt;th&gt;Hours of Operation &#9650&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;    
+        &lt;tbody id="tableData"&gt;
+
+            &lt;/tbody&gt;
+            &lt;/table&gt;
+    &lt;section&gt;
+
+   &lt;section&gt;
+     
+      &lt;p&gt;
+       
+
+         
+   
+    let storeInfo = [
+    { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Miramar Store, 97 Gates Road',     'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
+    { 'image': 'https://via.placeholder.com/400x200.png','address': 'Mira Mesa Store, 202-B Laffey Circle',   'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
+    { 'image': 'https://via.placeholder.com/400x200.png','address': 'Kearny Mesa Store, 1540 D Lovell Ct',   'phone' : '(619)851-4153', 'hours': '4:00pm-11:00pm'},
+    { 'image': 'https://via.placeholder.com/400x200.png', 'address': 'Clairemont Store, 4545 La Jolla Village Square', 'phone' : '(619)453-8562', 'hours': '9:00am-5:00pm'},
+    { 'image': 'https://via.placeholder.com/400x200.png','address': 'University City Store, 2267 Lago Ventana',    'phone' : '(858)256-2044', 'hours': '9:00am-5:00pm'},
+    {'image': 'https://via.placeholder.com/400x200.png','address': 'San Diego Store, 1570 Iris Avenue',   'phone' : '(858)256-9651', 'hours': '4:00pm-11:00pm'},
+];
+
+window.onload = () => {
+    loadTableData(storeInfo);
+}
+
+
+//search
+$('#search-input').on('keyup', function(){
+    var value = $(this).val()
+    console.log('value:',value)
+    var data= searchTable(value, storeInfo)
+    loadTableData(data)
+})
+
+
+
+function searchTable(value, data) {
+    var filterData=[];
+
+    for(var i=0; i data.length; i++ ){
+        value = value.toLowerCase()
+        var address = data[i].address.toLowerCase();
+        var phone = data[i].phone.toLowerCase();
+        if (address.includes(value)){
+            filterData.push(data[i])
+        } else if (phone.includes(value)) {
+            filterData.push(data[i])
+        }
+    } return filterData
+}
+
+//sort function
+$('th').on('click', function(column){
+
+    
+    var column = $(this).data('column');
+    var order = $(this).data('order');
+    var text = $(this).html();
+    text = text.substring(0, text.length -1)
+    var dataType = $(this).data('type');
+
+    console.log('column was clicked', column, order, dataType);
+    if( (dataType == 'image') || (dataType =='time')) {
+       
+        return;
+
+    }
+  
+    if(order == 'desc') {
+        $(this).data('order', 'asc')
+        $(this).addClass('asc');
+        $(this).removeClass('desc');
+        if(dataType == 'number'){
+            storeInfo = storeInfo.sort((a,b) => parseFloat( a[column]) > parseFloat(b[column]) ? 1: -1)s
             
-              <div class="contact_container">
-                   <label for="fName">First Name:</label>
-                  <input type="text" name="fNmae" id="fName" required>
-                  <label for="lName">Last Name:</label>
-                  <input type="text" name="lName" id="lName" required>
-                  <label for="exampleEmailInput">Your email</label>
-                  <input class="contact_email" type="email" placeholder="email@mailbox.com" id="exampleEmailInput">
-                  
-                     <label for="exampleRecipientInput">Reason for contacting</label>
-                      <select class="contact_reason" id="exampleRecipientInput">
-                        <option value="Option 1">Questions</option>
-                        <option value="Option 2">Admiration</option>
-                        <option value="Option 3">Can I get your number?</option>
-                      </select>
-                      <label for="exampleMessage">Message</label>
-                      <textarea class="contact_text" placeholder="The reasons I contact you guys...." id="exampleMessage"></textarea>
-                      <label class="example-send-yourself-copy">
-                      <input type="checkbox">
-                      <span class="label-body">Send a copy to yourself</span>
-                      </label>
-                       <!-- <input class="button-primary" type="submit" value="Submit"> -->
-                      <button type="submit">Submit</button>
-                
-              </div>
-            </form>
-    </section>
+        } else {
+            storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
+            
+        }
+       
+        text += '&#9650'
+    }else {
+
+        $(this).data('order', 'desc')
+        $(this).addClass('desc');
+        $(this).removeClass('asc');
+        if(dataType == 'number'){
+            storeInfo = storeInfo.sort((a,b) => parseFloat( a[column])  &lt; parseFloat(b[column]) ? 1: -1)
+            
+        } else {
+            
+            storeInfo = storeInfo.sort((a,b) => a[column]  &lt; b[column] ? 1: -1)
+        }
+
+        
+        text += '&#9660'
+    }
+    $(this).html(text)
+
+    loadTableData(storeInfo)
+})
+
+//END SORT
 
 
 
+//table data load
+//     window.onload = () => {
+//     loadTableData(storeInfo);
+// }
+ function loadTableData(storeInfo) {
+    const tableBody = document.getElementById('tableData');
+    let dataHtml = '';
 
+    
+    for(let info of storeInfo) {
+        dataHtml += `
+                        
+                        &lt;td&gt;${' &lt;img&gt; src="' + info.image +'"&gt;>'}&lt;/td&gt;
+                        &lt;td&gt;${info.address}&lt;/td&gt;
+                        &lt;td&gt;${info.phone}&lt;/td&gt;
+                        &lt;td&gt;${info.hours}&lt;/td&gt;
+                    &lt;td&gt;&lt;/tr&gt;`;
+    }
+    console.log(dataHtml);
 
+    tableBody.innerHTML= dataHtml;
+} 
+
+&lt;/p&gt;
+
+</code>
+</pre>
+
+</section>
+
+</div>
 
         <script src="../scripts/main.js"></script>
         <script src="../scripts/table.js"></script>
