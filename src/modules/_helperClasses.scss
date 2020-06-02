@@ -1,0 +1,37 @@
+.sushiStyle {
+    p {
+        color: $orange;
+    }
+    background-color: $black;
+    font-family: $font-sushi;
+    h1 {
+        color: $white;
+        font-style: $font-sushi;
+    }
+}
+.sushiInverted {
+    color: $black;
+    background-color: $orange;
+    font-style: $font-sushi;
+}
+
+.helperDiv {
+    width: 500px;
+    height: 200px;
+    border: solid 1px black;
+    p {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+.coffeeDream {
+    p {
+        color: $black;
+    }
+    background-color: $coffeeDream;
+    font-family: $font-coffee;
+    h1 {
+        color: $black;
+        font-family: $font-coffee;
+    }
+}

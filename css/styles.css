@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&display=swap");
 * {
   padding: 0px;
@@ -1226,5 +1227,50 @@ body {
 .typography ul li h3, .typography ul li h4, .typography ul li h5, .typography ul li h6 {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.sushiStyle {
+  background-color: #000;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.sushiStyle p {
+  color: #ff4900;
+}
+
+.sushiStyle h1 {
+  color: #fff;
+  font-style: "Inria Sans", sans-serif;
+}
+
+.sushiInverted {
+  color: #000;
+  background-color: #ff4900;
+  font-style: "Inria Sans", sans-serif;
+}
+
+.helperDiv {
+  width: 500px;
+  height: 200px;
+  border: solid 1px black;
+}
+
+.helperDiv p {
+  font-size: 2em;
+  text-align: center;
+}
+
+.coffeeDream {
+  background-color: #d1dcfd;
+  font-family: "Dawning of a New Day", cursive;
+}
+
+.coffeeDream p {
+  color: #000;
+}
+
+.coffeeDream h1 {
+  color: #000;
+  font-family: "Dawning of a New Day", cursive;
 }
 /*# sourceMappingURL=styles.css.map */

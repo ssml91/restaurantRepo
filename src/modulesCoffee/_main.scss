@@ -79,7 +79,7 @@ body {
         top: 25px;
         right: 20px;
         cursor: pointer;
-        color: rgba(255, 255, 255, 0.8);
+        color: $black;
         font-size: 24px;
     }
     @include break(600px) {
@@ -245,16 +245,16 @@ body {
 }
 
 .slide:first-child {
-    background: url('../../images/coffee-01.jpg') no-repeat center center/cover;
+    background: url('../images/coffee-01.jpg') no-repeat center center/cover;
 }
 .slide:nth-child(2) {
-    background: url('../../images/coffee-02.jpg') no-repeat center top/cover;
+    background: url('../images/coffee-02.jpg') no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-    background: url('../../images/coffee-03.jpg') no-repeat center top/cover;
+    background: url('../images/coffee-03.jpg') no-repeat center top/cover;
 }
 .slide:nth-child(4) {
-    background: url('../../images/coffee-04.jpg') no-repeat center top/cover;
+    background: url('../images/coffee-04.jpg') no-repeat center top/cover;
 }
 footer {
     text-align: center;
