@@ -115,7 +115,7 @@ input[id="address"] {
       margin-right: 10px;
     }
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 960px) {
     .fieldset3 {
       width: 94%;
       margin-left: 15px;
@@ -161,7 +161,7 @@ input[id="address"] {
   
 }
 .contact_container #fName, #lName, #exampleEmailInput, #exampleRecipientInput, #exampleMessage {
-  width: 95%;
+  width: 94%;
   display: inline-block;
   padding: 12px 20px;
   margin-left: 10px;
