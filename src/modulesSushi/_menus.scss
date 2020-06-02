@@ -65,12 +65,12 @@ th, td {
     }
 }
 th {
-    
+    font-size: .5em;
     font-weight: bold;
     text-transform: uppercase;
     @include break(600px) {
-        background: $wasabi;
-        color: white;
+       
+       
     }
 }
 tr {
@@ -111,7 +111,7 @@ td {
 }
 .tableSearchButton {
     border: solid 1px $black;
-    background-color:$wasabi;
+    background-color:$dkGray;
     padding: 10px 20px;
     float: left;
     margin: 20px 0;
@@ -123,4 +123,10 @@ td {
 .col div {
     display: flex;
     flex-direction: row;
+}
+
+.componentsTables{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
