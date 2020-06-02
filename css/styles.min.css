@@ -327,7 +327,6 @@ article { margin-top: 15px; }
   #description { -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid #ccc; padding-top: 15px; }
   .gCard_detail { list-style: none; } }
 
-/* =============================================================== */
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 960px) { #gCard_main { display: -ms-grid; display: grid; -ms-grid-columns: 300px 300px 300px; grid-template-columns: 300px 300px 300px; -ms-grid-rows: 400px; grid-template-rows: 400px; /* align-items: start; */ -webkit-box-pack: top; -ms-flex-pack: top; justify-content: top; text-align: center; border: solid 1px #ccc; padding-top: 20px; }
   #gCard_description { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; padding-top: 15px; }

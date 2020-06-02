@@ -33,7 +33,11 @@ body { font-family: 'Lato', sans-serif; }
 
 @media (min-width: 600px) { .navbar li { margin: 0; } }
 
-.navbar a { text-decoration: none; color: #000; display: inline-block; margin-top: 10px; margin-left: 20px; padding: 5px 10px; }
+.navbar a { text-decoration: none; color: #000; margin-top: 10px; margin-left: 20px; padding: 5px 10px; }
+
+.navbar .logo { text-decoration: none; display: inline-block; margin-top: 10px; margin-left: 20px; padding: 5px 10px; }
+
+.navbar .logo:hover { color: white; }
 
 .navbar .navbar-toggle { position: absolute; top: 25px; right: 20px; cursor: pointer; color: rgba(255, 255, 255, 0.8); font-size: 24px; }
 
@@ -44,11 +48,11 @@ body { font-family: 'Lato', sans-serif; }
 
 h1 { font-family: 'Dawning of a New Day', cursive; font-size: 2.8em; }
 
-#indexGrid { text-align: center; padding: 7em 1.5em; }
+#indexGrid { text-align: center; padding: 7em; }
 
 #indexGrid h1 { margin-bottom: 1em; font-family: 'Dawning of a New Day', cursive; font-size: 2.7em; }
 
-#indexGrid p { margin-top: 2.5em; }
+#indexGrid p { margin-top: 2em; }
 
 @media (min-width: 600px) { #indexGrid { text-align: center; } }
 
@@ -86,4 +90,92 @@ button { padding: 1.5em; background-color: #dedede; cursor: pointer; }
 .slide:nth-child(4) { background: url("../../images/coffee-04.jpg") no-repeat center top/cover; }
 
 footer { text-align: center; background-color: #d1dcfd; padding: 1.5em; display: block; }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* logom form======================================== */
+main { max-width: 960px; width: 90%; margin: auto; padding: 1em; background-color: #fff; position: relative; overflow: hidden; }
+
+fieldset { padding: 1em; }
+
+legend { color: #fff; }
+
+.row { margin-bottom: .5em; }
+
+input { border: solid 1px; padding: .2em; }
+
+label { display: block; }
+
+input[id="address"] { width: 250px; }
+
+label[for="city"], label[for="state"] { display: inline-block; }
+
+/* Bordered form */
+form { border: 3px solid #f1f1f1; }
+
+/* Full-width inputs */
+input[type=text], input[type=password] { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Set a style for all buttons */
+.formButton { background-color: #fff; color: black; padding: 14px 20px; margin: 8px 0; border: ipx solod gray; cursor: pointer; width: 100%; }
+
+/* Add a hover effect for buttons */
+button:hover { opacity: 0.8; }
+
+/* Extra style for the cancel button (red) */
+.cancelbtn { width: auto; padding: 10px 18px; border: 1px solod gray; }
+
+/* Center the avatar image inside this container */
+.imgcontainer { text-align: center; margin: 24px 0 12px 0; }
+
+/* Avatar image */
+img.avatar { width: 40%; border-radius: 50%; }
+
+/* Add padding to containers */
+.container { padding: 16px; }
+
+/* The "Forgot password" text */
+span.psw { float: right; padding-top: 16px; }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) { span.psw { display: block; float: none; }
+  .cancelbtn { width: 100%; } }
+
+/* ===================================================== */
+h1 { text-align: center; }
+
+.contact_container { width: 90%; border: 2px solid #ccc; margin: 15px; padding: 15px; line-height: 1.7; }
+
+.contact_email, .contact_reason, .contact_text { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ==checkout form */
+/*form styles*/
+* { margin: 0 auto; }
+
+h1, h2 { text-align: center; margin-top: 10px; margin-bottom: 10px; }
+
+.fieldset1, .fieldset2, .fieldset3 { padding: 1em; margin: 5px; }
+
+legend { color: #999; }
+
+.row { margin-bottom: .5em; }
+
+input { border: solid 1px #99b8a8; padding: .2em; }
+
+label { display: block; }
+
+input[id="address"] { width: 250px; }
+
+label[for="city"], label[for="state"] { display: inline-block; }
+
+label[for="visa"], label[for="mc"], label[for="amex"] { display: inline-block; }
+
+.checkoutp { padding-left: 5px; }
+
+/* .container { width: 90%; max-width: 960px; margin: 0 auto; } */
+@media screen and (min-width: 800px) { .fieldset3 { width: 92.5%; }
+  .innerfieldset { width: 93%; margin-top: 15px; }
+  .fieldset1, .fieldset2 { background-color: #FFF; -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2); float: left; width: calc(100% - 56%); margin-right: 10px; overflow: hidden; }
+  .clear { clear: both; }
+  .checkoutp { padding: 2px; max-width: 940px; text-align: left; } }
 /*# sourceMappingURL=demoCoffee.min.css.map */

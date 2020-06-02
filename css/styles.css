@@ -1207,7 +1207,6 @@ article {
   }
 }
 
-/* =============================================================== */
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 960px) {
   #gCard_main {
