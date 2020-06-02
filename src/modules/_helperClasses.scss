@@ -1,37 +1,102 @@
 .sushiStyle {
     p {
-        color: $orange;
+        color: $white;
     }
     background-color: $black;
     font-family: $font-sushi;
     h1 {
-        color: $white;
-        font-style: $font-sushi;
+        color: $orange;
+        font-family: $font-sushi;
     }
 }
 .sushiInverted {
     color: $black;
     background-color: $orange;
     font-style: $font-sushi;
+    h1 {
+        color: $black;
+        font-family: $font-sushi;
+    }
+    p {
+        color: $white;
+    }
 }
 
 .helperDiv {
-    width: 500px;
+    
+    width: 300px;
     height: 200px;
+    padding: 0 15px 0 15px;
+    margin: 10px;
     border: solid 1px black;
     p {
-        font-size: 2em;
+        font-size: 1em;
         text-align: center;
     }
+    flex-wrap: wrap;
+    flex-basis: 10%;
 }
 .coffeeDream {
     p {
-        color: $black;
+        color: $white;
+        font-family: $font-subCoffee;
+
     }
     background-color: $coffeeDream;
     font-family: $font-coffee;
     h1 {
         color: $black;
         font-family: $font-coffee;
+    }
+}
+.coffeeInverted {
+    p {
+        color: $black;
+        font-family: $font-subCoffee;
+
+    }
+    background-color: $white;
+    font-family: $font-coffee;
+    h1 {
+        color: $black;
+        font-family: $font-coffee;
+    }
+}
+.restaurantRepo {
+    color: $white;
+    background-color: $dkGray;
+    p {
+        color: $black;
+        font-family: $font-rr;
+    }
+    h1 {
+        color: $white;
+        font-family: $font-stack;
+    }
+}
+.rrInverted {
+    color: $black;
+    background-color: $mdGray;
+    p {
+        color: $black;
+        font-family: $font-rr;
+        
+    }
+    h1 {
+        color: $black;
+        font-family: $font-rr;
+    }
+}
+.containerHelper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include break(600px) {
+        flex-direction: row;
+        
+        
     }
 }

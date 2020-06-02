@@ -13,6 +13,14 @@
   font-family: "Abril Fatface", cursive;
 }
 
+* h1 {
+  font-size: 1.5em;
+}
+
+* h2 {
+  font-size: 1em;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -441,7 +449,6 @@ footer {
 .amenities, .web, .menu, .food {
   padding: 20px;
   margin: 20px;
-  border: solid 1px blue;
 }
 
 @media only screen and (max-width: 601px) {
@@ -1215,7 +1222,12 @@ body {
   background-color: transparent;
 }
 
+.typography h2 {
+  text-align: left;
+}
+
 .typography ul li {
+  list-style-type: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1229,18 +1241,44 @@ body {
   padding-bottom: 5px;
 }
 
+.mainHome {
+  margin: 0 auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.mainHome section h2 {
+  text-align: left;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.lowerCase {
+  text-transform: lowercase;
+}
+
+.menu ul li, .amenities ul li, .web ul li {
+  list-style-type: none;
+}
+
+.menu ul li i, .amenities ul li i, .web ul li i {
+  padding-right: 5px;
+}
+
 .sushiStyle {
   background-color: #000;
   font-family: "Inria Sans", sans-serif;
 }
 
 .sushiStyle p {
-  color: #ff4900;
+  color: #fff;
 }
 
 .sushiStyle h1 {
-  color: #fff;
-  font-style: "Inria Sans", sans-serif;
+  color: #ff4900;
+  font-family: "Inria Sans", sans-serif;
 }
 
 .sushiInverted {
@@ -1249,14 +1287,27 @@ body {
   font-style: "Inria Sans", sans-serif;
 }
 
+.sushiInverted h1 {
+  color: #000;
+  font-family: "Inria Sans", sans-serif;
+}
+
+.sushiInverted p {
+  color: #fff;
+}
+
 .helperDiv {
-  width: 500px;
+  width: 300px;
   height: 200px;
+  padding: 0 15px 0 15px;
+  margin: 10px;
   border: solid 1px black;
+  flex-wrap: wrap;
+  flex-basis: 10%;
 }
 
 .helperDiv p {
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -1266,11 +1317,71 @@ body {
 }
 
 .coffeeDream p {
-  color: #000;
+  color: #fff;
+  font-family: "Lato", "sans-serif";
 }
 
 .coffeeDream h1 {
   color: #000;
   font-family: "Dawning of a New Day", cursive;
+}
+
+.coffeeInverted {
+  background-color: #fff;
+  font-family: "Dawning of a New Day", cursive;
+}
+
+.coffeeInverted p {
+  color: #000;
+  font-family: "Lato", "sans-serif";
+}
+
+.coffeeInverted h1 {
+  color: #000;
+  font-family: "Dawning of a New Day", cursive;
+}
+
+.restaurantRepo {
+  color: #fff;
+  background-color: #c4bdac;
+}
+
+.restaurantRepo p {
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.restaurantRepo h1 {
+  color: #fff;
+  font-family: "Abril Fatface", cursive;
+}
+
+.rrInverted {
+  color: #000;
+  background-color: #efeeee;
+}
+
+.rrInverted p {
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.rrInverted h1 {
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.containerHelper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .containerHelper {
+    flex-direction: row;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
