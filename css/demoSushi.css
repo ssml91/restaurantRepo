@@ -96,7 +96,8 @@ td img {
   padding: 10px;
   border: solid 1px #000;
   border-radius: 4px 0 0 4px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 300px;
   float: left;
 }
@@ -113,8 +114,13 @@ td img {
 }
 
 .col div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .componentsTables {
@@ -187,11 +193,20 @@ h1 {
 
 @media (min-width: 600px) {
   .navbar .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
   }
 }
 
@@ -234,12 +249,21 @@ h1 {
 
 @media (min-width: 600px) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .navbar-toggle {
     display: none;
@@ -247,9 +271,16 @@ h1 {
 }
 
 .main-nav.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding-right: 100px;
 }
 
@@ -285,9 +316,16 @@ h1 {
   .subflyout:hover .submenu {
     position: absolute;
     left: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #efeeee;
     color: #1b1343;
   }
@@ -304,7 +342,8 @@ h1 {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sushiBody {
@@ -312,10 +351,19 @@ h1 {
   background-image: url("../images/dish4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 100px 0 30px;
   font-weight: 400;
   font-size: 24px;
@@ -323,7 +371,10 @@ h1 {
 
 @media (min-width: 600px) {
   .sushiBody {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -355,7 +406,8 @@ a {
 .signcontainer {
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
   width: 768px;
@@ -365,12 +417,21 @@ a {
 
 .form-container form {
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 50px;
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -381,9 +442,15 @@ a {
 .social-container a {
   border: 1px solid #ddd;
   border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 5px;
   height: 40px;
   width: 40px;
@@ -408,11 +475,15 @@ button {
   padding: 12px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
   transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
 }
 
 button:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 button:focus {
@@ -428,6 +499,7 @@ button.ghost {
   position: absolute;
   top: 0;
   height: 100%;
+  -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
@@ -451,60 +523,86 @@ button.ghost {
   width: 50%;
   height: 100%;
   overflow: hidden;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   z-index: 100;
 }
 
 .overlay {
   background: #666;
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#666)) no-repeat 0 0/cover;
   background: linear-gradient(to right, #222, #666) no-repeat 0 0/cover;
   color: #fff;
   position: relative;
   left: -100%;
   height: 100%;
   width: 200%;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 
 .overlay-panel {
   position: absolute;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 40px;
   height: 100%;
   width: 50%;
   text-align: center;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 
 .overlay-right {
   right: 0;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .overlay-left {
-  transform: translateX(-20%);
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 
 /* Animation */
 /* Move signin to the right */
 .signcontainer.right-panel-active .sign-in-container {
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 /* Move overlay to left */
 .signcontainer.right-panel-active .overlay-container {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 /* bring sign up over sign in */
 .signcontainer.right-panel-active .sign-up-container {
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   opacity: 1;
   z-index: 5;
   /* animation: show 0.6s; */
@@ -512,15 +610,18 @@ button.ghost {
 
 /* Move overlay back to right */
 .signcontainer.right-panel-active .overlay {
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .signcontainer.right-panel-active .overlay-left {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .signcontainer.right-panel-active .overlay-right {
-  transform: translateX(20%);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 .signcontainer {
@@ -531,8 +632,12 @@ button.ghost {
   width: 100%;
   position: absolute;
   bottom: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100%;
   height: 50px;
@@ -542,7 +647,9 @@ button.ghost {
   color: #fff;
   font-size: 18px;
   /* -webkit-justify-content: center; */
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /* -webkit-align-items: center; */
 }
 
@@ -553,9 +660,15 @@ button.ghost {
 .social-container a {
   border: 1px solid #dddddd;
   border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 5px;
   height: 40px;
   width: 40px;
@@ -576,33 +689,59 @@ a.logo {
 @media (min-width: 600px) {
   .form-container form {
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 50px;
     height: 100%;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   .overlay-panel {
     position: absolute;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 40px;
     height: 100%;
     width: 50%;
     text-align: center;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   }
   .signinfooter {
     width: 100%;
     display: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     width: 100%;
     height: 50px;
@@ -613,7 +752,9 @@ a.logo {
     color: #fff;
     font-size: 18px;
     /* -webkit-justify-content: center; */
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     /* -webkit-align-items: center; */
   }
 }
@@ -685,7 +826,8 @@ a.logo {
   font-size: 50px;
   font-weight: 800;
   text-shadow: #ff2205 0.03em 0.03em 0.03em;
-  text-emphasis-color: #333;
+  -webkit-text-emphasis-color: #333;
+          text-emphasis-color: #333;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -713,6 +855,7 @@ a.logo {
 
 /* nav ========================================= */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -749,9 +892,16 @@ a.logo {
 
 @media (min-width: 600px) {
   .navbar .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
 }
@@ -793,10 +943,16 @@ a.logo {
 
 @media (min-width: 600px) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .navbar .navbar-toggle {
@@ -834,8 +990,15 @@ a.logo {
 
 @media (min-width: 600px) {
   .subflyout:hover .submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border: dotted 1px #333;
     z-index: 3;
@@ -868,8 +1031,12 @@ a.logo {
   border: solid 1px blue;
 } */
 .sushifooter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100%;
   height: 50px;
@@ -879,7 +1046,9 @@ a.logo {
   color: #fff;
   font-size: 18px;
   /* -webkit-justify-content: center; */
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /* -webkit-align-items: center; */
 }
 
@@ -890,9 +1059,15 @@ a.logo {
 .social-container a {
   border: 1px solid #666;
   border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 5px;
   height: 40px;
   width: 40px;
@@ -912,11 +1087,13 @@ a.logo {
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
