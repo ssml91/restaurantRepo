@@ -151,12 +151,16 @@ h1 {
         text-align: center;
         font-size: 2.7em;
     }
+    h3 {
+        text-align: center;
+        font-size: 1.3em;
+    }
     p {
         line-height: 1.6;
-        text-align: left;
+        text-align: center;
     }
     @include break (600px) {
-        text-align: center;
+        text-align: left;
         padding-bottom: 7em;
     }
 }

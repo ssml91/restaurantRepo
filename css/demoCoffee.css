@@ -246,14 +246,19 @@ h1 {
   font-size: 2.7em;
 }
 
+#hoursGrid h3 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 #hoursGrid p {
   line-height: 1.6;
-  text-align: left;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
   #hoursGrid {
-    text-align: center;
+    text-align: left;
     padding-bottom: 7em;
   }
 }

@@ -67,9 +67,11 @@ h1 { font-family: 'Dawning of a New Day', cursive; font-size: 2.8em; }
 
 #hoursGrid h1 { text-align: center; font-size: 2.7em; }
 
-#hoursGrid p { line-height: 1.6; text-align: left; }
+#hoursGrid h3 { text-align: center; font-size: 1.3em; }
 
-@media (min-width: 600px) { #hoursGrid { text-align: center; padding-bottom: 7em; } }
+#hoursGrid p { line-height: 1.6; text-align: center; }
+
+@media (min-width: 600px) { #hoursGrid { text-align: left; padding-bottom: 7em; } }
 
 @media (min-width: 1000px) { #hoursContainer { display: -ms-grid; display: grid; -ms-grid-columns: 500px 500px; grid-template-columns: 500px 500px; -ms-grid-rows: 280px; grid-template-rows: 280px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; margin: 0 auto; }
   #hoursContainer div { padding: 0 2em; line-height: 2; }
