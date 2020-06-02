@@ -53,8 +53,8 @@
         </ul>
     </nav>
     <section class="componentsCarousel maxWidth" id="componentsCarousel">
-      <h1>Image Carousel</h1>
-      <p>Create a custom CTA banner on any of your pages with an image carousel.  This carousel is created with Javascript and CSS</p>
+      <h1>Image Carousel</h1><br>
+      <p>Create a custom CTA banner on any of your pages with an image carousel.  An image carousel will allow your customers to have a good visual of your product as well as increase credibility. This carousel is created with simple Javascript and CSS. </p><br><br>
       <div class="slider">
         <div class="slide current">
             <div class="content">
@@ -86,13 +86,48 @@
         <button id="next"><i class="fas fa-chevron-right"></i></button>
     </div>
   </section> 
-
-     <!-- GRID EXAMPLE -->
+<!--DISPLAY CODE FOR IMAGE CAROUSEL-->
+<div class="displayCode">
+  <pre><code>
+    &lt;div class="slide current"&gt;
+        &lt;div class="content"&gt;
+        &lt;h1&gt;Slide One&lt;/h1&gt;
+        &lt;p&gt;Place your paragraph description here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="slide"&gt;
+        &lt;div class="content"&gt;
+        &lt;h1&gt;Slide Two&lt;/h1&gt;
+        &lt;p&gt;Place your paragraph description here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="slide"&gt;
+        &lt;div class="content"&gt;
+        &lt;h1&gt;Slide Three&lt;/h1&gt;
+        &lt;p&gt;Place your paragraph description here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="slide"&gt;
+        &lt;div class="content"&gt;
+        &lt;h1&gt;Slide Four&lt;/h1&gt;
+        &lt;p&gt;Place your paragraph description here.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="buttons"&gt;
+        &lt;button id="prev"&gt;&lt;i class="fas fa-chevron-left"&lt;/i&gt;&lt;/button&gt;
+        &lt;button id="next"&gt;&lt;i class="fas fa-chevron-right"&lt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/section&gt; 
+  </code></pre>
+</div>
+<!-- BACK TO TOP -->
+<a href="#top" class="top">Back to Top</a>
+<!-- GRID EXAMPLE -->
     <section id="intro" class="maxWidth">
         <h1>The Grid System</h1><br>
-        <p>Grids are a great way to organize content and create messages that are quick and easy for your audience to process. Take a look below at the grid layouts we have to choose from.</p><br><br>
+        <p>Grids are a great way to organize content and create messages that are quick and easy for your audience to process. Take a look below at the grid layouts we have to choose from. Whether you want to create a 12 column grid layout for your whole site or break up a couple sections in an area of your site, this grid system is flexible and easy to apply anywhere.</p><br><br>
     </section>
-      </div>
     <section id="gridContainer" class="maxWidth">
       <div id="one1" class="gridItem">ONE</div>
       <div id="one2" class="gridItem">ELEVEN</div>
@@ -117,9 +152,34 @@
       <div id="eleven1" class="gridItem">ELEVEN</div>
       <div id="eleven2" class="gridItem">ONE</div>
     </section>
+<!-- DISPLAY CODE FOR GRIDS -->
+<div class="displayCode">
+  <pre><code>
+    &lt;!-- THIS IS THE BEGINNING OF THE CONTAINER --&gt;
+    &lt;div class="container"&gt;<br>
 
-    <a href="#top" class="top">Back to Top</a>
-
+    &lt;!-- GIVE EACH ROW A CLASS OF ROW --&gt;
+      &lt;div class="row"&gt;
+      &lt;!-- GIVE EACH COLUMN A CLASS OF THE NUMBER OF COLUMNS YOU WANT FOLLOWED BY "-COLUMN" --&gt;
+        &lt;div class="two-column"&gt;Two&lt;/div&gt;
+        &lt;div class="two-column"&gt;Two&lt;/div&gt;
+      &lt;/div&gt;<br>
+      &lt;div class="row"&gt;
+        &lt;div class="three-column"&gt;Three&lt;/div&gt;
+        &lt;div class="three-column"&gt;Three&lt;/div&gt;
+        &lt;div class="three-column"&gt;Three&lt;/div&gt;
+      &lt;/div&gt;<br>
+      &lt;div class="row"&gt;
+      &lt;div class="four-column"&gt;Four&lt;/div&gt;
+      &lt;div class="four-column"&gt;Four&lt;/div&gt;
+      &lt;div class="four-column"&gt;Four&lt;/div&gt;
+      &lt;div class="four-column"&gt;Four&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+</div>
+<!-- BACK TO TOP -->
+<a href="#top" class="top">Back to Top</a>
   <!-- TABLES -->
     <section class="componentsTables maxWidth" id=componentsTable>
         <h1>Tables</h1>
@@ -175,143 +235,13 @@
                 &lt;/table&gt;
         &lt;section&gt;
            &lt;section&gt;
-         
-          &lt;p&gt;
-         
-        let storeInfo = [
-        { 'image': 'https://via.placeholder.com/400x200.png', 
-        'address': 'Miramar Store, 97 Gates Road',     
-        'phone' : '(301)378-2630', 'hours': '9:00am-5:00pm'},
-        { 'image': 'https://via.placeholder.com/400x200.png',
-        'address': 'Mira Mesa Store, 202-B Laffey Circle',  
-        'phone' : '(301)863-6278', 'hours': '6:00am-3:00pm'},
-        { 'image': 'https://via.placeholder.com/400x200.png',
-        'address': 'Kearny Mesa Store, 1540 D Lovell Ct',   
-        'phone' : '(619)851-4153', 'hours': '4:00pm-11:00pm'},
-        { 'image': 'https://via.placeholder.com/400x200.png', 
-        'address': 'Clairemont Store, 4545 La Jolla Village Square', 
-        'phone' : '(619)453-8562', 'hours': '9:00am-5:00pm'},
-        { 'image': 'https://via.placeholder.com/400x200.png',
-        'address': 'University City Store, 2267 Lago Ventana',    
-        'phone' : '(858)256-2044', 'hours': '9:00am-5:00pm'},
-        {'image': 'https://via.placeholder.com/400x200.png',
-        'address': 'San Diego Store, 1570 Iris Avenue',   
-        'phone' : '(858)256-9651', 'hours': '4:00pm-11:00pm'},
-    ];
-    
-    window.onload = () => {
-        loadTableData(storeInfo);
-    }
-    
-    //search
-    $('#search-input').on('keyup', function(){
-        var value = $(this).val()
-        console.log('value:',value)
-        var data= searchTable(value, storeInfo)
-        loadTableData(data)
-    })
-    
-    function searchTable(value, data) {
-        var filterData=[];
-    
-        for(var i=0; i data.length; i++ ){
-            value = value.toLowerCase()
-            var address = data[i].address.toLowerCase();
-            var phone = data[i].phone.toLowerCase();
-            if (address.includes(value)){
-                filterData.push(data[i])
-            } else if (phone.includes(value)) {
-                filterData.push(data[i])
-            }
-        } return filterData
-    }
-    
-    //sort function
-    $('th').on('click', function(column){
-    
-        
-        var column = $(this).data('column');
-        var order = $(this).data('order');
-        var text = $(this).html();
-        text = text.substring(0, text.length -1)
-        var dataType = $(this).data('type');
-    
-        console.log('column was clicked', column, order, dataType);
-        if( (dataType == 'image') || (dataType =='time')) {           
-            return;
-            }
-      
-        if(order == 'desc') {
-            $(this).data('order', 'asc')
-            $(this).addClass('asc');
-            $(this).removeClass('desc');
-            if(dataType == 'number'){
-                storeInfo = storeInfo.sort((a,b) => parseFloat( a[column]) > 
-                parseFloat(b[column]) ? 1: -1)s
-                
-            } else {
-                storeInfo = storeInfo.sort((a,b) => a[column] > b[column] ? 1: -1)
-            }
-            text += '&#9650'
-        }else {
-            $(this).data('order', 'desc')
-            $(this).addClass('desc');
-            $(this).removeClass('asc');
-            if(dataType == 'number'){
-                storeInfo = storeInfo.sort((a,b) => parseFloat( a[column])  &lt; 
-                parseFloat(b[column]) ? 1: -1)
-                
-            } else {
-                
-                storeInfo = storeInfo.sort((a,b) => a[column]  &lt; b[column] ? 1: -1)
-            }
-            text += '&#9660'
-        }
-        $(this).html(text)
-    
-        loadTableData(storeInfo)
-    })
-    
-    //END SORT
-    
-    //table data load
-    //     window.onload = () => {
-    //     loadTableData(storeInfo);
-    // }
-     function loadTableData(storeInfo) {
-        const tableBody = document.getElementById('tableData');
-        let dataHtml = '';
-    
-        
-        for(let info of storeInfo) {
-            dataHtml += `
-                            
-                            &lt;td&gt;${' &lt;img&gt; src="' + info.image +'"&gt;>'}&lt;/td&gt;
-                            &lt;td&gt;${info.address}&lt;/td&gt;
-                            &lt;td&gt;${info.phone}&lt;/td&gt;
-                            &lt;td&gt;${info.hours}&lt;/td&gt;
-                        &lt;td&gt;&lt;/tr&gt;`;
-        }
-        console.log(dataHtml);
-    
-        tableBody.innerHTML= dataHtml;
-    } 
-    &lt;/p&gt;
-    
     </code>
     </pre>
-    
     </section>
-    
     </div>
 
-
-
-
-
-
-
-    <a href="#top" class="top">Back to Top</a>
+<!-- BACK TO TOP -->
+<a href="#top" class="top">Back to Top</a>
     <!-- FORMS -->
     <section class=componentsForms id=componentsForms>
       <main>
@@ -512,7 +442,8 @@
   <br>
   <br>
 
-  <a href="#top" class="top">Back to Top</a>
+<!-- BACK TO TOP -->
+<a href="#top" class="top">Back to Top</a>
     <section class="componentsParallax" id="componentsParallax">
       <h1>Create a Parallax</h1>
       Adding a parallax page to your website is a great way to highlight images of your business.  Scroll down on a wide screen to see the effect.

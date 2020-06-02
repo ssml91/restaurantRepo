@@ -214,7 +214,7 @@ footer {
 }
 .maxWidth {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 5em auto;
 }
 .displayCode {
     display: none;
@@ -224,7 +224,8 @@ footer {
     margin: 0 10% 0 10%;
     @include break(600px) {
         display: block;
-        margin-bottom: 4em;
+        max-width: 960px;
+        margin: 0 auto 4em;
     }
 
 }

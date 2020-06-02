@@ -333,7 +333,7 @@ footer {
 
 .maxWidth {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 5em auto;
 }
 
 .displayCode {
@@ -347,7 +347,8 @@ footer {
 @media (min-width: 600px) {
   .displayCode {
     display: block;
-    margin-bottom: 4em;
+    max-width: 960px;
+    margin: 0 auto 4em;
   }
 }
 
@@ -676,8 +677,7 @@ body {
 }
 
 #intro {
-  margin-top: 1.5em;
-  margin: 1.5em 1em 0;
+  margin: 1.5em auto 0;
 }
 
 #gridContainer {
@@ -1305,14 +1305,20 @@ body {
 }
 
 .buttons button#next {
+  background-color: #dedede;
+  color: #000;
+  border: solid 1px #9c9c9c;
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 15px;
 }
 
 .buttons button#prev {
+  background-color: #dedede;
+  color: #000;
+  border: solid 1px #9c9c9c;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 15px;
 }
 

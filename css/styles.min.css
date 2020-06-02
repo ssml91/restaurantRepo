@@ -85,11 +85,11 @@ footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #
 
 .top { z-index: 10; padding: 1em; color: #fff; background-color: #252525; font-family: 'Abril Fatface', cursive; cursor: pointer; float: right; text-decoration: none; width: 100px; text-align: center; }
 
-.maxWidth { max-width: 960px; margin: 0 auto; }
+.maxWidth { max-width: 960px; margin: 5em auto; }
 
 .displayCode { display: none; background-color: #c4bdac; margin: 0 10%; background-color: #c4bdac; margin: 0 10% 0 10%; }
 
-@media (min-width: 600px) { .displayCode { display: block; margin-bottom: 4em; } }
+@media (min-width: 600px) { .displayCode { display: block; max-width: 960px; margin: 0 auto 4em; } }
 
 .navbar { font-size: .8em; background-color: #c4bdac; padding-bottom: 10px; }
 
@@ -178,7 +178,7 @@ td img { max-width: 100%; height: auto; }
 
 body { margin: 0 auto; }
 
-#intro { margin-top: 1.5em; margin: 1.5em 1em 0; }
+#intro { margin: 1.5em auto 0; }
 
 #gridContainer { text-align: center; width: 80%; }
 
@@ -350,9 +350,9 @@ body { overflow-x: hidden; }
 
 .slide .content h1 { margin-bottom: 10px; }
 
-.buttons button#next { position: absolute; top: 50%; right: 15px; }
+.buttons button#next { background-color: #dedede; color: #000; border: solid 1px #9c9c9c; position: absolute; top: 60%; right: 15px; }
 
-.buttons button#prev { position: absolute; top: 50%; left: 15px; }
+.buttons button#prev { background-color: #dedede; color: #000; border: solid 1px #9c9c9c; position: absolute; top: 60%; left: 15px; }
 
 @media (max-width: 500px) { .slide .content { bottom: -300px; left: 0; width: 100%; }
   .slide.current .content { -webkit-transform: translateY(-300px); transform: translateY(-300px); } }
