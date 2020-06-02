@@ -54,12 +54,24 @@ body {
     a {
         text-decoration: none;
         color: #000;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 5px 10px;
+        @include break {
+            margin-top: 0;
+        }
+    }
+    .logo {
+        text-decoration: none;
         display: inline-block;
         margin-top: 10px;
         margin-left: 20px;
         padding: 5px 10px;
         @include break {
             margin-top: 0;
+        }
+        &:hover {
+            color: rgba(255,255,255,1);
         }
     }
     .navbar-toggle {
@@ -95,23 +107,24 @@ h1 {
 }
 #indexGrid {
     text-align: center;
-    padding: 7em 1.5em;
+    padding: 1em;
     h1 {
         margin-bottom: 1em;
         font-family: 'Dawning of a New Day', cursive;
         font-size: 2.7em;
     }
     p {
-        margin-top: 2.5em;
+        margin-top: 2em;
     }
     @include break (600px) {
         text-align: center;
+        padding: 7em;
     }
 }
 #orderOnline {
     img {
-        width: 95%;
-        height: auto;
+        width: 90%;
+        margin: 0 auto;
     }
     @include break (1000px) {
         display: grid;
@@ -132,14 +145,50 @@ h1 {
     font-size: 1em;
     border: solid 1px #949494;
 }
+#hoursGrid {
+    padding: 1em;
+    h1 {
+        text-align: center;
+        font-size: 2.7em;
+    }
+    p {
+        line-height: 1.6;
+        text-align: left;
+    }
+    @include break (600px) {
+        text-align: center;
+        padding-bottom: 7em;
+    }
+}
+#hoursContainer {
+    @include break (1000px) {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 280px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        div {
+            padding: 0 2em;
+            line-height: 2;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+}
 button {
     padding: 1.5em;
     background-color: #dedede;
     cursor: pointer;
 }
+body {
+    overflow-x: hidden;
+}
 .slider {
     position: relative;
-    height: 85vh;
+    height: 80vh;
 }
 .slide {
     position: absolute;
@@ -152,11 +201,11 @@ button {
 }
 .slide.current {
     opacity: 1;
-}
-.slide.current .content {
-    opacity: 1;
-    transform: translateX(600px);
-    transition: all .7s ease-in-out .3s;
+    .content {
+        opacity: 1;
+        transform: translateX(600px);
+        transition: all .7s ease-in-out .3s;
+    }
 }
 .slide .content {
     position: absolute;
@@ -167,20 +216,32 @@ button {
     background-color: rgba(255,255,255, .8);
     color: #333;
     padding: 35px;
+    h1 {
+        margin-bottom: 10px;
+        font-family: 'Lato', sans-serif;
     }
-.slide .content h1 {
-    margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
 }
-.buttons button#next {
-    position: absolute;
-    top: 40%;
-    right: 15px;
+.buttons {
+    button#next {
+        position: absolute;
+        top: 40%;
+        right: 15px;
+    }
+    button#prev {
+        position: absolute;
+        top: 40%;
+        left: 15px;
+    }
 }
-.buttons button#prev {
-    position: absolute;
-    top: 40%;
-    left: 15px;
+@media(max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
 }
 
 .slide:first-child {

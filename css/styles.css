@@ -1012,7 +1012,6 @@ article {
   }
 }
 
-/* =============================================================== */
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 960px) {
   #gCard_main {
@@ -1095,13 +1094,13 @@ body {
 
 .buttons button#next {
   position: absolute;
-  top: 575%;
+  top: 40%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 575%;
+  top: 40%;
   left: 15px;
 }
 

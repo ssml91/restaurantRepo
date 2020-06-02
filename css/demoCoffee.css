@@ -97,10 +97,21 @@ body {
 .navbar a {
   text-decoration: none;
   color: #000;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 5px 10px;
+}
+
+.navbar .logo {
+  text-decoration: none;
   display: inline-block;
   margin-top: 10px;
   margin-left: 20px;
   padding: 5px 10px;
+}
+
+.navbar .logo:hover {
+  color: white;
 }
 
 .navbar .navbar-toggle {
@@ -140,7 +151,7 @@ h1 {
 
 #indexGrid {
   text-align: center;
-  padding: 7em 1.5em;
+  padding: 1em;
 }
 
 #indexGrid h1 {
@@ -150,18 +161,19 @@ h1 {
 }
 
 #indexGrid p {
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 @media (min-width: 600px) {
   #indexGrid {
     text-align: center;
+    padding: 7em;
   }
 }
 
 #orderOnline img {
-  width: 95%;
-  height: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
@@ -186,15 +198,66 @@ h1 {
   border: solid 1px #949494;
 }
 
+#hoursGrid {
+  padding: 1em;
+}
+
+#hoursGrid h1 {
+  text-align: center;
+  font-size: 2.7em;
+}
+
+#hoursGrid p {
+  line-height: 1.6;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  #hoursGrid {
+    text-align: center;
+    padding-bottom: 7em;
+  }
+}
+
+@media (min-width: 1000px) {
+  #hoursContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px 500px;
+        grid-template-columns: 500px 500px;
+    -ms-grid-rows: 280px;
+        grid-template-rows: 280px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #hoursContainer div {
+    padding: 0 2em;
+    line-height: 2;
+  }
+  #hoursContainer h3 {
+    text-align: center;
+  }
+}
+
 button {
   padding: 1.5em;
   background-color: #dedede;
   cursor: pointer;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .slider {
   position: relative;
-  height: 85vh;
+  height: 80vh;
 }
 
 .slide {
@@ -245,6 +308,18 @@ button {
   left: 15px;
 }
 
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+  .slide.current .content {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
 .slide:first-child {
   background: url("../../images/coffee-01.jpg") no-repeat center center/cover;
 }
@@ -266,5 +341,145 @@ footer {
   background-color: #d1dcfd;
   padding: 1.5em;
   display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input {
+  border: solid 1px;
+  padding: .2em;
+}
+
+label {
+  display: block;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.formButton {
+  background-color: #dedede;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #949494;
+  cursor: pointer;
+  width: 100%;
+}
+
+#topH1 {
+  margin-top: 1.3em;
+}
+
+.contact_container {
+  width: 90%;
+  margin: 2em auto 5em;
+  border: 2px solid #ccc;
+  padding: 15px;
+  line-height: 1.7;
+}
+
+@media (min-width: 800px) {
+  .contact_container {
+    max-width: 800px;
+  }
+}
+
+.contact_email, .contact_reason, .contact_text {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fieldset1, .fieldset2, .fieldset3 {
+  padding: 1em;
+  margin: 5px;
+}
+
+legend {
+  color: #999;
+}
+
+.row {
+  margin-bottom: .5em;
+}
+
+input {
+  border: solid 1px #99b8a8;
+  padding: .2em;
+}
+
+label {
+  display: block;
+}
+
+input[id="address"] {
+  width: 250px;
+}
+
+label[for="city"], label[for="state"] {
+  display: inline-block;
+}
+
+label[for="visa"], label[for="mc"], label[for="amex"] {
+  display: inline-block;
+}
+
+.checkoutp {
+  padding-left: 5px;
+}
+
+/* .container {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;
+  } */
+@media screen and (min-width: 800px) {
+  .fieldset3 {
+    width: 92.5%;
+  }
+  .innerfieldset {
+    width: 93%;
+    margin-top: 15px;
+  }
+  .fieldset1, .fieldset2 {
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+    float: left;
+    width: calc(100% - 56%);
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  .clear {
+    clear: both;
+  }
+  .checkoutp {
+    padding: 2px;
+    max-width: 940px;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=demoCoffee.css.map */
