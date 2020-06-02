@@ -5,22 +5,26 @@
     }
     .sushiBody {
         font-family: 'Inria Sans', sans-serif;
-        background-image: url('../images/dish4.jpg'); 
-        background-repeat: no-repeat;
+        background-image: url('../images/sushiMember.png'); 
+       
         background-size: cover;
         display: flex;
-        flex-direction: row;
-        // height: 50vh;
-        @include break(600px) {
-            flex-direction: column;
-        }
-        
        
+       height: 100vh;
+       
+        flex-direction: column;
+        
+      
         justify-content: center;
         align-items: center;
-        margin: 100px 0 30px;
+        // margin: 100px 0 30px;
+        
         font-weight: 400;
-        font-size: 24px;
+        font-size: 16px;
+        @include break(600px) {
+            font-size: 16px;
+        }
+       
       
     }
 
@@ -28,10 +32,18 @@
         font-weight: bold;
         margin: 0;
         font-family: 'Inria Sans', sans-serif;
+        font-size: 1em;
+        @include break(600px) {
+            font-size: 2em;
+        }
     }
 
     .signinp {
-        font-size: 14px;
+        font-size: 10px;
+        @include break(600px) {
+            font-size: 14px;
+        }
+       
         font-weight: 100;
         line-height: 20px;
         letter-spacing: 0.5px;
@@ -39,12 +51,20 @@
     }
 
     span {
-        font-size: 12px;
+        font-size: 8px;
+        @include break(600px) {
+            font-size: 12px;
+        }
+        
     }
     
     a {
         color: #333;
-        font-size: 14px;
+        font-size: 10px;
+        @include  break(600px) {
+            font-size: 14px;
+        }
+       
         text-decoration: none;
         margin: 15px 0;
     }
@@ -98,7 +118,11 @@
        border: 1px solid #ff4b2b;
        background: #ff4b2b;
        color: #ffffff;
-       font-size: 12px;
+       font-size: 8px;
+       @include break(600px) {
+        font-size: 12px;
+       }
+      
        font-weight: bold;
        padding: 12px 45px;
        letter-spacing: 1px;
@@ -231,7 +255,11 @@ button.ghost {
     padding-bottom:10px;
     background-color: #111;
     color:#fff;
-    font-size: 18px;
+    font-size: 12px;
+    @include break(600px) {
+        font-size: 18px;
+    }
+    
   /* -webkit-justify-content: center; */
   justify-content: space-between;
   /* -webkit-align-items: center; */
@@ -255,7 +283,11 @@ a.logo {
   color: #fff;
   margin-left: 15px;
   font-family: 'Inria Sans', sans-serif;
-  font-size: 24px; 
+  font-size: 16px;
+  @include break(600px) {
+    font-size: 16px;  
+  }
+ 
 }
 .logo:hover {
   color: red;
@@ -299,7 +331,12 @@ a.logo {
         margin-top: 20px;
         background-color: #111;
         color:#fff;
-        font-size: 18px;
+        font-size: 12px;
+        @include break(600px) {
+            font-size: 18px;
+        }
+
+       
       /* -webkit-justify-content: center; */
       justify-content: space-between;
       /* -webkit-align-items: center; */

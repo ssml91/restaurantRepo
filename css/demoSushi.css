@@ -309,21 +309,20 @@ h1 {
 
 .sushiBody {
   font-family: 'Inria Sans', sans-serif;
-  background-image: url("../images/dish4.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../images/sushiMember.png");
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  height: 100vh;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 100px 0 30px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 @media (min-width: 600px) {
   .sushiBody {
-    flex-direction: column;
+    font-size: 16px;
   }
 }
 
@@ -331,25 +330,50 @@ h1 {
   font-weight: bold;
   margin: 0;
   font-family: 'Inria Sans', sans-serif;
+  font-size: 1em;
+}
+
+@media (min-width: 600px) {
+  .signinh2 {
+    font-size: 2em;
+  }
 }
 
 .signinp {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
 }
 
+@media (min-width: 600px) {
+  .signinp {
+    font-size: 14px;
+  }
+}
+
 span {
-  font-size: 12px;
+  font-size: 8px;
+}
+
+@media (min-width: 600px) {
+  span {
+    font-size: 12px;
+  }
 }
 
 a {
   color: #333;
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: none;
   margin: 15px 0;
+}
+
+@media (min-width: 600px) {
+  a {
+    font-size: 14px;
+  }
 }
 
 .signcontainer {
@@ -403,12 +427,18 @@ button {
   border: 1px solid #ff4b2b;
   background: #ff4b2b;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 8px;
   font-weight: bold;
   padding: 12px 45px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+}
+
+@media (min-width: 600px) {
+  button {
+    font-size: 12px;
+  }
 }
 
 button:active {
@@ -540,10 +570,16 @@ button.ghost {
   padding-bottom: 10px;
   background-color: #111;
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
   /* -webkit-justify-content: center; */
   justify-content: space-between;
   /* -webkit-align-items: center; */
+}
+
+@media (min-width: 600px) {
+  .signinfooter {
+    font-size: 18px;
+  }
 }
 
 .social-container {
@@ -566,7 +602,13 @@ a.logo {
   color: #fff;
   margin-left: 15px;
   font-family: 'Inria Sans', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  a.logo {
+    font-size: 16px;
+  }
 }
 
 .logo:hover {
@@ -611,10 +653,16 @@ a.logo {
     margin-top: 20px;
     background-color: #111;
     color: #fff;
-    font-size: 18px;
+    font-size: 12px;
     /* -webkit-justify-content: center; */
     justify-content: space-between;
     /* -webkit-align-items: center; */
+  }
+}
+
+@media (min-width: 600px) and (min-width: 600px) {
+  .signinfooter {
+    font-size: 18px;
   }
 }
 
@@ -694,6 +742,7 @@ a.logo {
   background-color: #111;
   color: #fff;
   padding: 20px;
+  font-size: 1em;
 }
 
 .suship {
