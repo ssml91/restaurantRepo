@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -1388,6 +1389,189 @@ body {
 @media (min-width: 600px) {
   .containerHelper {
     flex-direction: row;
+  }
+}
+
+.contactUsBody {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+@media (min-width: 600px) {
+  .contactUsBody {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.contacth1 {
+  text-align: center;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 20px 0 30px;
+  text-shadow: #d8ee5b 0.03em 0.03em 0.03em;
+  text-emphasis-color: #333;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  align-items: center;
+  margin-left: 140px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.contact_container {
+  width: 94%;
+  border: 1px solid #ccc;
+  margin: 15px 15px;
+  padding: 0;
+  line-height: 1.7;
+}
+
+.contact_container label {
+  margin-left: 15px;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 15px;
+  width: 90%;
+  justify-content: center;
+  justify-self: center;
+  font-size: 16px;
+}
+
+.contact_container #fName, #lName, #exampleEmailInput, #exampleRecipientInput, #exampleMessage {
+  width: 80%;
+  display: inline-block;
+  padding: 12px 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .contact_container #fName, #lName, #exampleEmailInput, #exampleRecipientInput, #exampleMessage {
+    width: 94%;
+  }
+}
+
+.contact_email, .contact_reason, .contact_text {
+  width: 95%;
+  padding: 12px 10px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.example-send-yourself-copy {
+  justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .contact_email, .contact_reason, .contact_text {
+    align-content: center;
+    width: 95%;
+    margin: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .example-send-yourself-copy {
+    display: inline-block;
+    text-align: center;
+  }
+  .button-primary {
+    align-items: center;
+    margin-left: 240px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .contact_container .button-primary {
+    justify-content: center;
+    align-content: center;
+  }
+  .contact_container label {
+    margin-left: 15px;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 15px;
+    width: 96%;
+    justify-content: center;
+    justify-self: center;
+  }
+  .button-primary {
+    align-items: center;
+    margin-left: 320px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .contact_container .button-primary {
+    justify-content: center;
+    align-content: center;
+  }
+  .button-primary {
+    align-items: center;
+    margin-left: 430px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+  }
+  .contact_container label {
+    margin-left: 15px;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 15px;
+    width: 97%;
+    justify-content: center;
+    justify-self: center;
+  }
+  .example-send-yourself-copy {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.formsample {
+  background-color: rgba(248, 246, 233, 0.7);
+  box-sizing: border-box;
+  border: 1px solid #777;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px;
+}
+
+.display-code {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+  border: 1px solid #666;
+  margin: 10px 3px 10px 3px;
+  padding: 0;
+}
+
+@media screen and (max-width: 590px) {
+  .display-code {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
