@@ -21,6 +21,12 @@
   font-size: 1em;
 }
 
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
