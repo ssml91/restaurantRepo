@@ -179,6 +179,9 @@ form {
   .checkoutp {
     padding-left: 5px;
   }
+  #checkoutForm {
+    margin: 0 auto;
+  }
   
   /* .container {
       width: 90%;
@@ -259,7 +262,7 @@ form {
 
 main {
   width: 98%;
-  margin: auto;
+  margin: 0 auto;
   /* padding: 1em; */
   background-color: rgba(255,255,255,.8);
   position: relative;
