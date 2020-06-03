@@ -1513,6 +1513,43 @@ body {
   margin-top: 5em;
 }
 
+.buttonsOnStyles {
+  text-align: center;
+}
+
+.buttonsOnStyles button {
+  border: solid 1px #525252;
+}
+
+.displayCode {
+  margin-top: 3em;
+}
+
+.xsmallBtn {
+  padding: .4em 1em;
+}
+
+.smallBtn {
+  padding: .6em 3em;
+}
+
+.largeBtn {
+  padding: 1.5em 4em;
+}
+
+.hoverBtnStyle {
+  background-color: #636363;
+}
+
+.activeBtnStyle {
+  background-color: #919191;
+}
+
+.visitedBtnStyle {
+  background-color: #cfcfcf;
+  color: #000;
+}
+
 .sushiStyle {
   background-color: #000;
   font-family: "Inria Sans", sans-serif;
