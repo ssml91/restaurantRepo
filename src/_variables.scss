@@ -2,11 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
 
 
 //Fonts 
 $font-stack: 'Abril Fatface', cursive;
+$font-rr: 'Lato', sans-serif;
+$font-sushi: 'Inria Sans', sans-serif;
+$font-coffee: 'Dawning of a New Day', cursive;
+$font-subCoffee: 'Lato', 'sans-serif';
 //Framework Colors 
 $dkGray: #c4bdac;
 $mdGray: #efeeee;
@@ -26,3 +33,12 @@ $rust: #bb3a1e;
 $ltBlue: #5879b1;
 $gold: #deb608;
 $dkBlue: #1b1343;
+
+//Sushi Style
+$orange: #ff4900;
+$black: #000;
+$white: #fff;
+
+//Coffee Dream
+$coffeeDream: #d1dcfd;
+

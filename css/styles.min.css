@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&display=swap");
 * { padding: 0px; margin: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 * h1, * h2 { font-family: "Abril Fatface", cursive; }
+
+* h1 { font-size: 1.5em; }
+
+* h2 { font-size: 1em; }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
 
@@ -139,7 +144,7 @@ footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #
 
 .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.amenities, .web, .menu, .food { padding: 20px; margin: 20px; border: solid 1px blue; }
+.amenities, .web, .menu, .food { padding: 20px; margin: 20px; }
 
 @media only screen and (max-width: 601px) { table, thead, tbody, th, td, tr { display: block; }
   thead tr { position: absolute; top: -9999px; left: -999px; }
@@ -389,9 +394,67 @@ body { overflow-x: hidden; }
 
 .ptext .trans { background-color: transparent; }
 
-.typography ul li { padding-top: 10px; padding-bottom: 10px; }
+.typography h2 { text-align: left; }
+
+.typography ul li { list-style-type: none; padding-top: 10px; padding-bottom: 10px; }
 
 .typography ul li h1, .typography ul li h2 { text-align: left; }
 
 .typography ul li h3, .typography ul li h4, .typography ul li h5, .typography ul li h6 { padding-top: 5px; padding-bottom: 5px; }
+
+.mainHome { margin: 0 auto; padding-left: 2em; padding-right: 2em; }
+
+.mainHome section h2 { text-align: left; }
+
+.upperCase { text-transform: uppercase; }
+
+.lowerCase { text-transform: lowercase; }
+
+.menu ul li, .amenities ul li, .web ul li { list-style-type: none; }
+
+.menu ul li i, .amenities ul li i, .web ul li i { padding-right: 5px; }
+
+.sushiStyle { background-color: #000; font-family: "Inria Sans", sans-serif; }
+
+.sushiStyle p { color: #fff; }
+
+.sushiStyle h1 { color: #ff4900; font-family: "Inria Sans", sans-serif; }
+
+.sushiInverted { color: #000; background-color: #ff4900; font-style: "Inria Sans", sans-serif; }
+
+.sushiInverted h1 { color: #000; font-family: "Inria Sans", sans-serif; }
+
+.sushiInverted p { color: #fff; }
+
+.helperDiv { width: 300px; height: 200px; padding: 0 15px 0 15px; margin: 10px; border: solid 1px black; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-preferred-size: 10%; flex-basis: 10%; }
+
+.helperDiv p { font-size: 1em; text-align: center; }
+
+.coffeeDream { background-color: #d1dcfd; font-family: "Dawning of a New Day", cursive; }
+
+.coffeeDream p { color: #fff; font-family: "Lato", "sans-serif"; }
+
+.coffeeDream h1 { color: #000; font-family: "Dawning of a New Day", cursive; }
+
+.coffeeInverted { background-color: #fff; font-family: "Dawning of a New Day", cursive; }
+
+.coffeeInverted p { color: #000; font-family: "Lato", "sans-serif"; }
+
+.coffeeInverted h1 { color: #000; font-family: "Dawning of a New Day", cursive; }
+
+.restaurantRepo { color: #fff; background-color: #c4bdac; }
+
+.restaurantRepo p { color: #000; font-family: "Lato", sans-serif; }
+
+.restaurantRepo h1 { color: #fff; font-family: "Abril Fatface", cursive; }
+
+.rrInverted { color: #000; background-color: #efeeee; }
+
+.rrInverted p { color: #000; font-family: "Lato", sans-serif; }
+
+.rrInverted h1 { color: #000; font-family: "Lato", sans-serif; }
+
+.containerHelper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+@media (min-width: 600px) { .containerHelper { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; } }
 /*# sourceMappingURL=styles.min.css.map */

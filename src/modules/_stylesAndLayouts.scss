@@ -1,6 +1,10 @@
 .typography {
+    h2 {
+        text-align: left;
+    }
     ul {
         li {
+            list-style-type: none;
             padding-top: 10px;
             padding-bottom: 10px;
             h1, h2 {
@@ -11,6 +15,33 @@
                 padding-bottom: 5px;
             }
             
+        }
+    }
+}
+.mainHome {
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    section {
+        h2 {
+            text-align: left;
+        }
+    }
+}
+.upperCase {
+    text-transform: uppercase;
+}
+.lowerCase {
+    text-transform: lowercase;
+}
+
+.menu, .amenities, .web {
+    ul {
+        li {
+            list-style-type: none;
+            i {
+                padding-right: 5px;
+            }
         }
     }
 }
