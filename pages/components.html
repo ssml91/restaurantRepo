@@ -249,15 +249,15 @@
           <p>Forms can be used to collect information from your customers simply and efficiently. Whether you need a contact page for customers to email you, create a membership login page, or take orders from your customers, our forms will be able to serve any need you may have. We have a variety of forms to choose from.<br><br>
           Apply any of our classes to simply style your forms according to your preference. We have a variety of color palettes to choose from! Your form can be a unique and one of a kind form.</p>
           <section>
-              <h2 class= "checkouth1" id="orderOnlineBody">Checkout</h2>
-          </section>
-          <section>
-              <h2 class= "checkouth">Shipping Information</h2>
-              <form action="#" method="GET" id="checkoutForm">
-                  <div class="cols">
-                      <div class="col checkout">
-                          <fieldset class="fieldset1">
-                              <legend>Ship to:</legend>
+            <h1 class= "checkouth1">Checkout, Complete your order</h1>
+                <h2 class="checkouth2">Shipping Information</h2>
+                <form action="#" method="GET" id="checkoutForm">
+                    <div class="checkout_cols">
+                        <div class="checkoutcol">
+                           
+              <!-- fieldset>legend{Ship to:}+div.row*6>label+input -->
+                         <fieldset class="fieldset1">
+                           <legend>Ship to:</legend>
                                 <div class="row">
                                     <label for="fNmae">First Name:</label>
                                     <input type="text" name="fNmae" id="fName" required></div>
@@ -266,72 +266,23 @@
                                     <input type="text" name="lName" id="lName" required></div>
                                 <div class="row">
                                     <label for="Address">Address:</label>
-                                    <input type="text" name="Address" id="Address" required></div>
+                                    <input type="text" name="Address" id="address" required></div>
                                 <div class="row">
                                     <label for="zip">Zip Code:</label>
                                     <input type="text" name="zip" id="zip" required></div>
                                 <div class="row">
                                     <label for="city">City:</label>
                                     <input type="text" name="city" id="city" required>
+                                
                                     <label for="state">State:</label>
                                     <select name="state" id="state">
-                                        <option value=" " selected></option>
-                                       <option value="AL">AL</option>
-                                       <option value="AK">AK</option>
-                                        <option value="AZ">AZ</option>
-                                        <option value="AR">AR</option>
-                                        <option value="CA">CA</option>
-                                        <option value="CO">CO</option>
-                                        <option value="CT">CT</option>
-                                        <option value="DE">DE</option>
-                                        <option value="DC">DC</option>
-                                        <option value="FL">FL</option>
-                                        <option value="GA">GA</option>
-                                        <option value="HI">HI</option>
-                                        <option value="ID">ID</option>					
-                                        <option value="IL">IL</option>					
-                                        <option value="IN">IN</option>					
-                                        <option value="IA">IA</option>					
-                                        <option value="KS">KS</option>					
-                                        <option value="KY">KY</option>					
-                                        <option value="LA">LA</option>					
-                                        <option value="ME">ME</option>					
-                                        <option value="MD">MD<option>                       
-                                        <option value="MA">MA</option>					
-                                        <option value="MI">MI</option>					
-                                        <option value="MN">MN</option>					
-                                        <option value="MS">MS</option>					
-                                        <option value="MO">MO</option>					
-                                        <option value="MT">MT</option>					
-                                        <option value="NE">NE</option>					
-                                        <option value="NV">NV</option>					
-                                        <option value="NH">NH</option>
-                                        <option value="NJ">NJ</option>
-                                        <option value="NM">NM</option>
-                                        <option value="NY">NY</option>
-                                        <option value="NC">NC</option>
-                                        <option value="ND">ND</option>
-                                        <option value="OH">OH</option>
-                                        <option value="OK">OK</option>
-                                        <option value="OR">OR</option>
-                                        <option value="PA">PA</option>
-                                        <option value="RI">RI</option>
-                                        <option value="SC">SC</option>
-                                        <option value="SD">SD</option> 
-                                          <option value="TN">TN</option>
-                                        <option value="TX">TX</option>
-                                        <option value="UT">UT</option>
-                                        <option value="VT">VT</option>
-                                        <option value="VA">VA</option>
-                                        <option value="WA">WA</option>
-                                        <option value="WV">WV</option>
-                                        <option value="WI">WI</option>
-                                        <option value="WY">WY</option> 
+                                    <option value="CA">CA</option>
                                     </select>
                                 </div>
-                                <fieldset class="innerfieldset">
+                                   <fieldset class="innerfieldset">
                                    
-                                            <legend>Aditional information</legend>
+                                      <legend>Aditional information</legend>
+                                          <div class = "innerwrap">
                                             <div class="row">
                                             <label for="email">Email address:</label>
                                             <input type="email" name="email" id="email" required>
@@ -339,15 +290,15 @@
                                             <label for="tel">Phone Number:</label>
                                             <input type="tel" name="tel" id="tel" placeholder="123-456-7890" maxlength="12" pattern="^\d{3}-\d{3}-\d{4}$" required>
                                           </div>
+                                        </div>
                                   </fieldset>
                             </fieldset> 
                            
                              
                             
                               
-                                <fieldset class="fieldset2">
-                                    <legend>Payment Details</legend>
-                                    
+                            <fieldset class="fieldset2">
+                                <legend>Payment Details</legend>
                                     <div class="row">
                                             <input type="radio" id="visa" name="cc">
                                             <label for="visa">Visa</label>
@@ -356,89 +307,141 @@
                                             <input type="radio" id="amex" name="cc">
                                             <label for="amex">American Express</label>
                                     </div>
-                                        <div class="row">
+                                    <div class="row">
                                             <label for="cardName">Name <span>as it appears on your card</span></label>
                                             <input type="text" id="cardName" name="cc_name" required>
-                                        </div>
-                                        <div class="row">
+                                     </div>
+                                      <div class="row">
                                             <label for="cardNum">Card Number</label>
                                             <input type="number" id="cardNum" name="card_number" required>
-                                        </div>
-                                        <div class="row">
+                                      </div>
+                                      <div class="row">
                                             <label for="exp">Expire date</label>
                                             <input type="month" id="exp" name="experiation" required>
-                                        </div>
-                                        <div class="row">
+                                      </div>
+                                       <div class="row">
                                             <label for="cvv">Security number</label>
                                             <input type="number" id="cvv" name="cvv" required pattern="[0-9]{3}">
                                        </div>
-                                       <fieldset class="innerfieldset">
-                                        <legend>Promo or Coupon Code</legend>
-                                        <div class="row">
-                                            <label for="promo">Enter code to apply discount: </label>
-                                        <input type="text" name="promo" id="promo" placeholder="enter code here">
-                                        <input type="button" value="Apply">  
-                                       </div>
-                                       <div class="row">
-                                        <label for="paygcard">Do you want to use Gift Card?:</label> </label>
-                                    <input type="text" name="paygcard" id="paugcard" placeholder="enter your gift card number here">
-                                    <input type="button" value="Apply">  
-                                   </div>
+                                         <fieldset class="innerfieldset">
+                                            <legend>Promo or Coupon Code</legend>
+                                             <div class = "innerwrap"> 
+                                               <div class="row">
+                                                 <label for="promo">Enter code to apply discount: </label>
+                                                 <input type="text" name="promo" id="promo" placeholder="enter code here">
+                                                 <input type="button" value="Apply">  
+                                              </div>
+                                             </div>
+                                              <div class = "innerwrap">
+                                              <div class="row">
+                                                <label for="paygcard">Do you want to use Gift Card?:</label> 
+                                               <input type="text" name="paygcard" id="paugcard" placeholder="enter your gift card number here">
+                                               <input type="button" value="Apply">  
+                                              </div>
+                                            </div>
+                                          </fieldset>
                                     </fieldset>
-                                    </fieldset>
-                                    
-                                </fieldset>
+                                </div> <!--end checkoutcol--> 
+                            
                                   <fieldset class="fieldset3">
                                         <legend>Submit your order</legend>
+                                        
                                         <div class="row">
-                                        <input type="submit">
+                                         <input type="submit">
+                                          <p class= checkoutp>Do you need more help?</p> <p class= checkoutp>Call us for assistance:<a href="tel:888-123-4567"> 888-123-4567 </a></p>
                                         </div>
-                                        <p class= checkoutp>Do you need more help? &nbsp; &nbsp; Call us for assistance:</p>
-                                             <a href="tel:888-123-4567"> 888-123-4567 </a>
-                                    </fieldset>
-                                </div>
-                          
-                        </div> <!--end col-->
-                    </div><!--end cols-->
-                    
+                                    </fieldset>  
+                    </div><!--end checkout_cols-->               
                 </form>
-               
             </section>
-        </main>
+         
         <main>
-          <form action="action_page.php" method="post">
-    
-            <h1>Contact</h1>
-              <!-- <div class="imgcontainer">
-                <img src="#" alt="card" class="card">
-              </div> -->
-              
+            <section class="contactUsBody"> 
+                <div class="formsample">
+                    <!-- THIS IS FORM DATA. THE FORM-DATA IS SENT TO THE PAGE SPECIFIED IN THE ACTION ATTRIBUTE. -->
+                    <form action="action_page.php" method="post">
+                      <h1 class="contacth1">Contact page </h1>
+                         <div class="contact_container">
+                            <!-- THIS IS OUR INPUT AND LABEL LISTS -->
+                             <label for="fName">First Name:</label>
+                            <input type="text" name="fNmae" id="fName" required>
+                            <label for="lName">Last Name:</label>
+                            <input type="text" name="lName" id="lName" required>
+                            <label for="exampleEmailInput">Your email:</label>
+                            <input class="contact_email" type="email" placeholder="email@mailbox.com" id="exampleEmailInput">
+                            
+                            <label for="exampleRecipientInput">Reason for contacting</label>
+                            <!-- THIS IS OPTION LABEL ELEMENTS -->
+                                <select class="contact_reason" id="exampleRecipientInput">
+                                    <option value="Option 1">Questions</option>
+                                    <option value="Option 2">Admiration</option>
+                                    <option value="Option 3">Can I get your number?</option>
+                                </select>
+                           <label for="exampleMessage">Message</label>
+                           <textarea class="contact_text" placeholder="The reasons I contact you guys...." id="exampleMessage"></textarea>
+                          <label class="example-send-yourself-copy">
+                            <!-- THIS IS CHECKBOX ATTRIBUTE IN INPUT ELEMENTS -->
+                          <input type="checkbox">
+                          <!-- THIS SPAN PAG USE LIKE A <div> Element, BUT SPAN IS INLINE -->
+                          <span class="label-body">Send a copy to yourself</span> </label>
+                          <input class="button-primary" type="submit" value="Submit">
+                    
+                        </div>
+                  <!-- =====start OF THE PRECODE AREA======= -->
+                  <div class= "displayCode">
+              <pre>
+              <code>
             
-              <div class="contact_container">
-                   <label for="fName">First Name:</label>
-                  <input type="text" name="fNmae" id="fName" required>
-                  <label for="lName">Last Name:</label>
-                  <input type="text" name="lName" id="lName" required>
-                  <label for="exampleEmailInput">Your email</label>
-                  <input class="contact_email" type="email" placeholder="email@mailbox.com" id="exampleEmailInput">
-                  
-                     <label for="exampleRecipientInput">Reason for contacting</label>
-                      <select class="contact_reason" id="exampleRecipientInput">
-                        <option value="Option 1">Questions</option>
-                        <option value="Option 2">Admiration</option>
-                        <option value="Option 3">Can I get your number?</option>
-                      </select>
-                      <label for="exampleMessage">Message</label>
-                      <textarea class="contact_text" placeholder="The reasons I contact you guys...." id="exampleMessage"></textarea>
-                      <label class="example-send-yourself-copy">
-                      <input type="checkbox">
-                      <span class="label-body">Send a copy to yourself</span>
-                      </label>
-                       <!-- <input class="button-primary" type="submit" value="Submit"> -->
-                      <button class="formButton" type="submit">Submit</button>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;A very useful form&lt;title&gt;
+        <!--THIS IS THE LINK TO OUR CUSTOM STYLES-->
+        &lt;link rel="stylesheet" href="../css/sampleforms.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt; 
+        <!-- THIS IS FORM DATA. THE FORM-DATA IS SENT TO THE PAGE SPECIFIED IN THE ACTION ATTRIBUTE. -->
+        &lt;form action="action_page.php" method="post"&gt;
+        &lt;h1 class="contacth1"&gt;Contact page &lt;/h1&gt;
+            &lt;div class="contact_container"&gt;
+                &lt;!-- THIS IS OUR INPUT AND LABEL LISTS --&gt;
+                &lt;label for="fName"&gt;First Name:&lt;/label&gt;
+                &lt;input type="text" name="fNmae" id="fName" required&gt;
+                &lt;label for="lName"&gt;Last Name:&lt;/label&gt;
+                &lt;input type="text" name="lName" id="lName" required&gt;
+                &lt;label for="exampleEmailInput"&gt;Your email:&lt;/label&gt;
+                &lt;input class="contact_email" type="email" 
+                placeholder="email@mailbox.com" id="exampleEmailInput"&gt;
                 
-              </div>
-            </form>
+                &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
+                <!-- THIS IS OPTION LABEL ELEMENTS -->
+                    &lt;select class="contact_reason" id="exampleRecipientInput"&gt;
+                        &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
+                        &lt;option value="Option 2"&gt;Admiration&lt;/option&gt;
+                        &lt;option value="Option 3"&gt;Can I get your number?&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;label for="exampleMessage"&gt;Message&lt;/label&gt;
+                &lt;textarea class="contact_text"
+                placeholder="The reasons I contact you guys...." 
+                id="exampleMessage"&gt;&lt;/textarea&gt;
+            &lt;label class="example-send-yourself-copy"&gt;
+                <!-- THIS IS CHECKBOX ATTRIBUTE IN INPUT ELEMENTS -->
+            &lt;input type="checkbox"&gt;
+            &lt;!-- THIS SPAN PAG USE LIKE A &lt;div&gt; Element, BUT SPAN IS INLINE --&gt;
+            &lt;span class="label-body"&gt;Send a copy to yourself&lt;/span&gt; &lt;/label&gt;
+            &lt;input class="button-primary" type="submit" value="Submit"&gt;
+        
+            &lt;/div&gt;  <!-- END OF .contact-container -->
+            &lt;/form&gt;  <!-- End OF FORM -->
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </code>
+            </pre>
+            <!-- ==END OF THE PRECODE==================================== -->
+            </div>
+        </section>  
     </section>
   <br>
   <br>
