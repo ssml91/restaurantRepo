@@ -116,7 +116,7 @@
                     </pre>
                 </div>
             
-        <div class="container displayCode">
+        <div class="container displayCode no-print">
         
            
         
@@ -158,6 +158,7 @@
         <h2>Typography</h2>
             <ul>
                 <li>Headings
+                    <p>These are the standard sizes for our headings used in our pages.  </p>
                     <h1>This is an &lt;h1&gt; heading.</h1> 
                     <h2>This is an &lt;h2&gt; heading.</h2>
                     <h3>This is an &lt;h3&gt; heading.</h3>
@@ -168,20 +169,38 @@
                 <li>Body Copy</li>
                     <p>Paragraphs are styled with a standardized font of .8ems.
                     </p>
-                <li>Inline Text Elements</li>
-                <li>Alignments, abbreviations, address, block quotes, lits</li>
+                
                 <li>Transformation to uppercase or lowercase
                     <p>Easily transform large bodies of text lower or uppercase by adding a class "upperCase" or "lowerCase" to your element. <br> <br>
                         <p> &lt;p class="upperCase"&gt;   &lt;/p&gt;</p>
-
                         <p> &lt;p class="lowerCase"&gt;   &lt;/p&gt;</p>
                     </p>
-
                 </li>
                 <li></li>
                 <li></li>
             </ul>
     </section>
+    <section class="printStyling" id="printStyling">
+        <h2>No Print Class</h2>
+        <p>Easily exclude segments of your webpage for printing, by adding a 'no-print' class on any element needed and define it in your css as follows:</p>
+        <p>
+            <div class="displayCode no-print">
+                <pre>
+                    <code>
+                        
+    
+    @media print
+    {    
+        .no-print, .no-print *
+        {
+            display: none !important;
+        }
+                    </code>
+                </pre>
+            </div>
+        </p>
+    </section>
+    
     <section class="formStyling" id="formStyling">
         <h2>Form Styling</h2>
     </section>
