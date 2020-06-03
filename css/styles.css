@@ -153,6 +153,11 @@ button {
   cursor: pointer;
 }
 
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #homeDescription {
   width: 80%;
   margin: 6em auto 0;
@@ -1900,7 +1905,7 @@ body {
 
 .sushiBody {
   font-family: 'Inria Sans', sans-serif;
-  background-color: #efeeee;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

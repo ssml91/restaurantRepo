@@ -80,6 +80,10 @@ p {
     font-size: .8em;
 }
 button{
+    a {
+        color: $white;
+        text-decoration: none;
+    }
     color: #fff;
     background-color: rgb(37, 37, 37);
     padding: 1em 3em;

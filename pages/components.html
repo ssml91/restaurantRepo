@@ -358,6 +358,7 @@
                 </form>
             </section>
             <section class="sushiBody">
+                <h1>Member Login Form</h1>
                 <div class="signcontainer" id="signcontainer">
                    <div class="form-container sign-up-container">
                        <form action="#">
@@ -442,61 +443,62 @@
                           <input class="button-primary" type="submit" value="Submit">
                     
                         </div>
+        </section> 
+         
                   <!-- =====start OF THE PRECODE AREA======= -->
                   <div class= "displayCode">
-              <pre>
-              <code>
-            
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang="en"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-        &lt;title&gt;A very useful form&lt;title&gt;
-        <!--THIS IS THE LINK TO OUR CUSTOM STYLES-->
-        &lt;link rel="stylesheet" href="../css/sampleforms.css"&gt;
-    &lt;/head&gt;
-    &lt;body&gt; 
-        <!-- THIS IS FORM DATA. THE FORM-DATA IS SENT TO THE PAGE SPECIFIED IN THE ACTION ATTRIBUTE. -->
-        &lt;form action="action_page.php" method="post"&gt;
-        &lt;h1 class="contacth1"&gt;Contact page &lt;/h1&gt;
-            &lt;div class="contact_container"&gt;
-                &lt;!-- THIS IS OUR INPUT AND LABEL LISTS --&gt;
-                &lt;label for="fName"&gt;First Name:&lt;/label&gt;
-                &lt;input type="text" name="fNmae" id="fName" required&gt;
-                &lt;label for="lName"&gt;Last Name:&lt;/label&gt;
-                &lt;input type="text" name="lName" id="lName" required&gt;
-                &lt;label for="exampleEmailInput"&gt;Your email:&lt;/label&gt;
-                &lt;input class="contact_email" type="email" 
-                placeholder="email@mailbox.com" id="exampleEmailInput"&gt;
-                
-                &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
-                <!-- THIS IS OPTION LABEL ELEMENTS -->
-                    &lt;select class="contact_reason" id="exampleRecipientInput"&gt;
-                        &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
-                        &lt;option value="Option 2"&gt;Admiration&lt;/option&gt;
-                        &lt;option value="Option 3"&gt;Can I get your number?&lt;/option&gt;
-                    &lt;/select&gt;
-                &lt;label for="exampleMessage"&gt;Message&lt;/label&gt;
-                &lt;textarea class="contact_text"
-                placeholder="The reasons I contact you guys...." 
-                id="exampleMessage"&gt;&lt;/textarea&gt;
-            &lt;label class="example-send-yourself-copy"&gt;
-                <!-- THIS IS CHECKBOX ATTRIBUTE IN INPUT ELEMENTS -->
-            &lt;input type="checkbox"&gt;
-            &lt;!-- THIS SPAN PAG USE LIKE A &lt;div&gt; Element, BUT SPAN IS INLINE --&gt;
-            &lt;span class="label-body"&gt;Send a copy to yourself&lt;/span&gt; &lt;/label&gt;
-            &lt;input class="button-primary" type="submit" value="Submit"&gt;
-        
-            &lt;/div&gt;  <!-- END OF .contact-container -->
-            &lt;/form&gt;  <!-- End OF FORM -->
-    &lt;/body&gt;
-    &lt;/html&gt;
-            </code>
-            </pre>
-            <!-- ==END OF THE PRECODE==================================== -->
-            </div>
-        </section>  
+                    <pre>
+                    <code>
+                  
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title&gt;A very useful form&lt;title&gt;
+              <!--THIS IS THE LINK TO OUR CUSTOM STYLES-->
+              &lt;link rel="stylesheet" href="../css/sampleforms.css"&gt;
+          &lt;/head&gt;
+          &lt;body&gt; 
+              <!-- THIS IS FORM DATA. THE FORM-DATA IS SENT TO THE PAGE SPECIFIED IN THE ACTION ATTRIBUTE. -->
+              &lt;form action="action_page.php" method="post"&gt;
+              &lt;h1 class="contacth1"&gt;Contact page &lt;/h1&gt;
+                  &lt;div class="contact_container"&gt;
+                      &lt;!-- THIS IS OUR INPUT AND LABEL LISTS --&gt;
+                      &lt;label for="fName"&gt;First Name:&lt;/label&gt;
+                      &lt;input type="text" name="fNmae" id="fName" required&gt;
+                      &lt;label for="lName"&gt;Last Name:&lt;/label&gt;
+                      &lt;input type="text" name="lName" id="lName" required&gt;
+                      &lt;label for="exampleEmailInput"&gt;Your email:&lt;/label&gt;
+                      &lt;input class="contact_email" type="email" 
+                      placeholder="email@mailbox.com" id="exampleEmailInput"&gt;
+                      
+                      &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
+                      <!-- THIS IS OPTION LABEL ELEMENTS -->
+                          &lt;select class="contact_reason" id="exampleRecipientInput"&gt;
+                              &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
+                              &lt;option value="Option 2"&gt;Admiration&lt;/option&gt;
+                              &lt;option value="Option 3"&gt;Can I get your number?&lt;/option&gt;
+                          &lt;/select&gt;
+                      &lt;label for="exampleMessage"&gt;Message&lt;/label&gt;
+                      &lt;textarea class="contact_text"
+                      placeholder="The reasons I contact you guys...." 
+                      id="exampleMessage"&gt;&lt;/textarea&gt;
+                  &lt;label class="example-send-yourself-copy"&gt;
+                      <!-- THIS IS CHECKBOX ATTRIBUTE IN INPUT ELEMENTS -->
+                  &lt;input type="checkbox"&gt;
+                  &lt;!-- THIS SPAN PAG USE LIKE A &lt;div&gt; Element, BUT SPAN IS INLINE --&gt;
+                  &lt;span class="label-body"&gt;Send a copy to yourself&lt;/span&gt; &lt;/label&gt;
+                  &lt;input class="button-primary" type="submit" value="Submit"&gt;
+              
+                  &lt;/div&gt;  <!-- END OF .contact-container -->
+                  &lt;/form&gt;  <!-- End OF FORM -->
+          &lt;/body&gt;
+          &lt;/html&gt;
+                  </code>
+                  </pre>
+                  <!-- ==END OF THE PRECODE==================================== -->
+                  </div>
     </section>
   <br>
   <br>

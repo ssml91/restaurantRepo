@@ -53,6 +53,8 @@ p { font-size: .8em; }
 
 button { color: #fff; background-color: #252525; padding: 1em 3em; font-family: 'Abril Fatface', cursive; cursor: pointer; }
 
+button a { color: #fff; text-decoration: none; }
+
 #homeDescription { width: 80%; margin: 6em auto 0; text-align: center; }
 
 #homeDescription i { padding: 5px; font-size: 2em; }
@@ -527,7 +529,7 @@ body { overflow-x: hidden; }
 
 @media screen and (max-width: 590px) { .display-code { display: none; } }
 
-.sushiBody { font-family: 'Inria Sans', sans-serif; background-color: #efeeee; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100vh; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-weight: 400; font-size: 16px; }
+.sushiBody { font-family: 'Inria Sans', sans-serif; background-color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100vh; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-weight: 400; font-size: 16px; }
 
 @media (min-width: 600px) { .sushiBody { font-size: 16px; } }
 
