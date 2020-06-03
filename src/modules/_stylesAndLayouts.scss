@@ -47,3 +47,31 @@
 .buttonStyles, .typography {
     margin-top: 5em;
 }
+.buttonsOnStyles {
+    text-align: center;
+    button {
+        border: solid 1px #525252;
+    }
+}
+.displayCode {
+    margin-top: 3em;
+}
+.xsmallBtn {
+    padding: .4em 1em;
+}
+.smallBtn {
+    padding: .6em 3em;
+}
+.largeBtn {
+    padding: 1.5em 4em;
+}
+.hoverBtnStyle {
+    background-color: rgb(99, 99, 99);
+}
+.activeBtnStyle {
+    background-color: rgb(145, 145, 145);
+}
+.visitedBtnStyle {
+    background-color: rgb(207, 207, 207);
+    color: #000;
+}
