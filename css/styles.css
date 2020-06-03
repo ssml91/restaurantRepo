@@ -1484,9 +1484,8 @@ body {
 }
 
 .mainHome {
-  margin: 0 auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin: 5em auto;
+  padding: 0 2em;
 }
 
 .mainHome section h2 {
@@ -1507,6 +1506,10 @@ body {
 
 .menu ul li i, .amenities ul li i, .web ul li i {
   padding-right: 5px;
+}
+
+.buttonStyles, .typography {
+  margin-top: 5em;
 }
 
 .sushiStyle {

@@ -19,9 +19,8 @@
     }
 }
 .mainHome {
-    margin: 0 auto;
-    padding-left: 2em;
-    padding-right: 2em;
+    margin: 5em auto;
+    padding: 0 2em;
     section {
         h2 {
             text-align: left;
@@ -44,4 +43,7 @@
             }
         }
     }
+}
+.buttonStyles, .typography {
+    margin-top: 5em;
 }

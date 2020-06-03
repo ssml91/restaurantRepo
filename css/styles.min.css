@@ -411,7 +411,7 @@ body { overflow-x: hidden; }
 
 .typography ul li h3, .typography ul li h4, .typography ul li h5, .typography ul li h6 { padding-top: 5px; padding-bottom: 5px; }
 
-.mainHome { margin: 0 auto; padding-left: 2em; padding-right: 2em; }
+.mainHome { margin: 5em auto; padding: 0 2em; }
 
 .mainHome section h2 { text-align: left; }
 
@@ -422,6 +422,8 @@ body { overflow-x: hidden; }
 .menu ul li, .amenities ul li, .web ul li { list-style-type: none; }
 
 .menu ul li i, .amenities ul li i, .web ul li i { padding-right: 5px; }
+
+.buttonStyles, .typography { margin-top: 5em; }
 
 .sushiStyle { background-color: #000; font-family: "Inria Sans", sans-serif; }
 
