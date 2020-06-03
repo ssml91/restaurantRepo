@@ -1591,7 +1591,7 @@ body {
 
 .sushiBody {
   font-family: 'Inria Sans', sans-serif;
-  background-color: #efeeee;
+  background-color: #fff;
   display: flex;
   height: 100vh;
   flex-direction: column;
