@@ -131,13 +131,11 @@
     </section>
     <section class="printStyling" id="printStyling">
         <h2>No Print Class</h2>
-        <p>Easily exclude segments of your webpage for printing, by adding a 'no-print' class on any element needed and define it in your css as follows:</p>
+        <p>Easily exclude segments of your webpage for printing, by adding a 'no-print' class on any element needed and define it in your css with @media print.  See the example below:</p>
         <p>
-            <div class="displayCode no-print">
+            <div class="no-print">
                 <pre>
                     <code>
-                        
-    
     @media print
     {    
         .no-print, .no-print *
