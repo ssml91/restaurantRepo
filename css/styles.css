@@ -1708,6 +1708,11 @@ body {
   margin-right: 8%;
 }
 
+.contactUsBody p {
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+}
+
 @media (min-width: 600px) {
   .contactUsBody {
     margin-left: 15%;
@@ -1715,32 +1720,17 @@ body {
   }
 }
 
-.contacth1 {
-  text-align: center;
-  font-weight: 900;
-  line-height: 20px;
-  letter-spacing: 1px;
-  margin: 20px 0 30px;
-  text-shadow: #d8ee5b 0.03em 0.03em 0.03em;
-  -webkit-text-emphasis-color: #333;
-          text-emphasis-color: #333;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
 .button-primary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 140px;
-  padding: 10px 20px 10px 20px;
-  border: 1px solid lightgray;
+  padding: 10px 20px;
   border-radius: 2px;
 }
 
 .contact_container {
   width: 94%;
-  border: 1px solid #ccc;
   margin: 15px 15px;
   padding: 0;
   line-height: 1.7;
@@ -1822,6 +1812,21 @@ body {
   }
 }
 
+.contacth1 {
+  margin-top: 4em;
+  font-size: 2em;
+}
+
+.contactUsBody {
+  margin-bottom: 10em;
+}
+
+.contact_container button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 760px) {
   .contact_container .button-primary {
     -webkit-box-pack: center;
@@ -1889,7 +1894,6 @@ body {
 }
 
 .formsample {
-  background-color: rgba(248, 246, 233, 0.7);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #777;

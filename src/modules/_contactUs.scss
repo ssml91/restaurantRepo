@@ -11,35 +11,24 @@
   letter-spacing: normal;
   margin-left: 8%;
   margin-right: 8%;
+  p {
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+  }
   @include break(600px) {
     margin-left: 15%;
     margin-right: 15%;
   }
  
  }
-
-.contacth1 {
-  text-align: center;
-  font-weight: 900;
-  line-height: 20px;
-  letter-spacing: 1px;
-  margin: 20px 0 30px;
-  text-shadow: rgb(216, 238, 91) 0.03em 0.03em 0.03em;
-  text-emphasis-color:#333;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-
-}
 .button-primary{
     align-items: center;
     margin-left: 140px;
-    padding: 10px 20px 10px 20px;
-    border:1px solid lightgray;
+    padding: 10px 20px;
     border-radius: 2px;
 }
 .contact_container {
   width: 94%;
-  border: 1px solid #ccc;
   margin: 15px 15px;
   padding: 0;
   line-height: 1.7;
@@ -112,7 +101,18 @@
     border-radius: 2px;
 }
 }
-
+.contacth1 {
+  margin-top: 4em;
+  font-size: 2em;
+}
+.contactUsBody {
+  margin-bottom: 10em;
+}
+.contact_container button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
 @media screen and (min-width: 760px) {
   .contact_container .button-primary {
    justify-content: center;
@@ -162,8 +162,7 @@
   text-align: center;
 }
 }
-.formsample{
-    background-color: rgba(248, 246, 233, 0.7);
+.formsample {
     box-sizing: border-box;
     border:1px solid #777;
     margin: 20px 20px 20px 20px;
