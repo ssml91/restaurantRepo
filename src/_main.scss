@@ -43,7 +43,7 @@ body {
         }
         a {
             text-decoration: none;
-            color: #000;
+            color: #fff;
             font-family: 'Abril Fatface', serif;
         }
         @include break(900px) {
@@ -67,6 +67,9 @@ body {
         #startGrid3 {
             grid-column: 1 / span 2;
             grid-row: 2;
+            button {
+                color: #fff;
+            }
         }
     }
     }
@@ -81,7 +84,7 @@ p {
 }
 button{
     a {
-        color: $white;
+        color: #fff;
         text-decoration: none;
     }
     color: #fff;
@@ -205,6 +208,8 @@ footer {
 }
 
 .top {
+    position: absolute;
+    right: 0;
     z-index: 10;
     padding: 1em;
     color: #fff;

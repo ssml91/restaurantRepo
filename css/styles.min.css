@@ -39,13 +39,14 @@ body { font-family: 'Montserrat', sans-serif; }
 
 .sectionHome #whereToStartGrid div { margin-bottom: 1.5em; }
 
-.sectionHome #whereToStartGrid a { text-decoration: none; color: #000; font-family: 'Abril Fatface', serif; }
+.sectionHome #whereToStartGrid a { text-decoration: none; color: #fff; font-family: 'Abril Fatface', serif; }
 
 @media (min-width: 900px) { .sectionHome #whereToStartGrid { display: -ms-grid; display: grid; -ms-grid-columns: 370px 370px; grid-template-columns: 370px 370px; -ms-grid-rows: 180px 100px; grid-template-rows: 180px 100px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 3em; }
   .sectionHome #whereToStartGrid div { margin: 0 1em; }
   .sectionHome #whereToStartGrid #startGrid1 { -ms-grid-column: 1; -ms-grid-column-span: 1; grid-column: 1 / span 1; -ms-grid-row: 1; grid-row: 1; }
   .sectionHome #whereToStartGrid #startGrid2 { -ms-grid-column: 2; -ms-grid-column-span: 1; grid-column: 2 / span 1; -ms-grid-row: 1; grid-row: 1; }
-  .sectionHome #whereToStartGrid #startGrid3 { -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; -ms-grid-row: 2; grid-row: 2; } }
+  .sectionHome #whereToStartGrid #startGrid3 { -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / span 2; -ms-grid-row: 2; grid-row: 2; }
+  .sectionHome #whereToStartGrid #startGrid3 button { color: #fff; } }
 
 .bodyHome h1 { font-family: 'Abril Fatface', cursive; font-size: 1.5em; }
 
@@ -94,7 +95,7 @@ button a { color: #fff; text-decoration: none; }
 
 footer { text-align: center; background-color: #c4bdac; padding: 1.5em; color: #fff; }
 
-.top { z-index: 10; padding: 1em; color: #fff; background-color: #252525; font-family: 'Abril Fatface', cursive; cursor: pointer; float: right; text-decoration: none; width: 100px; text-align: center; }
+.top { position: absolute; right: 0; z-index: 10; padding: 1em; color: #fff; background-color: #252525; font-family: 'Abril Fatface', cursive; cursor: pointer; float: right; text-decoration: none; width: 100px; text-align: center; }
 
 .maxWidth { margin: 5em auto; }
 
@@ -306,6 +307,8 @@ label[for="visa"], label[for="mc"], label[for="amex"] { display: inline-block; }
 
 .checkoutp { padding-left: 5px; }
 
+#checkoutForm { margin: 0 auto; }
+
 /* .container { width: 90%; max-width: 960px; margin: 0 auto; } */
 @media screen and (min-width: 800px) { .fieldset3 { width: 92.5%; }
   .innerfieldset { width: 93%; margin-top: 15px; }
@@ -328,7 +331,7 @@ label[for="visa"], label[for="mc"], label[for="amex"] { display: inline-block; }
 
 #gCard_col2 { width: 100%; padding-top: 10px; }
 
-main { width: 98%; margin: auto; /* padding: 1em; */ background-color: rgba(255, 255, 255, 0.8); position: relative; overflow: hidden; }
+main { width: 98%; margin: 0 auto; /* padding: 1em; */ background-color: rgba(255, 255, 255, 0.8); position: relative; overflow: hidden; }
 
 .info { margin-bottom: 1em; width: 90%; padding-left: 10px; }
 
