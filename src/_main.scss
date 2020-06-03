@@ -79,7 +79,7 @@ body {
 p {
     font-size: .8em;
 }
-#homeDescription button, .sectionHome button, #homeComponents button{
+button{
     color: #fff;
     background-color: rgb(37, 37, 37);
     padding: 1em 3em;
@@ -202,18 +202,19 @@ footer {
 
 .top {
     z-index: 10;
-    border: solid 1px $black;
     padding: 1em;
-    background-color: $mdGray;
+    color: #fff;
+    background-color: rgb(37, 37, 37);
+    font-family: 'Abril Fatface', cursive;
+    cursor: pointer;
     float: right;
-    color: $black;
     text-decoration: none;
     width: 100px;
     text-align: center;
 }
 .maxWidth {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 5em auto;
 }
 .displayCode {
     display: none;
@@ -223,7 +224,8 @@ footer {
     margin: 0 10% 0 10%;
     @include break(600px) {
         display: block;
-        margin-bottom: 4em;
+        max-width: 960px;
+        margin: 0 auto 4em;
     }
 
 }

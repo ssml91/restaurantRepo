@@ -37,13 +37,19 @@ body {
 }
 .buttons {
     button#next {
+        background-color: #dedede;
+        color: #000;
+        border: solid 1px #9c9c9c;
         position: absolute;
-        top: 40%;
+        top: 60%;
         right: 15px;
     }
     button#prev {
+        background-color: #dedede;
+        color: #000;
+        border: solid 1px #9c9c9c;
         position: absolute;
-        top: 40%;
+        top: 60%;
         left: 15px;
     }
 }
