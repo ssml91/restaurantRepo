@@ -217,8 +217,14 @@ footer {
     text-align: center;
 }
 .maxWidth {
-    max-width: 960px;
+    p {
+        width: 90%;
+        margin: 0 auto;
+    }
     margin: 5em auto;
+    @include break (960px) {
+        max-width: 960px;
+    }
 }
 .displayCode {
     display: none;
