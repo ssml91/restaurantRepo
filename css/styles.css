@@ -135,6 +135,11 @@ button {
   cursor: pointer;
 }
 
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #homeDescription {
   width: 80%;
   margin: 6em auto 0;
